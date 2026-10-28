@@ -51,6 +51,7 @@ import { HomePage } from "./interface/Home";
 import { ServerHome } from "./interface/ServerHome";
 import { ChannelPage } from "./interface/channels/ChannelPage";
 import "./serviceWorkerInterface";
+import { keepLinksInsideBasePath } from "./awakyn/basePathLinks";
 
 attachDevtoolsOverlay();
 
@@ -177,12 +178,17 @@ const routes = () => (
 
 const snackbarCtrl = new SnackbarController();
 
+// Keeps in-app addresses under the folder the app is served from (BASE_PATH at
+// build time), so reloading or sharing a link opens the app again.
+const routerBase = import.meta.env.BASE_URL.replace(/\/$/, "");
+keepLinksInsideBasePath(routerBase);
+
 render(
   () => (
     <DeviceContext>
       <I18nProvider>
         <SnackbarProvider controller={snackbarCtrl}>
-          <Router>
+          <Router base={routerBase}>
             <Route path="/i/:host" component={InstanceContext}>
               {routes()}
             </Route>
