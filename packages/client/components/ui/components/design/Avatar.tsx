@@ -16,7 +16,7 @@ export type Props = {
   /**
    * Avatar shape
    */
-  shape?: "circle" | "square" | "rounded-square";
+  shape?: "circle" | "square" | "rounded-square" | "awakyn-server";
 
   /**
    * Image source
@@ -207,6 +207,10 @@ const Shape = styled("div", {
       square: {},
       "rounded-square": {
         borderRadius: "var(--borderRadius-md)",
+      },
+      // Awakyn: community icons use the theme's rounded-square radius
+      "awakyn-server": {
+        borderRadius: "var(--awakyn-server-icon-radius)",
       },
     },
   },

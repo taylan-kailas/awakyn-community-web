@@ -14,6 +14,10 @@ import { Masks } from "./Masks";
 import { FONTS, MONOSPACE_FONTS } from "./fonts";
 import { legacyThemeUnsetShim } from "./legacyThemeGeneratorCode";
 
+// Awakyn: our look is applied on top of Stoat's own theme variables.
+import { stoatThemeVariables } from "../../../src/awakyn/theme/stoatVariables";
+import { AWAKYN_THEME } from "../../../src/awakyn/theme/tokens";
+
 /**
  * Component for loading theme variables into root
  */
@@ -50,6 +54,8 @@ export function LoadTheme() {
       ...createMaterialColourVariables(activeTheme, "--md-sys-color-"),
       // mount --mdui-color triplet variables
       ...createMduiColourTriplets(activeTheme, "--mdui-color-"),
+      // Awakyn: last, so it wins over any accent or font a member picked
+      ...stoatThemeVariables(AWAKYN_THEME, activeTheme.darkMode),
     };
   });
 

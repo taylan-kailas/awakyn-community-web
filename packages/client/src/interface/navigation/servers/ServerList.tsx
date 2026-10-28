@@ -17,9 +17,10 @@ import { VoiceStatus } from "@revolt/ui/components/design/VoiceStatus";
 
 import MdAdd from "@material-design-icons/svg/filled/add.svg?component-solid";
 import MdExplore from "@material-design-icons/svg/filled/explore.svg?component-solid";
-import MdHome from "@material-design-icons/svg/filled/home.svg?component-solid";
 import MdSettings from "@material-design-icons/svg/filled/settings.svg?component-solid";
 
+// Awakyn: lotus home button
+import { Lotus } from "../../../awakyn/Lotus";
 import { Tooltip } from "../../../../components/ui/components/floating";
 import { Draggable } from "../../../../components/ui/components/utils/Draggable";
 import { UserMenu } from "./UserMenu";
@@ -134,7 +135,7 @@ export const ServerList = (props: Props) => {
         >
           <Avatar
             size={42}
-            fallback={<MdHome />}
+            fallback={<Lotus size={26} />}
             holepunch={homeNotifications() ? "top-right" : undefined}
             overlay={
               <Show when={homeNotifications()}>
@@ -267,6 +268,7 @@ export const ServerList = (props: Props) => {
                   <Avatar
                     size={42}
                     src={entry.item.iconURL}
+                    shape="awakyn-server"
                     holepunch={
                       entry.item.mentions.length
                         ? entry.item.voiceStatus !== "none"

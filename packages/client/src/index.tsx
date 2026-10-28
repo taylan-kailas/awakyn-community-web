@@ -52,6 +52,7 @@ import { ServerHome } from "./interface/ServerHome";
 import { ChannelPage } from "./interface/channels/ChannelPage";
 import "./serviceWorkerInterface";
 import { keepLinksInsideBasePath } from "./awakyn/basePathLinks";
+import { loadThemeFont } from "./awakyn/theme/loadThemeFont";
 
 attachDevtoolsOverlay();
 
@@ -182,6 +183,7 @@ const snackbarCtrl = new SnackbarController();
 // build time), so reloading or sharing a link opens the app again.
 const routerBase = import.meta.env.BASE_URL.replace(/\/$/, "");
 keepLinksInsideBasePath(routerBase);
+loadThemeFont();
 
 render(
   () => (
