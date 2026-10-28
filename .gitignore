@@ -10,3 +10,6 @@ dev-dist
 .vercel
 
 .idea
+
+# Awakyn build output
+out/
