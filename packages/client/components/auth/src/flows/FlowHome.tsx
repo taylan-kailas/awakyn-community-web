@@ -9,7 +9,9 @@ import { Navigate } from "@revolt/routing";
 import { Button, Column } from "@revolt/ui";
 
 import { useState } from "@revolt/state";
-import Wordmark from "../../../../public/assets/web/wordmark.svg?component-solid";
+// Awakyn: our wordmark instead of Stoat's
+import { BRAND } from "../../../../src/awakyn/brand";
+import { Wordmark } from "../../../../src/awakyn/Wordmark";
 
 /**
  * Flow for logging into an account
@@ -46,21 +48,11 @@ export default function FlowHome() {
                   "text-align": "center",
                 }}
               >
-                <span>
-                  <Trans>
-                    Find your com
-                    <wbr />
-                    munity,
-                    <br />
-                    connect with the world.
-                  </Trans>
-                </span>
+                {/* Awakyn: our welcome instead of Stoat's pitch */}
+                <span>{BRAND.landingTitle}</span>
               </b>
               <span style={{ "text-align": "center", opacity: "0.5" }}>
-                <Trans>
-                  Stoat is one of the best ways to stay connected with your
-                  friends and community, anywhere, anytime.
-                </Trans>
+                {BRAND.landingBody}
               </span>
             </Column>
 

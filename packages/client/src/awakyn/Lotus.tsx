@@ -14,6 +14,8 @@ export function Lotus(props: { size: number }) {
       aria-hidden="true"
       style={{
         display: "inline-block",
+        // Never squeezed by a narrow flex row; the lotus keeps its size.
+        "flex-shrink": 0,
         width: `${props.size}px`,
         "aspect-ratio": LOTUS_ASPECT_RATIO,
         background: "currentColor",

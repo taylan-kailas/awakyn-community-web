@@ -11,6 +11,8 @@ import solidSvg from "vite-plugin-solid-svg";
 
 import codegenPlugin from "./codegen.plugin";
 import { addFontPreload } from "./fontpreload.plugin";
+import { BRAND } from "./src/awakyn/brand";
+import { AWAKYN_THEME } from "./src/awakyn/theme/tokens";
 
 const base = process.env.BASE_PATH ?? "/";
 const pwaScope = process.env.PWA_SCOPE || base;
@@ -46,39 +48,21 @@ export default defineConfig({
         type: "module",
       },
       manifest: {
-        name: "Stoat",
-        short_name: "Stoat",
-        description: "User-first open source chat platform.",
+        // Awakyn: install name, colours and icons
+        name: BRAND.name,
+        short_name: BRAND.name,
+        description: BRAND.description,
         categories: ["communication", "chat", "messaging"],
         start_url: base,
         scope: pwaScope,
         display_override: ["window-controls-overlay"],
         display: "standalone",
-        background_color: "#101823",
-        theme_color: "#101823",
+        background_color: AWAKYN_THEME.dark.bg,
+        theme_color: AWAKYN_THEME.dark.bg,
         icons: [
-          {
-            src: `${base}assets/web/android-chrome-192x192.png`,
-            type: "image/png",
-            sizes: "192x192",
-          },
-          {
-            src: `${base}assets/web/android-chrome-512x512.png`,
-            type: "image/png",
-            sizes: "512x512",
-          },
-          {
-            src: `${base}assets/web/monochrome.svg`,
-            type: "image/svg+xml",
-            sizes: "48x48 72x72 96x96 128x128 256x256",
-            purpose: "monochrome",
-          },
-          {
-            src: `${base}assets/web/masking-512x512.png`,
-            type: "image/png",
-            sizes: "512x512",
-            purpose: "maskable",
-          },
+          { src: `${base}awakyn/icon-192.png`, type: "image/png", sizes: "192x192" },
+          { src: `${base}awakyn/icon-512.png`, type: "image/png", sizes: "512x512" },
+          { src: `${base}awakyn/icon-512.png`, type: "image/png", sizes: "512x512", purpose: "maskable" },
         ],
         // TODO: take advantage of shortcuts
       },

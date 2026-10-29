@@ -9,6 +9,8 @@ import type { Session } from "@revolt/state/stores/Auth";
 
 import Instance from "../instance/Instance";
 import { killServiceWorkerSubscription } from "./NotificationsController";
+// Awakyn: signed-in devices carry our name
+import { BRAND } from "../../src/awakyn/brand";
 
 export enum State {
   Ready = "Ready",
@@ -486,7 +488,7 @@ export default class ClientController {
         os = "iPadOS";
       }
 
-      friendly_name = `Stoat for Web (${name} on ${os})`;
+      friendly_name = `${BRAND.name} (${name} on ${os})`;
     } else {
       friendly_name = "Stoat for Web (Unknown Device)";
     }

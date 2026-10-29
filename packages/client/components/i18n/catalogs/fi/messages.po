@@ -304,8 +304,8 @@ msgid "Able to speak in voice call"
 msgstr "Pystyy puhumaan puhekanavilla"
 
 #: components/auth/src/AuthPage.tsx
-msgid "About"
-msgstr "Tietoa"
+#~ msgid "About"
+#~ msgstr "Tietoa"
 
 #: components/modal/modals/SignOutSessions.tsx
 msgid "Accept"
@@ -958,8 +958,8 @@ msgstr "Luo kanava ennen muiden kutsumista!"
 #~ msgstr "Luo ryhmä"
 
 #: src/interface/Home.tsx
-msgid "Create a group or server"
-msgstr "Luo ryhmä tai palvelin"
+#~ msgid "Create a group or server"
+#~ msgstr "Luo ryhmä tai palvelin"
 
 #: components/modal/modals/CreateBot.tsx
 msgid "Create a new bot"
@@ -1214,8 +1214,8 @@ msgid "Discord RPC"
 msgstr "Discord-RPC"
 
 #: src/interface/Home.tsx
-msgid "Discover Stoat"
-msgstr "Tutki Stoatia"
+#~ msgid "Discover Stoat"
+#~ msgstr "Tutki Stoatia"
 
 #: components/app/interface/settings/user/appearance/AppearanceMenu.tsx
 msgid "Display & Text"
@@ -1257,12 +1257,12 @@ msgid "Don't show this again"
 msgstr ""
 
 #: components/app/interface/settings/UserSettings.tsx
-msgid "Donate"
-msgstr "Lahjoita"
+#~ msgid "Donate"
+#~ msgstr "Lahjoita"
 
 #: src/interface/Home.tsx
-msgid "Donate to Stoat"
-msgstr "Lahjoita Stoatille"
+#~ msgid "Donate to Stoat"
+#~ msgstr "Lahjoita Stoatille"
 
 #: components/ui/components/features/profiles/ProfileBadges.tsx
 msgid "Donated to Stoat"
@@ -1469,12 +1469,12 @@ msgid "File must be smaller than {0}"
 msgstr ""
 
 #: src/interface/Home.tsx
-msgid "Find a community based on your hobbies or interests."
-msgstr "Löydä harrastuksiisi tai kiinnostuksen kohteisiisi pohjautuva yhteisö."
+#~ msgid "Find a community based on your hobbies or interests."
+#~ msgstr "Löydä harrastuksiisi tai kiinnostuksen kohteisiisi pohjautuva yhteisö."
 
 #: components/auth/src/flows/FlowHome.tsx
-msgid "Find your com<0/>munity,<1/>connect with the world."
-msgstr ""
+#~ msgid "Find your com<0/>munity,<1/>connect with the world."
+#~ msgstr ""
 
 #: components/ui/components/features/profiles/ProfileStatus.tsx
 #: src/interface/channels/text/MemberSidebar.tsx
@@ -1554,8 +1554,8 @@ msgid "GIFs are now powered by Gifbox"
 msgstr ""
 
 #: src/interface/Home.tsx
-msgid "Give feedback on Stoat"
-msgstr "Anna Stoatista palautetta"
+#~ msgid "Give feedback on Stoat"
+#~ msgstr "Anna Stoatista palautetta"
 
 #: components/modal/modals/ReportContent.tsx
 msgid "Give us some detail"
@@ -1578,7 +1578,6 @@ msgid "Go to account settings to edit your username"
 msgstr "Mene omiin tiliasetuksiin vaihtamaan käyttäjänimesi"
 
 #: components/app/interface/settings/user/Feedback.tsx
-#: src/interface/Home.tsx
 msgid "Go to the Stoat Lounge"
 msgstr "Mene Stoatin Loungeen"
 
@@ -1708,8 +1707,8 @@ msgid "Invisible"
 msgstr "Näkymätön"
 
 #: src/interface/Home.tsx
-msgid "Invite all of your friends, some cool bots, and throw a big party."
-msgstr "Kutsu kaikki ystäväsi, muutama botti, ja aloita juhlat."
+#~ msgid "Invite all of your friends, some cool bots, and throw a big party."
+#~ msgstr "Kutsu kaikki ystäväsi, muutama botti, ja aloita juhlat."
 
 #: components/app/interface/settings/user/bots/ViewBot.tsx
 msgid "Invite Bot"
@@ -1761,7 +1760,6 @@ msgstr "Liity palvelimelle"
 #~ msgstr ""
 
 #: components/app/interface/settings/user/Feedback.tsx
-#: src/interface/Home.tsx
 msgid "Join the Stoat Lounge"
 msgstr "Liity Stoat Loungeen"
 
@@ -1857,8 +1855,8 @@ msgid "Let Stoat use its own custom titlebar."
 msgstr "Anna Stoatin käyttää omaa mukautettua otsikkoriviä."
 
 #: src/interface/Home.tsx
-msgid "Let us know how we can improve our app by giving us feedback."
-msgstr "Kerro meille, miten voimme parantaa sovellustamme antamalla palautetta."
+#~ msgid "Let us know how we can improve our app by giving us feedback."
+#~ msgstr "Kerro meille, miten voimme parantaa sovellustamme antamalla palautetta."
 
 #: components/app/interface/settings/server/roles/ServerRoleEditor.tsx
 #: components/app/interface/settings/user/appearance/AppearanceMenu.tsx
@@ -2415,8 +2413,8 @@ msgid "Privacy"
 msgstr ""
 
 #: components/auth/src/AuthPage.tsx
-msgid "Privacy Policy"
-msgstr "Tietosuojakäytäntö"
+#~ msgid "Privacy Policy"
+#~ msgstr "Tietosuojakäytäntö"
 
 #: components/markdown/plugins/anchors.tsx
 msgid "Private Channel"
@@ -2924,8 +2922,8 @@ msgid "Show send message button"
 msgstr "Näytä lähetä viesti -painike"
 
 #: components/auth/src/flows/FlowLogin.tsx
-msgid "Sign into Stoat"
-msgstr "Kirjaudu sisään Stoatiin"
+#~ msgid "Sign into Stoat"
+#~ msgstr "Kirjaudu sisään Stoatiin"
 
 #: components/auth/src/flows/FlowHome.tsx
 msgid "Sign Up"
@@ -3023,8 +3021,8 @@ msgid "Stoat Founder"
 msgstr "Stoatin Perustaja"
 
 #: components/auth/src/flows/FlowHome.tsx
-msgid "Stoat is one of the best ways to stay connected with your friends and community, anywhere, anytime."
-msgstr "Stoat on yksi parhaista tavoista pysyä yhteydessä ystäviisi ja yhteisöihisi missä vain, milloin vain."
+#~ msgid "Stoat is one of the best ways to stay connected with your friends and community, anywhere, anytime."
+#~ msgstr "Stoat on yksi parhaista tavoista pysyä yhteydessä ystäviisi ja yhteisöihisi missä vain, milloin vain."
 
 #: components/app/interface/settings/server/roles/ServerRoleEditor.tsx
 msgid "Stoat rocks!"
@@ -3075,8 +3073,8 @@ msgid "Suggest new Stoat features on GitHub discussions."
 msgstr "Ehdota uusia toimintoja Stoatiin Github-keskusteluissa."
 
 #: src/interface/Home.tsx
-msgid "Support the project by donating - thank you!"
-msgstr "Tue projektia lahjoittamalla - kiitos!"
+#~ msgid "Support the project by donating - thank you!"
+#~ msgstr "Tue projektia lahjoittamalla - kiitos!"
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
 msgid "Switch to this voice channel"
@@ -3123,8 +3121,8 @@ msgid "Terms"
 msgstr ""
 
 #: components/auth/src/AuthPage.tsx
-msgid "Terms of Service"
-msgstr "Käyttöehdot"
+#~ msgid "Terms of Service"
+#~ msgstr "Käyttöehdot"
 
 #: components/modal/modals/CreateChannel.tsx
 msgid "Text Channel"
@@ -3545,8 +3543,8 @@ msgid "What's new"
 msgstr ""
 
 #: components/app/interface/settings/UserSettings.tsx
-msgid "What's New"
-msgstr "Mitä uutta"
+#~ msgid "What's New"
+#~ msgstr "Mitä uutta"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Whether other users can edit these settings"
@@ -3607,7 +3605,6 @@ msgid "You can re-open it later, but it will disappear on both sides."
 msgstr "Voit avata sen myöhemmin uudelleen, mutta se katoaa molemmin puolin."
 
 #: components/app/interface/settings/user/Feedback.tsx
-#: src/interface/Home.tsx
 msgid "You can report issues and discuss improvements with us directly here."
 msgstr "Voit ilmoittaa ongelmia ja keskustella kanssamme parannuksista täällä."
 

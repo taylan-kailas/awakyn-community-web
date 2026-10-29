@@ -14,7 +14,8 @@ import MdCollapseContent from "@material-symbols/svg-400/outlined/collapse_conte
 import MdExpandContent from "@material-symbols/svg-400/outlined/expand_content.svg?component-solid";
 import MdMinimize from "@material-symbols/svg-400/outlined/minimize.svg?component-solid";
 
-import Wordmark from "../../../../public/assets/web/wordmark.svg?component-solid";
+// Awakyn: our wordmark instead of Stoat's
+import { Wordmark } from "../../../../src/awakyn/Wordmark";
 import { pendingUpdate } from "../../../../src/serviceWorkerInterface";
 
 const isMacOS = navigator.platform.startsWith("Mac");
@@ -61,12 +62,7 @@ export function Titlebar() {
                 "-webkit-app-region": "drag",
               }}
             >
-              <Wordmark
-                class={css({
-                  height: "18px",
-                  marginBlockStart: "1px",
-                })}
-              />{" "}
+              <Wordmark size={14} />{" "}
               <Show when={import.meta.env.DEV}>
                 <MdBuild {...symbolSize(16)} />
               </Show>

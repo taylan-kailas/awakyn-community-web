@@ -20,6 +20,7 @@ import MdArrowBack from "@material-design-icons/svg/filled/arrow_back.svg?compon
 import { useState } from "@revolt/state";
 import { FlowTitle } from "./Flow";
 import { Fields, Form } from "./Form";
+import { BRAND } from "../../../../src/awakyn/brand";
 
 /**
  * Flow for logging into an account
@@ -62,7 +63,8 @@ export default function FlowLogin() {
       <Switch
         fallback={
           <>
-            <FlowTitle subtitle={<Trans>Sign into Stoat</Trans>} emoji="wave">
+            {/* Awakyn: our name */}
+            <FlowTitle subtitle={BRAND.signInSubtitle} emoji="wave">
               <Trans>Welcome!</Trans>
             </FlowTitle>
             <Form onSubmit={performLogin}>

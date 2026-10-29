@@ -1,5 +1,7 @@
 /// <reference lib="webworker" />
 import { cleanupOutdatedCaches, precacheAndRoute } from "workbox-precaching";
+// Awakyn: notifications carry our name
+import { BRAND } from "./awakyn/brand";
 
 declare let self: ServiceWorkerGlobalScope;
 
@@ -37,19 +39,19 @@ self.addEventListener("push", (event) => {
   if (!notification.title) {
     if (notification.channel) {
       if (notification.channel.channel_type === "DirectMessage") {
-        notification.title = notification.author || "Stoat";
+        notification.title = notification.author || BRAND.name;
       } else {
         notification.title = `${notification.author} in ${notification.channel.name}`;
       }
     } else {
-      notification.title = "Stoat";
+      notification.title = BRAND.name;
     }
   }
 
   notification.url ||= self.registration.scope;
 
   event.waitUntil(
-    self.registration.showNotification(notification.title || "Stoat", {
+    self.registration.showNotification(notification.title || BRAND.name, {
       icon: notification.icon,
       body: notification.body,
       data: notification.url,
