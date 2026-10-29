@@ -23,6 +23,7 @@ import { LAYOUT_SECTIONS } from "@revolt/state/stores/Layout";
 import { LoadingScreen } from "@revolt/ui";
 
 import { SlideDrawer } from "../components/ui/components/navigation/SlideDrawer";
+import { AutoJoinCall } from "./awakyn/join/AutoJoinCall";
 import { Sidebar } from "./interface/Sidebar";
 
 /**
@@ -134,6 +135,8 @@ const Interface = (props: { children: JSX.Element }) => {
         </Switch>
 
         <NotificationsWorker />
+        {/* Awakyn: arrivals by call link go straight into the call */}
+        <AutoJoinCall />
       </AppRoot>
     </MessageCache>
   );

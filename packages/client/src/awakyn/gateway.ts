@@ -7,7 +7,7 @@ import { isUnreachable } from "./reachability.ts";
 
 export type GatewaySession = { _id: string; token: string; user_id: string };
 export type JoinTarget = { type: "Server"; serverId: string; channelId?: string } | { type: "Group"; channelId: string };
-export type InvitePreview = { type: "Server" | "Group"; name: string; guestsAllowed: boolean };
+export type InvitePreview = { type: "Server" | "Group"; name: string; guestsAllowed: boolean; target: JoinTarget };
 export type Joined = { session: GatewaySession; target?: JoinTarget };
 
 const UNREACHABLE = "Couldn't reach the community. Try again in a moment.";

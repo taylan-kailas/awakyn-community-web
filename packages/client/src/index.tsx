@@ -11,7 +11,7 @@ import { Navigate, Route, Router, useParams } from "@solidjs/router";
 import { QueryClient, QueryClientProvider } from "@tanstack/solid-query";
 import "material-symbols";
 import "mdui/mdui.css";
-import { PublicBot, PublicChannelInvite } from "stoat.js";
+import { PublicBot } from "stoat.js";
 
 import FlowDeleteAccount from "@revolt/auth/src/flows/FlowDelete";
 import FlowHome from "@revolt/auth/src/flows/FlowHome";
@@ -36,6 +36,7 @@ import "@revolt/ui/styles";
 import { AndroidNag } from "./AndroidNag";
 import AuthPage from "./Auth";
 import Interface from "./Interface";
+import { JoinPage } from "./awakyn/join/JoinPage";
 import "./index.css";
 import { DevelopmentPage } from "./interface/Development";
 import { Friends } from "./interface/Friends";
@@ -65,28 +66,6 @@ function SettingsRedirect() {
   const { openModal } = useModals();
 
   onMount(() => openModal({ type: "settings", config: "user" }));
-  return <PWARedirect />;
-}
-
-/**
- * Open invite and redirect to last active path
- */
-function InviteRedirect() {
-  const params = useParams();
-  const client = useClient();
-  const { openModal, showError } = useModals();
-
-  onMount(() => {
-    if (params.code) {
-      client()
-        // TODO: add a helper to stoat.js for this
-        .api.get(`/invites/${params.code as ""}`)
-        .then((invite) => PublicChannelInvite.from(client(), invite))
-        .then((invite) => openModal({ type: "invite", invite }))
-        .catch(showError);
-    }
-  });
-
   return <PWARedirect />;
 }
 
@@ -150,13 +129,16 @@ const routes = () => (
       />
       <Route path="/*" component={FlowHome} />
     </Route>
+    {/* Awakyn: invite links open the join screen, signed in or not */}
+    <Route path="/invite" component={AuthPage as never}>
+      <Route path="/:code" component={JoinPage} />
+    </Route>
     <Route path="/" component={Interface as never}>
       <Route path="/pwa" component={PWARedirect} />
       <Route path="/dev" component={DevelopmentPage} />
       {/* Awakyn: one community only, so Discover goes home */}
       <Route path="/discover/*" component={() => <Navigate href="/app" />} />
       <Route path="/settings" component={SettingsRedirect} />
-      <Route path="/invite/:code" component={InviteRedirect} />
       <Route path="/bot/:code" component={BotRedirect} />
       <Route path="/friends" component={Friends} />
       <Route path="/server/:server/*">

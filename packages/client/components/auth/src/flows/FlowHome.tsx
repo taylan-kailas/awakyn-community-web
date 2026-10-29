@@ -13,13 +13,15 @@ import { useState } from "@revolt/state";
 import { BRAND } from "../../../../src/awakyn/brand";
 import { Wordmark } from "../../../../src/awakyn/Wordmark";
 import { GoogleButton } from "../../../../src/awakyn/GoogleButton";
+import { signInWithToken } from "../../../../src/awakyn/googleSignIn";
 
 /**
  * Flow for logging into an account
  */
 export default function FlowHome() {
   const state = useState();
-  const { lifecycle, isLoggedIn, isError } = useClientLifecycle();
+  const controller = useClientLifecycle();
+  const { lifecycle, isLoggedIn, isError } = controller;
 
   return (
     <Switch
@@ -58,7 +60,7 @@ export default function FlowHome() {
             </Column>
 
             {/* Awakyn: Google is the only way in */}
-            <GoogleButton />
+            <GoogleButton onToken={signInWithToken(controller)} />
           </Column>
         </>
       }
