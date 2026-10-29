@@ -7,7 +7,6 @@ import { styled } from "styled-system/jsx";
 
 import { useClient } from "@revolt/client";
 import { useDevice } from "@revolt/common";
-import { useInstance } from "@revolt/instance";
 import { KeybindAction, createKeybind } from "@revolt/keybinds";
 import { useModals } from "@revolt/modal";
 import { useNavigate } from "@revolt/routing";
@@ -15,8 +14,6 @@ import { useState } from "@revolt/state";
 import { Avatar, Column, Text, Time, Unreads, UserStatus } from "@revolt/ui";
 import { VoiceStatus } from "@revolt/ui/components/design/VoiceStatus";
 
-import MdAdd from "@material-design-icons/svg/filled/add.svg?component-solid";
-import MdExplore from "@material-design-icons/svg/filled/explore.svg?component-solid";
 import MdSettings from "@material-design-icons/svg/filled/settings.svg?component-solid";
 
 // Awakyn: lotus home button
@@ -72,7 +69,6 @@ export const ServerList = (props: Props) => {
   const navigate = useNavigate();
   const { isMobile } = useDevice();
   const { openModal } = useModals();
-  const instance = useInstance();
 
   const navigateServer = (byOffset: number) => {
     const serverId = props.selectedServer();
@@ -306,24 +302,7 @@ export const ServerList = (props: Props) => {
             </Tooltip>
           )}
         </Draggable>
-        <Tooltip placement="right" content={"Create or join a server"}>
-          <a
-            class={entryContainer()}
-            onClick={() => props.onCreateOrJoinServer()}
-          >
-            <Avatar size={42} fallback={<MdAdd />} />
-          </a>
-        </Tooltip>
-        <Show when={instance.isStoat}>
-          <Tooltip placement="right" content={"Find new servers to join"}>
-            <a
-              href={state.layout.getLastActiveDiscoverPath()}
-              class={entryContainer()}
-            >
-              <Avatar size={42} fallback={<MdExplore />} />
-            </a>
-          </Tooltip>
-        </Show>
+        {/* Awakyn: one community only; no create, join or discover buttons */}
       </div>
       <Shadow>
         <div />

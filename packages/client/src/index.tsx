@@ -45,7 +45,6 @@ import AuthPage from "./Auth";
 import Interface from "./Interface";
 import "./index.css";
 import { DevelopmentPage } from "./interface/Development";
-import { Discover } from "./interface/Discover";
 import { Friends } from "./interface/Friends";
 import { HomePage } from "./interface/Home";
 import { ServerHome } from "./interface/ServerHome";
@@ -162,7 +161,8 @@ const routes = () => (
     <Route path="/" component={Interface as never}>
       <Route path="/pwa" component={PWARedirect} />
       <Route path="/dev" component={DevelopmentPage} />
-      <Route path="/discover/*" component={Discover} />
+      {/* Awakyn: one community only, so Discover goes home */}
+      <Route path="/discover/*" component={() => <Navigate href="/app" />} />
       <Route path="/settings" component={SettingsRedirect} />
       <Route path="/invite/:code" component={InviteRedirect} />
       <Route path="/bot/:code" component={BotRedirect} />
