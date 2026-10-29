@@ -8,6 +8,7 @@ import { Navigate, useParams } from "@revolt/routing";
 
 import { AgeGate } from "./AgeGate";
 import { TextChannel } from "./text/TextChannel";
+import { loadedRecipients } from "../../awakyn/loadedRecipients";
 
 /**
  * Channel layout
@@ -44,7 +45,7 @@ export const ChannelPage: Component = () => {
   // Awakyn: load group members the app hasn't met yet (guests who joined by link)
   createEffect(() => {
     const group = channel();
-    if (group?.type !== "Group" || group.recipients.length >= group.recipientIds.size) return;
+    if (group?.type !== "Group" || loadedRecipients(group).length >= group.recipientIds.size) return;
     group.fetchMembers().catch((error) => console.error("Couldn't load the group's members:", error));
   });
 

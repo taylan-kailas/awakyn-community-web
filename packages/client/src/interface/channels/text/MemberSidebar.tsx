@@ -21,6 +21,7 @@ import {
   UserStatus,
 } from "@revolt/ui";
 import { GuestTag } from "../../../awakyn/guests";
+import { loadedRecipients } from "../../../awakyn/loadedRecipients";
 
 interface Props {
   /**
@@ -238,7 +239,8 @@ export function GroupMemberSidebar(props: Props) {
 
       <Deferred>
         <VirtualContainer
-          items={props.channel.recipients.toSorted((a, b) =>
+          // Awakyn: skip members not loaded yet
+          items={loadedRecipients(props.channel).toSorted((a, b) =>
             a.displayName.localeCompare(b.displayName),
           )}
           scrollTarget={props.scrollTargetElement}

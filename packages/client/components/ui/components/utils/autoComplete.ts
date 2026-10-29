@@ -8,6 +8,7 @@ import {
   ServerRole,
   User,
 } from "stoat.js";
+import { loadedRecipients } from "../../../../src/awakyn/loadedRecipients";
 
 export interface AutoCompleteSearchSpace {
   users?: User[];
@@ -26,7 +27,7 @@ function generateSearchSpaceFrom(
     if (object.server) return generateSearchSpaceFrom(object.server, client);
     if (object.type === "Group" || object.type === "DirectMessage") {
       return {
-        users: object.recipients,
+        users: loadedRecipients(object), // Awakyn: skip members not loaded yet
       };
     }
   } else if (object instanceof Server) {
