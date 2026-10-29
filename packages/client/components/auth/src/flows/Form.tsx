@@ -159,6 +159,8 @@ interface Props {
  */
 export function Form(props: Props) {
   const [error, setError] = createSignal();
+  // Awakyn: marks the form busy while it submits, so its button shows it's working
+  const [busy, setBusy] = createSignal(false);
   let hcaptcha: HCaptchaFunctions | undefined;
 
   /**
@@ -176,16 +178,19 @@ export function Form(props: Props) {
       formData.set("captcha", response!.response);
     }
 
+    setBusy(true);
     try {
       await props.onSubmit(formData);
     } catch (err) {
       console.error(err);
       setError(err);
+    } finally {
+      setBusy(false);
     }
   }
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} aria-busy={busy()}>
       <Column gap="lg">
         {props.children}
         <Show when={error()}>

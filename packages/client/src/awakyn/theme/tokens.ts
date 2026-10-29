@@ -22,6 +22,8 @@ export type AwakynTheme = {
   fontFamily: string;
   fontStylesheet: string;
   serverIconRadius: string;
+  /** How every button reacts when pressed, and how a busy or disabled one looks. */
+  press: { scale: number; fadedOpacity: number; durationMs: number };
   /** Logo painted through a CSS mask, relative to the app's base path. */
   logoMaskPath: string;
   light: AwakynPalette;
@@ -34,6 +36,7 @@ export const AWAKYN_THEME: AwakynTheme = {
   fontStylesheet:
     "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap",
   serverIconRadius: "16px",
+  press: { scale: 0.95, fadedOpacity: 0.55, durationMs: 120 },
   logoMaskPath: "awakyn/lotus.png",
   light: {
     bg: "#f3eddd",

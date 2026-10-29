@@ -52,6 +52,8 @@ import { ChannelPage } from "./interface/channels/ChannelPage";
 import "./serviceWorkerInterface";
 import { keepLinksInsideBasePath } from "./awakyn/basePathLinks";
 import { loadThemeFont } from "./awakyn/theme/loadThemeFont";
+import { loadPressFeedback } from "./awakyn/theme/pressFeedback";
+import { AWAKYN_THEME } from "./awakyn/theme/tokens";
 
 attachDevtoolsOverlay();
 
@@ -184,6 +186,7 @@ const snackbarCtrl = new SnackbarController();
 const routerBase = import.meta.env.BASE_URL.replace(/\/$/, "");
 keepLinksInsideBasePath(routerBase);
 loadThemeFont();
+loadPressFeedback(AWAKYN_THEME);
 
 render(
   () => (
