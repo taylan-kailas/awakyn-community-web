@@ -25,6 +25,8 @@ import { LoadingScreen } from "@revolt/ui";
 import { SlideDrawer } from "../components/ui/components/navigation/SlideDrawer";
 import { AutoJoinCall } from "./awakyn/join/AutoJoinCall";
 import { Sidebar } from "./interface/Sidebar";
+import { GuestList } from "./awakyn/guests";
+import { pathWithinApp } from "./awakyn/basePathLinks";
 
 /**
  * Application layout
@@ -49,7 +51,8 @@ const Interface = (props: { children: JSX.Element }) => {
 
   createEffect(() => {
     if (!isLoggedIn()) {
-      state.layout.setNextPath(pathname);
+      // Awakyn: remembered without the app's folder, or returning adds it twice
+      state.layout.setNextPath(pathWithinApp(pathname, import.meta.env.BASE_URL.replace(/\/$/, "")));
       console.debug("WAITING... currently", lifecycle.state());
     }
   });
@@ -137,6 +140,7 @@ const Interface = (props: { children: JSX.Element }) => {
         <NotificationsWorker />
         {/* Awakyn: arrivals by call link go straight into the call */}
         <AutoJoinCall />
+        <GuestList />
       </AppRoot>
     </MessageCache>
   );

@@ -461,7 +461,6 @@ msgstr "Rolleri Atayabilme"
 msgid "Audio disabled by browser"
 msgstr "Tarayıcı tarafından ses devre dışı bırakıldı"
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/modal/modals/MFAFlow.tsx
 msgid "Authenticator App"
 msgstr "Kimlik Doğrulama Uygulaması"
@@ -623,8 +622,8 @@ msgid "Cancel message"
 msgstr "Mesajı iptal et"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Cannot delete account until servers are deleted or transferred"
-msgstr "Sunucular silinene veya aktarılana kadar hesap silinemez"
+#~ msgid "Cannot delete account until servers are deleted or transferred"
+#~ msgstr "Sunucular silinene veya aktarılana kadar hesap silinemez"
 
 #: components/i18n/errors.tsx
 msgid "Cannot edit this message."
@@ -808,12 +807,12 @@ msgid "Coming soon! 👀"
 msgstr "Çok yakında geliyor! 👀"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Configure a way to get back into your account in case your 2FA is lost"
-msgstr "İki aşamalı doğrulamanın kaybolması durumunda hesabına geri dönebilmek için bir yol ayarla"
+#~ msgid "Configure a way to get back into your account in case your 2FA is lost"
+#~ msgstr "İki aşamalı doğrulamanın kaybolması durumunda hesabına geri dönebilmek için bir yol ayarla"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Configure one-time password authentication"
-msgstr "Tek şifreli kimlik onaylama ayarla"
+#~ msgid "Configure one-time password authentication"
+#~ msgstr "Tek şifreli kimlik onaylama ayarla"
 
 #: components/auth/src/flows/FlowLogin.tsx
 #: components/modal/modals/MFAFlow.tsx
@@ -1135,8 +1134,8 @@ msgid "Delete {0}?"
 msgstr "{0}'yı sil?"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Delete Account"
-msgstr "Hesabı Sil"
+#~ msgid "Delete Account"
+#~ msgstr "Hesabı Sil"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Delete and pin messages sent by other members"
@@ -1195,12 +1194,12 @@ msgstr "Masaüstü"
 #~ msgstr "Geliştirici Dokümantasyonu"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Disable Account"
-msgstr "Hesabı Devre Dışı Bırak"
+#~ msgid "Disable Account"
+#~ msgstr "Hesabı Devre Dışı Bırak"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Disable one-time password authenticator"
-msgstr "Tek seferlik şifre ile kimlik onayını devre dışı bırak"
+#~ msgid "Disable one-time password authenticator"
+#~ msgstr "Tek seferlik şifre ile kimlik onayını devre dışı bırak"
 
 #: components/app/interface/settings/server/Overview.tsx
 #: components/app/interface/settings/user/voice/VoiceProcessingOptions.tsx
@@ -1336,7 +1335,6 @@ msgstr "Düzenlendi"
 msgid "Effective <0/> (<1/>)"
 msgstr "Şu tarihten itibaren geçerli <0/> (<1/>)"
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/EditEmail.tsx
 msgid "Email"
@@ -1355,8 +1353,8 @@ msgid "Emojis"
 msgstr "Emojiler"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Enable Authenticator"
-msgstr "Kimlik Doğrulamayı Etkinleştir"
+#~ msgid "Enable Authenticator"
+#~ msgstr "Kimlik Doğrulamayı Etkinleştir"
 
 #: components/modal/modals/MFAEnableTOTP.tsx
 msgid "Enable authenticator app"
@@ -1528,20 +1526,20 @@ msgid "Generate a new token if it gets lost or compromised"
 msgstr "Kaybolması veya başkasının eline geçmesi durumunda yeni bir token oluştur"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Generate Recovery Codes"
-msgstr "Kurtarma Kodu Oluştur"
+#~ msgid "Generate Recovery Codes"
+#~ msgstr "Kurtarma Kodu Oluştur"
 
 #: components/modal/modals/CreateInvite.tsx
 msgid "Generating invite…"
 msgstr "Davet oluşturuluyor…"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Get a new set of recovery codes"
-msgstr "Yeni kurtarma kodu dizisi oluştur"
+#~ msgid "Get a new set of recovery codes"
+#~ msgstr "Yeni kurtarma kodu dizisi oluştur"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Get active recovery codes"
-msgstr "Aktif kurtarma kodu al"
+#~ msgid "Get active recovery codes"
+#~ msgstr "Aktif kurtarma kodu al"
 
 #: src/AndroidNag.tsx
 msgid "Get it on Google Play"
@@ -2047,8 +2045,8 @@ msgid "Messaging"
 msgstr "Mesajlaşma"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "MFA setup canceled."
-msgstr "Çok faktörlü kimlik doğrulama (MFA) kurulumu iptal edildi."
+#~ msgid "MFA setup canceled."
+#~ msgstr "Çok faktörlü kimlik doğrulama (MFA) kurulumu iptal edildi."
 
 #: components/app/interface/settings/user/Native.tsx
 msgid "Minimise to Tray"
@@ -2323,7 +2321,6 @@ msgstr "Kullanıcıyı Affet"
 msgid "Partial Outage"
 msgstr "Kısmi Kesinti"
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/MFAFlow.tsx
 msgid "Password"
@@ -2503,8 +2500,8 @@ msgid "Recovery Code"
 msgstr "Kurtarma Kodu"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Recovery Codes"
-msgstr "Kurtarma Kodları"
+#~ msgid "Recovery Codes"
+#~ msgstr "Kurtarma Kodları"
 
 #: components/app/interface/settings/user/appearance/AppearanceMenu.tsx
 msgid "Reduced"
@@ -2543,8 +2540,8 @@ msgid "Remove all reactions"
 msgstr "Tüm tepkileri kaldır"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Remove Authenticator"
-msgstr "Kimlik Doğrulayıcıyı Kaldır"
+#~ msgid "Remove Authenticator"
+#~ msgstr "Kimlik Doğrulayıcıyı Kaldır"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Remove Avatars"
@@ -2640,8 +2637,8 @@ msgid "Reset password"
 msgstr "Şifreni sıfırla"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Reset Recovery Codes"
-msgstr "Kurtarma Kodlarını Sıfırla"
+#~ msgid "Reset Recovery Codes"
+#~ msgstr "Kurtarma Kodlarını Sıfırla"
 
 #: components/app/interface/settings/user/bots/ViewBot.tsx
 msgid "Reset Token"
@@ -2887,12 +2884,12 @@ msgid "Settings"
 msgstr "Ayarlar"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Setup one-time password authenticator"
-msgstr "Tek kullanımlık şifre doğrulaması ayarla"
+#~ msgid "Setup one-time password authenticator"
+#~ msgstr "Tek kullanımlık şifre doğrulaması ayarla"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Setup recovery codes"
-msgstr "Kurtarma kodu ayarla"
+#~ msgid "Setup recovery codes"
+#~ msgstr "Kurtarma kodu ayarla"
 
 #: src/interface/channels/text/CompositionInfo.tsx
 msgid "Several people are typing…"
@@ -3404,7 +3401,6 @@ msgstr "Kullanıcı Ayarları"
 msgid "User's profile has inappropriate content"
 msgstr "Bu kullanıcının profili uygunsuz içeriğe sahip"
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/CreateBot.tsx
@@ -3473,8 +3469,8 @@ msgid "View pinned messages"
 msgstr "Sabitlenmiş mesajları görüntüle"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "View Recovery Codes"
-msgstr "Kurtarma Kodlarına Bak"
+#~ msgid "View Recovery Codes"
+#~ msgstr "Kurtarma Kodlarına Bak"
 
 #: components/ui/components/design/LoadingScreen.tsx
 msgid "View status page"
@@ -3688,8 +3684,8 @@ msgid "You will not receive any notifications"
 msgstr "Herhangi bir bildirim almayacaksınız"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "You won't be able to access your account unless you contact support - however, your data will not be deleted."
-msgstr "Destek ekibiyle iletişime geçmediğin sürece hesabına erişemezsin - fakat bu süreçte verileriniz silinmeyecek."
+#~ msgid "You won't be able to access your account unless you contact support - however, your data will not be deleted."
+#~ msgstr "Destek ekibiyle iletişime geçmediğin sürece hesabına erişemezsin - fakat bu süreçte verileriniz silinmeyecek."
 
 #: components/modal/modals/DeleteChannel.tsx
 #: components/modal/modals/LeaveServer.tsx
@@ -3727,8 +3723,8 @@ msgid "You've sent too many friend requests, the maximum is {0}"
 msgstr "Çok fazla arkadaş isteği gönderdin, en fazla {0} tane gönderebilirsin"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Your account and all of your data (including your messages and friends list) will be queued for deletion. A confirmation email will be sent - you can cancel this within 7 days by contacting support."
-msgstr "Bütün verileriniz (mesaj ve arkadaş listesi dahil) ve hesabınız silinmeye ayarlandı. Onay için e-posta gönderilecek - bunu 7 gün içerisinde destek ekibimizle iletişime geçerek iptal edebilirsiniz."
+#~ msgid "Your account and all of your data (including your messages and friends list) will be queued for deletion. A confirmation email will be sent - you can cancel this within 7 days by contacting support."
+#~ msgstr "Bütün verileriniz (mesaj ve arkadaş listesi dahil) ve hesabınız silinmeye ayarlandı. Onay için e-posta gönderilecek - bunu 7 gün içerisinde destek ekibimizle iletişime geçerek iptal edebilirsiniz."
 
 #: components/auth/src/flows/FlowVerify.tsx
 msgid "Your account has been verified!"

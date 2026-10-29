@@ -117,9 +117,9 @@ function RoomRow(props: {
         <Text class="title">{props.room.name}</Text>
         <Text class="label">{shortDate(props.room.createdAt)}</Text>
       </Row>
-      <Text class="label" style={{ "user-select": "all", "overflow-wrap": "anywhere" }}>
-        {link() ?? COPY.linkOff}
-      </Text>
+      <span style={{ "user-select": "all", "overflow-wrap": "anywhere" }}>
+        <Text class="label">{link() ?? COPY.linkOff}</Text>
+      </span>
       <Row gap="sm" style={{ "flex-wrap": "wrap" }}>
         <Show when={link()}>
           <ActionButton

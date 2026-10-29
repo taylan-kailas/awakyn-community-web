@@ -483,7 +483,6 @@ msgstr "Berikan Peran"
 msgid "Audio disabled by browser"
 msgstr ""
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/modal/modals/MFAFlow.tsx
 msgid "Authenticator App"
 msgstr "Aplikasi Autentikator"
@@ -646,8 +645,8 @@ msgid "Cancel message"
 msgstr "Batalkan pesan"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Cannot delete account until servers are deleted or transferred"
-msgstr "Tidak dapat menghapus akun hingga server dihapus atau dialihkan"
+#~ msgid "Cannot delete account until servers are deleted or transferred"
+#~ msgstr "Tidak dapat menghapus akun hingga server dihapus atau dialihkan"
 
 #: components/i18n/errors.tsx
 msgid "Cannot edit this message."
@@ -832,12 +831,12 @@ msgid "Coming soon! 👀"
 msgstr ""
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Configure a way to get back into your account in case your 2FA is lost"
-msgstr "Konfigurasi cara untuk mengakses kembali akun kamu apabila autentikasi 2 faktor (2FA) kamu hilang"
+#~ msgid "Configure a way to get back into your account in case your 2FA is lost"
+#~ msgstr "Konfigurasi cara untuk mengakses kembali akun kamu apabila autentikasi 2 faktor (2FA) kamu hilang"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Configure one-time password authentication"
-msgstr "Konfigurasi autentikasi kata sandi sekali pakai"
+#~ msgid "Configure one-time password authentication"
+#~ msgstr "Konfigurasi autentikasi kata sandi sekali pakai"
 
 #: components/auth/src/flows/FlowLogin.tsx
 #: components/modal/modals/MFAFlow.tsx
@@ -1164,8 +1163,8 @@ msgid "Delete {0}?"
 msgstr "Hapus {0}?"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Delete Account"
-msgstr "Hapus Akun"
+#~ msgid "Delete Account"
+#~ msgstr "Hapus Akun"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Delete and pin messages sent by other members"
@@ -1224,12 +1223,12 @@ msgstr "Desktop"
 #~ msgstr "Dokumentasi Pengembang"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Disable Account"
-msgstr "Nonaktifkan Akun"
+#~ msgid "Disable Account"
+#~ msgstr "Nonaktifkan Akun"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Disable one-time password authenticator"
-msgstr "Nonaktifkan autentikator kata sandi sekali pakai"
+#~ msgid "Disable one-time password authenticator"
+#~ msgstr "Nonaktifkan autentikator kata sandi sekali pakai"
 
 #: components/app/interface/settings/server/Overview.tsx
 #: components/app/interface/settings/user/voice/VoiceProcessingOptions.tsx
@@ -1365,7 +1364,6 @@ msgstr "Telah disunting"
 msgid "Effective <0/> (<1/>)"
 msgstr "Efektif <0/> (<1/>)"
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/EditEmail.tsx
 msgid "Email"
@@ -1384,8 +1382,8 @@ msgid "Emojis"
 msgstr "Emoji"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Enable Authenticator"
-msgstr "Aktifkan Autentikator"
+#~ msgid "Enable Authenticator"
+#~ msgstr "Aktifkan Autentikator"
 
 #: components/modal/modals/MFAEnableTOTP.tsx
 msgid "Enable authenticator app"
@@ -1556,20 +1554,20 @@ msgid "Generate a new token if it gets lost or compromised"
 msgstr "Buat token baru apabila token yang lama hilang atau disalahgunakan"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Generate Recovery Codes"
-msgstr "Buat Kode Pemulihan"
+#~ msgid "Generate Recovery Codes"
+#~ msgstr "Buat Kode Pemulihan"
 
 #: components/modal/modals/CreateInvite.tsx
 msgid "Generating invite…"
 msgstr "Membuat undangan…"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Get a new set of recovery codes"
-msgstr "Dapatkan serangkaian kode pemulihan baru"
+#~ msgid "Get a new set of recovery codes"
+#~ msgstr "Dapatkan serangkaian kode pemulihan baru"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Get active recovery codes"
-msgstr "Dapatkan kode pemulihan aktif"
+#~ msgid "Get active recovery codes"
+#~ msgstr "Dapatkan kode pemulihan aktif"
 
 #: src/AndroidNag.tsx
 msgid "Get it on Google Play"
@@ -2076,8 +2074,8 @@ msgid "Messaging"
 msgstr "Perpesanan"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "MFA setup canceled."
-msgstr ""
+#~ msgid "MFA setup canceled."
+#~ msgstr ""
 
 #: components/app/interface/settings/user/Native.tsx
 msgid "Minimise to Tray"
@@ -2352,7 +2350,6 @@ msgstr "Ampuni Pengguna"
 msgid "Partial Outage"
 msgstr ""
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/MFAFlow.tsx
 msgid "Password"
@@ -2533,8 +2530,8 @@ msgid "Recovery Code"
 msgstr "Kode Pemulihan"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Recovery Codes"
-msgstr "Kode Pemulihan"
+#~ msgid "Recovery Codes"
+#~ msgstr "Kode Pemulihan"
 
 #: components/app/interface/settings/user/appearance/AppearanceMenu.tsx
 msgid "Reduced"
@@ -2573,8 +2570,8 @@ msgid "Remove all reactions"
 msgstr "Hapus semua reaksi"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Remove Authenticator"
-msgstr "Hapus Autentikator"
+#~ msgid "Remove Authenticator"
+#~ msgstr "Hapus Autentikator"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Remove Avatars"
@@ -2670,8 +2667,8 @@ msgid "Reset password"
 msgstr "Atur ulang kata sandi"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Reset Recovery Codes"
-msgstr "Atur ulang Kode Pemulihan"
+#~ msgid "Reset Recovery Codes"
+#~ msgstr "Atur ulang Kode Pemulihan"
 
 #: components/app/interface/settings/user/bots/ViewBot.tsx
 msgid "Reset Token"
@@ -2917,12 +2914,12 @@ msgid "Settings"
 msgstr "Pengaturan"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Setup one-time password authenticator"
-msgstr "Siapkan autentikator kata sandi sekali pakai"
+#~ msgid "Setup one-time password authenticator"
+#~ msgstr "Siapkan autentikator kata sandi sekali pakai"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Setup recovery codes"
-msgstr "Siapkan kode pemulihan"
+#~ msgid "Setup recovery codes"
+#~ msgstr "Siapkan kode pemulihan"
 
 #: src/interface/channels/text/CompositionInfo.tsx
 msgid "Several people are typing…"
@@ -3433,7 +3430,6 @@ msgstr "Pengaturan Pengguna"
 msgid "User's profile has inappropriate content"
 msgstr "Profil pengguna berisi konten tidak pantas"
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/CreateBot.tsx
@@ -3504,8 +3500,8 @@ msgid "View pinned messages"
 msgstr "Lihat pesan yang disematkan"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "View Recovery Codes"
-msgstr "Lihat Kode Pemulihan"
+#~ msgid "View Recovery Codes"
+#~ msgstr "Lihat Kode Pemulihan"
 
 #: components/ui/components/design/LoadingScreen.tsx
 msgid "View status page"
@@ -3719,8 +3715,8 @@ msgid "You will not receive any notifications"
 msgstr "Kamu tidak akan menerima notifikasi lagi"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "You won't be able to access your account unless you contact support - however, your data will not be deleted."
-msgstr "Kamu tidak akan bisa mengakses akunmu kecuali dengan menghubungi bantuan - namun, datamu tidak akan dihapus."
+#~ msgid "You won't be able to access your account unless you contact support - however, your data will not be deleted."
+#~ msgstr "Kamu tidak akan bisa mengakses akunmu kecuali dengan menghubungi bantuan - namun, datamu tidak akan dihapus."
 
 #: components/modal/modals/DeleteChannel.tsx
 #: components/modal/modals/LeaveServer.tsx
@@ -3758,8 +3754,8 @@ msgid "You've sent too many friend requests, the maximum is {0}"
 msgstr "Kamu telah mengirim terlalu banyak permintaan pesan, maksimum adalah {0}"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Your account and all of your data (including your messages and friends list) will be queued for deletion. A confirmation email will be sent - you can cancel this within 7 days by contacting support."
-msgstr "Akun kamu dan seluruh data kamu (termasuk pesan dan daftar teman) akan diantrekan untuk penghapusan. Email konfirmasi akan dikirim - kamu dapat membatalkan penghapusan ini dalam waktu 7 hari dengan menghubungi dukungan."
+#~ msgid "Your account and all of your data (including your messages and friends list) will be queued for deletion. A confirmation email will be sent - you can cancel this within 7 days by contacting support."
+#~ msgstr "Akun kamu dan seluruh data kamu (termasuk pesan dan daftar teman) akan diantrekan untuk penghapusan. Email konfirmasi akan dikirim - kamu dapat membatalkan penghapusan ini dalam waktu 7 hari dengan menghubungi dukungan."
 
 #: components/auth/src/flows/FlowVerify.tsx
 msgid "Your account has been verified!"

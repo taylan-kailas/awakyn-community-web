@@ -483,7 +483,6 @@ msgstr "Titulusok hozzárendelése"
 msgid "Audio disabled by browser"
 msgstr ""
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/modal/modals/MFAFlow.tsx
 msgid "Authenticator App"
 msgstr "Hitelesítést végző app"
@@ -646,8 +645,8 @@ msgid "Cancel message"
 msgstr "Üzenet visszavonása"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Cannot delete account until servers are deleted or transferred"
-msgstr "Nem törölhetjük ki a fiókot amíg a szerverek nincsenek kitörölve vagy átadva"
+#~ msgid "Cannot delete account until servers are deleted or transferred"
+#~ msgstr "Nem törölhetjük ki a fiókot amíg a szerverek nincsenek kitörölve vagy átadva"
 
 #: components/i18n/errors.tsx
 msgid "Cannot edit this message."
@@ -832,12 +831,12 @@ msgid "Coming soon! 👀"
 msgstr ""
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Configure a way to get back into your account in case your 2FA is lost"
-msgstr "Állíts be egy visszaszerzési módot a fiókodhoz ha a 2FA-t elveszítenéd"
+#~ msgid "Configure a way to get back into your account in case your 2FA is lost"
+#~ msgstr "Állíts be egy visszaszerzési módot a fiókodhoz ha a 2FA-t elveszítenéd"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Configure one-time password authentication"
-msgstr "Egyszeri jelszavas hitelesítés beállítása"
+#~ msgid "Configure one-time password authentication"
+#~ msgstr "Egyszeri jelszavas hitelesítés beállítása"
 
 #: components/auth/src/flows/FlowLogin.tsx
 #: components/modal/modals/MFAFlow.tsx
@@ -1164,8 +1163,8 @@ msgid "Delete {0}?"
 msgstr ""
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Delete Account"
-msgstr "Fiók törlése"
+#~ msgid "Delete Account"
+#~ msgstr "Fiók törlése"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Delete and pin messages sent by other members"
@@ -1224,12 +1223,12 @@ msgstr "Asztal"
 #~ msgstr ""
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Disable Account"
-msgstr "Fiók letiltása"
+#~ msgid "Disable Account"
+#~ msgstr "Fiók letiltása"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Disable one-time password authenticator"
-msgstr "Egyszeri jelszavas hitelesítés kikapcsolása"
+#~ msgid "Disable one-time password authenticator"
+#~ msgstr "Egyszeri jelszavas hitelesítés kikapcsolása"
 
 #: components/app/interface/settings/server/Overview.tsx
 #: components/app/interface/settings/user/voice/VoiceProcessingOptions.tsx
@@ -1365,7 +1364,6 @@ msgstr "Szerkesztve"
 msgid "Effective <0/> (<1/>)"
 msgstr ""
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/EditEmail.tsx
 msgid "Email"
@@ -1384,8 +1382,8 @@ msgid "Emojis"
 msgstr "Emodzsik"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Enable Authenticator"
-msgstr "Hitelesítő beállítása"
+#~ msgid "Enable Authenticator"
+#~ msgstr "Hitelesítő beállítása"
 
 #: components/modal/modals/MFAEnableTOTP.tsx
 msgid "Enable authenticator app"
@@ -1556,20 +1554,20 @@ msgid "Generate a new token if it gets lost or compromised"
 msgstr "Új token generálása ha elveszik vagy feltörik"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Generate Recovery Codes"
-msgstr "Helyreállító kódok létrehozása"
+#~ msgid "Generate Recovery Codes"
+#~ msgstr "Helyreállító kódok létrehozása"
 
 #: components/modal/modals/CreateInvite.tsx
 msgid "Generating invite…"
 msgstr "Meghívó létrehozása…"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Get a new set of recovery codes"
-msgstr ""
+#~ msgid "Get a new set of recovery codes"
+#~ msgstr ""
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Get active recovery codes"
-msgstr ""
+#~ msgid "Get active recovery codes"
+#~ msgstr ""
 
 #: src/AndroidNag.tsx
 msgid "Get it on Google Play"
@@ -2076,8 +2074,8 @@ msgid "Messaging"
 msgstr "Üzenetváltás"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "MFA setup canceled."
-msgstr ""
+#~ msgid "MFA setup canceled."
+#~ msgstr ""
 
 #: components/app/interface/settings/user/Native.tsx
 msgid "Minimise to Tray"
@@ -2352,7 +2350,6 @@ msgstr "Felhasználó megbocsátása"
 msgid "Partial Outage"
 msgstr ""
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/MFAFlow.tsx
 msgid "Password"
@@ -2533,8 +2530,8 @@ msgid "Recovery Code"
 msgstr "Helyreállító kód"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Recovery Codes"
-msgstr "Helyreállító kódok"
+#~ msgid "Recovery Codes"
+#~ msgstr "Helyreállító kódok"
 
 #: components/app/interface/settings/user/appearance/AppearanceMenu.tsx
 msgid "Reduced"
@@ -2573,8 +2570,8 @@ msgid "Remove all reactions"
 msgstr "Összes reakció törlése"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Remove Authenticator"
-msgstr "Hitelesítő eltávolítása"
+#~ msgid "Remove Authenticator"
+#~ msgstr "Hitelesítő eltávolítása"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Remove Avatars"
@@ -2670,8 +2667,8 @@ msgid "Reset password"
 msgstr "Jelszóváltoztatás kérése"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Reset Recovery Codes"
-msgstr ""
+#~ msgid "Reset Recovery Codes"
+#~ msgstr ""
 
 #: components/app/interface/settings/user/bots/ViewBot.tsx
 msgid "Reset Token"
@@ -2917,12 +2914,12 @@ msgid "Settings"
 msgstr "Beállítások"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Setup one-time password authenticator"
-msgstr ""
+#~ msgid "Setup one-time password authenticator"
+#~ msgstr ""
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Setup recovery codes"
-msgstr ""
+#~ msgid "Setup recovery codes"
+#~ msgstr ""
 
 #: src/interface/channels/text/CompositionInfo.tsx
 msgid "Several people are typing…"
@@ -3433,7 +3430,6 @@ msgstr "Felhasználói beállítások"
 msgid "User's profile has inappropriate content"
 msgstr "A felhasználó profilja szabálysértő tartalmat használ"
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/CreateBot.tsx
@@ -3504,8 +3500,8 @@ msgid "View pinned messages"
 msgstr "Kitűzött üzenetek megtekintése"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "View Recovery Codes"
-msgstr "Helyreállító kódok megtekintése"
+#~ msgid "View Recovery Codes"
+#~ msgstr "Helyreállító kódok megtekintése"
 
 #: components/ui/components/design/LoadingScreen.tsx
 msgid "View status page"
@@ -3719,8 +3715,8 @@ msgid "You will not receive any notifications"
 msgstr "Nem fogsz semmilyen értesítést kapni"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "You won't be able to access your account unless you contact support - however, your data will not be deleted."
-msgstr "Nem fogsz tudni hozzáférni a fiókodhoz, amíg segítséget nem kérsz az ügyfélszolgálattól. Az adataid nem lesznek törölve."
+#~ msgid "You won't be able to access your account unless you contact support - however, your data will not be deleted."
+#~ msgstr "Nem fogsz tudni hozzáférni a fiókodhoz, amíg segítséget nem kérsz az ügyfélszolgálattól. Az adataid nem lesznek törölve."
 
 #: components/modal/modals/DeleteChannel.tsx
 #: components/modal/modals/LeaveServer.tsx
@@ -3758,8 +3754,8 @@ msgid "You've sent too many friend requests, the maximum is {0}"
 msgstr "Túl sok baráti kérelmet küldtél, a maximum {0}"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Your account and all of your data (including your messages and friends list) will be queued for deletion. A confirmation email will be sent - you can cancel this within 7 days by contacting support."
-msgstr ""
+#~ msgid "Your account and all of your data (including your messages and friends list) will be queued for deletion. A confirmation email will be sent - you can cancel this within 7 days by contacting support."
+#~ msgstr ""
 
 #: components/auth/src/flows/FlowVerify.tsx
 msgid "Your account has been verified!"

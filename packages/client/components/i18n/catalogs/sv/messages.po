@@ -460,7 +460,6 @@ msgstr "Tilldela Roller"
 msgid "Audio disabled by browser"
 msgstr ""
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/modal/modals/MFAFlow.tsx
 msgid "Authenticator App"
 msgstr "Autentiseringsapp"
@@ -622,8 +621,8 @@ msgid "Cancel message"
 msgstr "Avbryt meddelande"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Cannot delete account until servers are deleted or transferred"
-msgstr "Kan inte ta bort konto förrän servrar är borttagna eller flyttade"
+#~ msgid "Cannot delete account until servers are deleted or transferred"
+#~ msgstr "Kan inte ta bort konto förrän servrar är borttagna eller flyttade"
 
 #: components/i18n/errors.tsx
 msgid "Cannot edit this message."
@@ -807,12 +806,12 @@ msgid "Coming soon! 👀"
 msgstr ""
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Configure a way to get back into your account in case your 2FA is lost"
-msgstr "Konfigurera ett sätt att få åtkomst till ditt konto igen om din tvåfaktorsautentisering (2FA) går förlorad"
+#~ msgid "Configure a way to get back into your account in case your 2FA is lost"
+#~ msgstr "Konfigurera ett sätt att få åtkomst till ditt konto igen om din tvåfaktorsautentisering (2FA) går förlorad"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Configure one-time password authentication"
-msgstr "Konfigurera engångsautentisering med lösenord"
+#~ msgid "Configure one-time password authentication"
+#~ msgstr "Konfigurera engångsautentisering med lösenord"
 
 #: components/auth/src/flows/FlowLogin.tsx
 #: components/modal/modals/MFAFlow.tsx
@@ -1133,8 +1132,8 @@ msgid "Delete {0}?"
 msgstr "Radera {0}?"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Delete Account"
-msgstr "Radera konto"
+#~ msgid "Delete Account"
+#~ msgstr "Radera konto"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Delete and pin messages sent by other members"
@@ -1193,12 +1192,12 @@ msgstr "Skrivbord"
 #~ msgstr "Utvecklardokumentation"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Disable Account"
-msgstr "Inaktivera Konto"
+#~ msgid "Disable Account"
+#~ msgstr "Inaktivera Konto"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Disable one-time password authenticator"
-msgstr "Inaktivera engångsautentisering med lösenord"
+#~ msgid "Disable one-time password authenticator"
+#~ msgstr "Inaktivera engångsautentisering med lösenord"
 
 #: components/app/interface/settings/server/Overview.tsx
 #: components/app/interface/settings/user/voice/VoiceProcessingOptions.tsx
@@ -1334,7 +1333,6 @@ msgstr "Ändrad"
 msgid "Effective <0/> (<1/>)"
 msgstr "Gällande <0/> (<1/>)"
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/EditEmail.tsx
 msgid "Email"
@@ -1353,8 +1351,8 @@ msgid "Emojis"
 msgstr "Emotikonar"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Enable Authenticator"
-msgstr "Aktivera autentiserare"
+#~ msgid "Enable Authenticator"
+#~ msgstr "Aktivera autentiserare"
 
 #: components/modal/modals/MFAEnableTOTP.tsx
 msgid "Enable authenticator app"
@@ -1525,20 +1523,20 @@ msgid "Generate a new token if it gets lost or compromised"
 msgstr "Generera en ny token om den tappats bort eller kommit i fel händer"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Generate Recovery Codes"
-msgstr "Generera återställningskoder"
+#~ msgid "Generate Recovery Codes"
+#~ msgstr "Generera återställningskoder"
 
 #: components/modal/modals/CreateInvite.tsx
 msgid "Generating invite…"
 msgstr "Genererar inbjudan…"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Get a new set of recovery codes"
-msgstr "Skaffa en ny uppsättning återställningskoder"
+#~ msgid "Get a new set of recovery codes"
+#~ msgstr "Skaffa en ny uppsättning återställningskoder"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Get active recovery codes"
-msgstr "Hämta aktiva återställningskoder"
+#~ msgid "Get active recovery codes"
+#~ msgstr "Hämta aktiva återställningskoder"
 
 #: src/AndroidNag.tsx
 msgid "Get it on Google Play"
@@ -2044,8 +2042,8 @@ msgid "Messaging"
 msgstr "Meddelanden"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "MFA setup canceled."
-msgstr ""
+#~ msgid "MFA setup canceled."
+#~ msgstr ""
 
 #: components/app/interface/settings/user/Native.tsx
 msgid "Minimise to Tray"
@@ -2320,7 +2318,6 @@ msgstr "Återställ användare"
 msgid "Partial Outage"
 msgstr ""
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/MFAFlow.tsx
 msgid "Password"
@@ -2500,8 +2497,8 @@ msgid "Recovery Code"
 msgstr "Återställningskod"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Recovery Codes"
-msgstr "Återställningskoder"
+#~ msgid "Recovery Codes"
+#~ msgstr "Återställningskoder"
 
 #: components/app/interface/settings/user/appearance/AppearanceMenu.tsx
 msgid "Reduced"
@@ -2540,8 +2537,8 @@ msgid "Remove all reactions"
 msgstr "Ta bort alla reaktioner"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Remove Authenticator"
-msgstr "Ta bort autentiserare"
+#~ msgid "Remove Authenticator"
+#~ msgstr "Ta bort autentiserare"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Remove Avatars"
@@ -2637,8 +2634,8 @@ msgid "Reset password"
 msgstr "Återställ lösenord"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Reset Recovery Codes"
-msgstr "Återställ återställningskoder"
+#~ msgid "Reset Recovery Codes"
+#~ msgstr "Återställ återställningskoder"
 
 #: components/app/interface/settings/user/bots/ViewBot.tsx
 msgid "Reset Token"
@@ -2884,12 +2881,12 @@ msgid "Settings"
 msgstr "Inställningar"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Setup one-time password authenticator"
-msgstr "Konfigurera engångsautentisering med lösenord"
+#~ msgid "Setup one-time password authenticator"
+#~ msgstr "Konfigurera engångsautentisering med lösenord"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Setup recovery codes"
-msgstr "Konfigurera återställningskoder"
+#~ msgid "Setup recovery codes"
+#~ msgstr "Konfigurera återställningskoder"
 
 #: src/interface/channels/text/CompositionInfo.tsx
 msgid "Several people are typing…"
@@ -3400,7 +3397,6 @@ msgstr "Användarinställningar"
 msgid "User's profile has inappropriate content"
 msgstr "Användarens profil har olämpligt innehåll"
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/CreateBot.tsx
@@ -3469,8 +3465,8 @@ msgid "View pinned messages"
 msgstr "Visa fästa meddelanden"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "View Recovery Codes"
-msgstr "Visa koder för återställning"
+#~ msgid "View Recovery Codes"
+#~ msgstr "Visa koder för återställning"
 
 #: components/ui/components/design/LoadingScreen.tsx
 msgid "View status page"
@@ -3682,8 +3678,8 @@ msgid "You will not receive any notifications"
 msgstr "Du kommer inte att få några aviseringar"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "You won't be able to access your account unless you contact support - however, your data will not be deleted."
-msgstr "Du kommer inte kunna nå ditt konto såvida du inte kontaktar supporten - däremot kommer inte din data att försvinna."
+#~ msgid "You won't be able to access your account unless you contact support - however, your data will not be deleted."
+#~ msgstr "Du kommer inte kunna nå ditt konto såvida du inte kontaktar supporten - däremot kommer inte din data att försvinna."
 
 #: components/modal/modals/DeleteChannel.tsx
 #: components/modal/modals/LeaveServer.tsx
@@ -3721,8 +3717,8 @@ msgid "You've sent too many friend requests, the maximum is {0}"
 msgstr "Du har skickat för många vänförfrågningar, max är {0}"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Your account and all of your data (including your messages and friends list) will be queued for deletion. A confirmation email will be sent - you can cancel this within 7 days by contacting support."
-msgstr "Ditt konto och all din data (inklusive dina meddelanden och din vänlista) kommer att köas för radering. Ett bekräftelsemejl skickas – du kan avbryta detta inom 7 dagar genom att kontakta supporten."
+#~ msgid "Your account and all of your data (including your messages and friends list) will be queued for deletion. A confirmation email will be sent - you can cancel this within 7 days by contacting support."
+#~ msgstr "Ditt konto och all din data (inklusive dina meddelanden och din vänlista) kommer att köas för radering. Ett bekräftelsemejl skickas – du kan avbryta detta inom 7 dagar genom att kontakta supporten."
 
 #: components/auth/src/flows/FlowVerify.tsx
 msgid "Your account has been verified!"

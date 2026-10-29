@@ -403,7 +403,6 @@ msgstr "ロールを付与"
 msgid "Audio disabled by browser"
 msgstr ""
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/modal/modals/MFAFlow.tsx
 msgid "Authenticator App"
 msgstr "二段階認証アプリ"
@@ -562,8 +561,8 @@ msgid "Cancel message"
 msgstr "メッセージを取り消す"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Cannot delete account until servers are deleted or transferred"
-msgstr "所有するサーバーが削除または譲渡されるまで、アカウントを削除することはできません"
+#~ msgid "Cannot delete account until servers are deleted or transferred"
+#~ msgstr "所有するサーバーが削除または譲渡されるまで、アカウントを削除することはできません"
 
 #: components/i18n/errors.tsx
 msgid "Cannot edit this message."
@@ -744,12 +743,12 @@ msgid "Coming soon! 👀"
 msgstr "近日公開! 👀"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Configure a way to get back into your account in case your 2FA is lost"
-msgstr "設定しておけば、二要素認証の手段を失ってもアカウントを復旧できます"
+#~ msgid "Configure a way to get back into your account in case your 2FA is lost"
+#~ msgstr "設定しておけば、二要素認証の手段を失ってもアカウントを復旧できます"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Configure one-time password authentication"
-msgstr "ワンタイムパスワード認証を設定"
+#~ msgid "Configure one-time password authentication"
+#~ msgstr "ワンタイムパスワード認証を設定"
 
 #: components/auth/src/flows/FlowLogin.tsx
 #: components/modal/modals/MFAFlow.tsx
@@ -1067,8 +1066,8 @@ msgid "Delete {0}?"
 msgstr "{0} を削除しますか？"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Delete Account"
-msgstr "アカウントを削除"
+#~ msgid "Delete Account"
+#~ msgstr "アカウントを削除"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Delete and pin messages sent by other members"
@@ -1127,12 +1126,12 @@ msgstr "デスクトップ"
 #~ msgstr "デベロッパードキュメント"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Disable Account"
-msgstr "アカウントを無効化"
+#~ msgid "Disable Account"
+#~ msgstr "アカウントを無効化"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Disable one-time password authenticator"
-msgstr "二要素認証を無効化"
+#~ msgid "Disable one-time password authenticator"
+#~ msgstr "二要素認証を無効化"
 
 #: components/app/interface/settings/server/Overview.tsx
 #: components/app/interface/settings/user/voice/VoiceProcessingOptions.tsx
@@ -1265,7 +1264,6 @@ msgstr "編集済み"
 msgid "Effective <0/> (<1/>)"
 msgstr "<0/> に施行 (<1/>)"
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/EditEmail.tsx
 msgid "Email"
@@ -1284,8 +1282,8 @@ msgid "Emojis"
 msgstr "絵文字"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Enable Authenticator"
-msgstr "二要素認証を有効化"
+#~ msgid "Enable Authenticator"
+#~ msgstr "二要素認証を有効化"
 
 #: components/modal/modals/MFAEnableTOTP.tsx
 msgid "Enable authenticator app"
@@ -1456,20 +1454,20 @@ msgid "Generate a new token if it gets lost or compromised"
 msgstr "トークンをなくしてしまったり、誰かにバレてしまったりした場合はトークンを再発行できます"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Generate Recovery Codes"
-msgstr "リカバリ コードの生成"
+#~ msgid "Generate Recovery Codes"
+#~ msgstr "リカバリ コードの生成"
 
 #: components/modal/modals/CreateInvite.tsx
 msgid "Generating invite…"
 msgstr "招待コードを作成中…"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Get a new set of recovery codes"
-msgstr "リカバリーコードを再発行します"
+#~ msgid "Get a new set of recovery codes"
+#~ msgstr "リカバリーコードを再発行します"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Get active recovery codes"
-msgstr "現在のリカバリーコードを取得します"
+#~ msgid "Get active recovery codes"
+#~ msgstr "現在のリカバリーコードを取得します"
 
 #: src/AndroidNag.tsx
 msgid "Get it on Google Play"
@@ -1969,8 +1967,8 @@ msgid "Messaging"
 msgstr "メッセージ"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "MFA setup canceled."
-msgstr ""
+#~ msgid "MFA setup canceled."
+#~ msgstr ""
 
 #: components/app/interface/settings/user/Native.tsx
 msgid "Minimise to Tray"
@@ -2245,7 +2243,6 @@ msgstr "BANを解除"
 msgid "Partial Outage"
 msgstr ""
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/MFAFlow.tsx
 msgid "Password"
@@ -2422,8 +2419,8 @@ msgid "Recovery Code"
 msgstr "リカバリーコード"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Recovery Codes"
-msgstr "リカバリーコード"
+#~ msgid "Recovery Codes"
+#~ msgstr "リカバリーコード"
 
 #: components/app/interface/settings/user/appearance/AppearanceMenu.tsx
 msgid "Reduced"
@@ -2462,8 +2459,8 @@ msgid "Remove all reactions"
 msgstr "全てのリアクションを削除"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Remove Authenticator"
-msgstr "二要素認証を無効化"
+#~ msgid "Remove Authenticator"
+#~ msgstr "二要素認証を無効化"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Remove Avatars"
@@ -2559,8 +2556,8 @@ msgid "Reset password"
 msgstr "パスワードをリセット"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Reset Recovery Codes"
-msgstr "リカバリーコードをリセット"
+#~ msgid "Reset Recovery Codes"
+#~ msgstr "リカバリーコードをリセット"
 
 #: components/app/interface/settings/user/bots/ViewBot.tsx
 msgid "Reset Token"
@@ -2800,12 +2797,12 @@ msgid "Settings"
 msgstr "設定"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Setup one-time password authenticator"
-msgstr ""
+#~ msgid "Setup one-time password authenticator"
+#~ msgstr ""
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Setup recovery codes"
-msgstr ""
+#~ msgid "Setup recovery codes"
+#~ msgstr ""
 
 #: src/interface/channels/text/CompositionInfo.tsx
 msgid "Several people are typing…"
@@ -3310,7 +3307,6 @@ msgstr "ユーザー設定"
 msgid "User's profile has inappropriate content"
 msgstr ""
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/CreateBot.tsx
@@ -3373,8 +3369,8 @@ msgid "View pinned messages"
 msgstr ""
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "View Recovery Codes"
-msgstr "リカバリコードを表示"
+#~ msgid "View Recovery Codes"
+#~ msgstr "リカバリコードを表示"
 
 #: components/ui/components/design/LoadingScreen.tsx
 msgid "View status page"
@@ -3588,8 +3584,8 @@ msgid "You will not receive any notifications"
 msgstr ""
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "You won't be able to access your account unless you contact support - however, your data will not be deleted."
-msgstr "サポートに連絡しない限り、アカウントにアクセスすることはできません。ただし、データは削除されません。"
+#~ msgid "You won't be able to access your account unless you contact support - however, your data will not be deleted."
+#~ msgstr "サポートに連絡しない限り、アカウントにアクセスすることはできません。ただし、データは削除されません。"
 
 #: components/modal/modals/DeleteChannel.tsx
 #: components/modal/modals/LeaveServer.tsx
@@ -3627,8 +3623,8 @@ msgid "You've sent too many friend requests, the maximum is {0}"
 msgstr ""
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Your account and all of your data (including your messages and friends list) will be queued for deletion. A confirmation email will be sent - you can cancel this within 7 days by contacting support."
-msgstr ""
+#~ msgid "Your account and all of your data (including your messages and friends list) will be queued for deletion. A confirmation email will be sent - you can cancel this within 7 days by contacting support."
+#~ msgstr ""
 
 #: components/auth/src/flows/FlowVerify.tsx
 msgid "Your account has been verified!"

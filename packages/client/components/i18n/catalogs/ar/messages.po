@@ -483,7 +483,6 @@ msgstr "تعيين الرتب"
 msgid "Audio disabled by browser"
 msgstr "تم تعطيل الصوت بواسطة المتصفح"
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/modal/modals/MFAFlow.tsx
 msgid "Authenticator App"
 msgstr "تطبيق المصادقة الثنائية"
@@ -645,8 +644,8 @@ msgid "Cancel message"
 msgstr "إلغاء الرسالة"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Cannot delete account until servers are deleted or transferred"
-msgstr "لا يمكن حذف الحساب حتى يتم حذف الخوادم أو نقلها"
+#~ msgid "Cannot delete account until servers are deleted or transferred"
+#~ msgstr "لا يمكن حذف الحساب حتى يتم حذف الخوادم أو نقلها"
 
 #: components/i18n/errors.tsx
 msgid "Cannot edit this message."
@@ -830,12 +829,12 @@ msgid "Coming soon! 👀"
 msgstr "قريباً! 👀"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Configure a way to get back into your account in case your 2FA is lost"
-msgstr "قم بإعداد طريقة للعودة إلى حسابك في حال ضياع مصادقتك الثنائية"
+#~ msgid "Configure a way to get back into your account in case your 2FA is lost"
+#~ msgstr "قم بإعداد طريقة للعودة إلى حسابك في حال ضياع مصادقتك الثنائية"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Configure one-time password authentication"
-msgstr "قم بإعداد المصادقة بكلمة مرور لمرة واحدة"
+#~ msgid "Configure one-time password authentication"
+#~ msgstr "قم بإعداد المصادقة بكلمة مرور لمرة واحدة"
 
 #: components/auth/src/flows/FlowLogin.tsx
 #: components/modal/modals/MFAFlow.tsx
@@ -1161,8 +1160,8 @@ msgid "Delete {0}?"
 msgstr "حذف {0}؟"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Delete Account"
-msgstr "حذف الحساب"
+#~ msgid "Delete Account"
+#~ msgstr "حذف الحساب"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Delete and pin messages sent by other members"
@@ -1221,12 +1220,12 @@ msgstr "سطح المكتب"
 #~ msgstr "وثيقة للمطورين"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Disable Account"
-msgstr "تعطيل الحساب"
+#~ msgid "Disable Account"
+#~ msgstr "تعطيل الحساب"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Disable one-time password authenticator"
-msgstr "تعطيل موثق كلمة السر"
+#~ msgid "Disable one-time password authenticator"
+#~ msgstr "تعطيل موثق كلمة السر"
 
 #: components/app/interface/settings/server/Overview.tsx
 #: components/app/interface/settings/user/voice/VoiceProcessingOptions.tsx
@@ -1362,7 +1361,6 @@ msgstr "معدل"
 msgid "Effective <0/> (<1/>)"
 msgstr "فعال <0/> (<1/>)"
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/EditEmail.tsx
 msgid "Email"
@@ -1381,8 +1379,8 @@ msgid "Emojis"
 msgstr "الرموز التعبيرية"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Enable Authenticator"
-msgstr "تفعيل الموثق"
+#~ msgid "Enable Authenticator"
+#~ msgstr "تفعيل الموثق"
 
 #: components/modal/modals/MFAEnableTOTP.tsx
 msgid "Enable authenticator app"
@@ -1553,20 +1551,20 @@ msgid "Generate a new token if it gets lost or compromised"
 msgstr "إنشاء رمز جديد في حالة الضياع أو السرقة"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Generate Recovery Codes"
-msgstr "إنتاج رموز استرجاع"
+#~ msgid "Generate Recovery Codes"
+#~ msgstr "إنتاج رموز استرجاع"
 
 #: components/modal/modals/CreateInvite.tsx
 msgid "Generating invite…"
 msgstr "جار انشاء دعوة…"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Get a new set of recovery codes"
-msgstr "الحصول على مجموعة جديدة من أكواد الإسترجاع"
+#~ msgid "Get a new set of recovery codes"
+#~ msgstr "الحصول على مجموعة جديدة من أكواد الإسترجاع"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Get active recovery codes"
-msgstr "الحصول على أكواد الإسترجاع المفعلة"
+#~ msgid "Get active recovery codes"
+#~ msgstr "الحصول على أكواد الإسترجاع المفعلة"
 
 #: src/AndroidNag.tsx
 msgid "Get it on Google Play"
@@ -2072,8 +2070,8 @@ msgid "Messaging"
 msgstr "المراسلة"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "MFA setup canceled."
-msgstr "تم إلغاء إعداد MFA."
+#~ msgid "MFA setup canceled."
+#~ msgstr "تم إلغاء إعداد MFA."
 
 #: components/app/interface/settings/user/Native.tsx
 msgid "Minimise to Tray"
@@ -2348,7 +2346,6 @@ msgstr "العفو عن مستخدم"
 msgid "Partial Outage"
 msgstr "انقطاع جزئي"
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/MFAFlow.tsx
 msgid "Password"
@@ -2528,8 +2525,8 @@ msgid "Recovery Code"
 msgstr "رمز الاسترجاع"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Recovery Codes"
-msgstr "رموز الاسترجاع"
+#~ msgid "Recovery Codes"
+#~ msgstr "رموز الاسترجاع"
 
 #: components/app/interface/settings/user/appearance/AppearanceMenu.tsx
 msgid "Reduced"
@@ -2568,8 +2565,8 @@ msgid "Remove all reactions"
 msgstr "حذف كل التفاعلات"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Remove Authenticator"
-msgstr "أزل موثقًا"
+#~ msgid "Remove Authenticator"
+#~ msgstr "أزل موثقًا"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Remove Avatars"
@@ -2665,8 +2662,8 @@ msgid "Reset password"
 msgstr "أعد تعيين كلمة السر"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Reset Recovery Codes"
-msgstr "اعادة تعيين رموز الاسترجاع"
+#~ msgid "Reset Recovery Codes"
+#~ msgstr "اعادة تعيين رموز الاسترجاع"
 
 #: components/app/interface/settings/user/bots/ViewBot.tsx
 msgid "Reset Token"
@@ -2912,12 +2909,12 @@ msgid "Settings"
 msgstr "الإعدادات"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Setup one-time password authenticator"
-msgstr "اعداد موثق كلمة المرور للاستخدام الواحد"
+#~ msgid "Setup one-time password authenticator"
+#~ msgstr "اعداد موثق كلمة المرور للاستخدام الواحد"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Setup recovery codes"
-msgstr "اعداد رموز الاسترجاع"
+#~ msgid "Setup recovery codes"
+#~ msgstr "اعداد رموز الاسترجاع"
 
 #: src/interface/channels/text/CompositionInfo.tsx
 msgid "Several people are typing…"
@@ -3428,7 +3425,6 @@ msgstr "إعدادات المستخدم"
 msgid "User's profile has inappropriate content"
 msgstr "تحتوي صفحة تعريف المستخدم على محتوى غير لائق"
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/CreateBot.tsx
@@ -3497,8 +3493,8 @@ msgid "View pinned messages"
 msgstr "رأية الرسائل المثبتة"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "View Recovery Codes"
-msgstr "عرض رموز الاسترجاع"
+#~ msgid "View Recovery Codes"
+#~ msgstr "عرض رموز الاسترجاع"
 
 #: components/ui/components/design/LoadingScreen.tsx
 msgid "View status page"
@@ -3712,8 +3708,8 @@ msgid "You will not receive any notifications"
 msgstr "لن تتحصل على أية إشعارات"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "You won't be able to access your account unless you contact support - however, your data will not be deleted."
-msgstr "لن يكن لك القدرة أن تستخدم حسابك إلا إذا اتصلت بالدعم لكن بياناتك لن تحذف."
+#~ msgid "You won't be able to access your account unless you contact support - however, your data will not be deleted."
+#~ msgstr "لن يكن لك القدرة أن تستخدم حسابك إلا إذا اتصلت بالدعم لكن بياناتك لن تحذف."
 
 #: components/modal/modals/DeleteChannel.tsx
 #: components/modal/modals/LeaveServer.tsx
@@ -3751,8 +3747,8 @@ msgid "You've sent too many friend requests, the maximum is {0}"
 msgstr "لقد أرسلت كثيرا من طلبات الصداقة، الحد الأقصى هو {0}"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Your account and all of your data (including your messages and friends list) will be queued for deletion. A confirmation email will be sent - you can cancel this within 7 days by contacting support."
-msgstr "حسابك و كل بياناتك (تشمل رسائلك و قائمة أصدقائك) تم إدراجها في قائمة الحذف. سيتم إرسال رسالة إلى بريدك الإلكتروني - يمكنك إلغاء هذه العملية في خلال 7 أيام عن طريق التواصل مع خدمة الحرفاء."
+#~ msgid "Your account and all of your data (including your messages and friends list) will be queued for deletion. A confirmation email will be sent - you can cancel this within 7 days by contacting support."
+#~ msgstr "حسابك و كل بياناتك (تشمل رسائلك و قائمة أصدقائك) تم إدراجها في قائمة الحذف. سيتم إرسال رسالة إلى بريدك الإلكتروني - يمكنك إلغاء هذه العملية في خلال 7 أيام عن طريق التواصل مع خدمة الحرفاء."
 
 #: components/auth/src/flows/FlowVerify.tsx
 msgid "Your account has been verified!"

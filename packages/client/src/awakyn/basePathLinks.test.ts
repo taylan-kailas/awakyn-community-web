@@ -2,7 +2,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 
-import { pathInsideApp } from "./basePathLinks.ts";
+import { pathInsideApp, pathWithinApp } from "./basePathLinks.ts";
 
 const BASE = "/community-app";
 
@@ -27,4 +27,11 @@ test("links to the rest of the website are left alone", () => {
 
 test("nothing changes when the app is served from the site root", () => {
   assert.equal(pathInsideApp("/login/auth", ""), null);
+});
+
+test("the page to return to after signing in is remembered without the app's folder", () => {
+  assert.equal(pathWithinApp("/community-app/channel/abc", "/community-app"), "/channel/abc");
+  assert.equal(pathWithinApp("/community-app", "/community-app"), "/");
+  assert.equal(pathWithinApp("/channel/abc", ""), "/channel/abc");
+  assert.equal(pathWithinApp("/channel/abc", "/community-app"), "/channel/abc");
 });

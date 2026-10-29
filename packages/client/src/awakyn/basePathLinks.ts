@@ -31,6 +31,15 @@ export function pathInsideApp(pathname: string, base: string): string | null {
   return `${base}${pathname}`;
 }
 
+/**
+ * `pathname` (a full browser address) as the app's router knows it, without
+ * the folder — the router adds the folder back itself when it navigates.
+ */
+export function pathWithinApp(pathname: string, base: string): string {
+  if (!base || !(pathname === base || pathname.startsWith(`${base}/`))) return pathname;
+  return pathname.slice(base.length) || "/";
+}
+
 export function keepLinksInsideBasePath(base: string) {
   if (!base) return;
 

@@ -454,7 +454,6 @@ msgstr "Назначать роли"
 msgid "Audio disabled by browser"
 msgstr "Звук отключен браузером"
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/modal/modals/MFAFlow.tsx
 msgid "Authenticator App"
 msgstr "Приложение для аутентификации"
@@ -616,8 +615,8 @@ msgid "Cancel message"
 msgstr "Отменить сообщение"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Cannot delete account until servers are deleted or transferred"
-msgstr "Невозможно удалить аккаунт, пока серверы не будут удалены или переданы"
+#~ msgid "Cannot delete account until servers are deleted or transferred"
+#~ msgstr "Невозможно удалить аккаунт, пока серверы не будут удалены или переданы"
 
 #: components/i18n/errors.tsx
 msgid "Cannot edit this message."
@@ -801,12 +800,12 @@ msgid "Coming soon! 👀"
 msgstr "Скоро появится! 👀"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Configure a way to get back into your account in case your 2FA is lost"
-msgstr "Настройте способ входа в акаунт при потери двухфакторной аутентификации"
+#~ msgid "Configure a way to get back into your account in case your 2FA is lost"
+#~ msgstr "Настройте способ входа в акаунт при потери двухфакторной аутентификации"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Configure one-time password authentication"
-msgstr "Настройте аутентификацию одноразовым паролем"
+#~ msgid "Configure one-time password authentication"
+#~ msgstr "Настройте аутентификацию одноразовым паролем"
 
 #: components/auth/src/flows/FlowLogin.tsx
 #: components/modal/modals/MFAFlow.tsx
@@ -1127,8 +1126,8 @@ msgid "Delete {0}?"
 msgstr "Удалить {0}?"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Delete Account"
-msgstr "Удалить Аккаунт"
+#~ msgid "Delete Account"
+#~ msgstr "Удалить Аккаунт"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Delete and pin messages sent by other members"
@@ -1187,12 +1186,12 @@ msgstr "ПК"
 #~ msgstr "Документация Разработчика"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Disable Account"
-msgstr "Отключить учетную запись"
+#~ msgid "Disable Account"
+#~ msgstr "Отключить учетную запись"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Disable one-time password authenticator"
-msgstr "Отключить аутентификацию одноразовым паролем"
+#~ msgid "Disable one-time password authenticator"
+#~ msgstr "Отключить аутентификацию одноразовым паролем"
 
 #: components/app/interface/settings/server/Overview.tsx
 #: components/app/interface/settings/user/voice/VoiceProcessingOptions.tsx
@@ -1325,7 +1324,6 @@ msgstr "Изменено"
 msgid "Effective <0/> (<1/>)"
 msgstr "В силу с <0/> (<1/>)"
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/EditEmail.tsx
 msgid "Email"
@@ -1344,8 +1342,8 @@ msgid "Emojis"
 msgstr "Эмодзи"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Enable Authenticator"
-msgstr "Включить Аутентификатор"
+#~ msgid "Enable Authenticator"
+#~ msgstr "Включить Аутентификатор"
 
 #: components/modal/modals/MFAEnableTOTP.tsx
 msgid "Enable authenticator app"
@@ -1516,20 +1514,20 @@ msgid "Generate a new token if it gets lost or compromised"
 msgstr "Сгенерировать новый токен, если прошлый потерялся или его узнали"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Generate Recovery Codes"
-msgstr "Сгенерировать резервные коды"
+#~ msgid "Generate Recovery Codes"
+#~ msgstr "Сгенерировать резервные коды"
 
 #: components/modal/modals/CreateInvite.tsx
 msgid "Generating invite…"
 msgstr "Создание приглашения…"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Get a new set of recovery codes"
-msgstr "Получить новый набор кодов восстановления"
+#~ msgid "Get a new set of recovery codes"
+#~ msgstr "Получить новый набор кодов восстановления"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Get active recovery codes"
-msgstr "Получить активный код восстановления"
+#~ msgid "Get active recovery codes"
+#~ msgstr "Получить активный код восстановления"
 
 #: src/AndroidNag.tsx
 msgid "Get it on Google Play"
@@ -2032,8 +2030,8 @@ msgid "Messaging"
 msgstr "Переписка"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "MFA setup canceled."
-msgstr "Настройка 2FA отменена."
+#~ msgid "MFA setup canceled."
+#~ msgstr "Настройка 2FA отменена."
 
 #: components/app/interface/settings/user/Native.tsx
 msgid "Minimise to Tray"
@@ -2308,7 +2306,6 @@ msgstr "Простить Пользователя"
 msgid "Partial Outage"
 msgstr "Частичный сбой"
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/MFAFlow.tsx
 msgid "Password"
@@ -2488,8 +2485,8 @@ msgid "Recovery Code"
 msgstr "Код восстановления"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Recovery Codes"
-msgstr "Коды Восстановления"
+#~ msgid "Recovery Codes"
+#~ msgstr "Коды Восстановления"
 
 #: components/app/interface/settings/user/appearance/AppearanceMenu.tsx
 msgid "Reduced"
@@ -2528,8 +2525,8 @@ msgid "Remove all reactions"
 msgstr "Убрать все реакции"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Remove Authenticator"
-msgstr "Удалить аутентификатор"
+#~ msgid "Remove Authenticator"
+#~ msgstr "Удалить аутентификатор"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Remove Avatars"
@@ -2625,8 +2622,8 @@ msgid "Reset password"
 msgstr "Восстановить пароль"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Reset Recovery Codes"
-msgstr "Сбросить Коды Восстановления"
+#~ msgid "Reset Recovery Codes"
+#~ msgstr "Сбросить Коды Восстановления"
 
 #: components/app/interface/settings/user/bots/ViewBot.tsx
 msgid "Reset Token"
@@ -2866,12 +2863,12 @@ msgid "Settings"
 msgstr "Настройки"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Setup one-time password authenticator"
-msgstr "Включить аутентификацию одноразовым паролем"
+#~ msgid "Setup one-time password authenticator"
+#~ msgstr "Включить аутентификацию одноразовым паролем"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Setup recovery codes"
-msgstr "Включить коды восстановления"
+#~ msgid "Setup recovery codes"
+#~ msgstr "Включить коды восстановления"
 
 #: src/interface/channels/text/CompositionInfo.tsx
 msgid "Several people are typing…"
@@ -3379,7 +3376,6 @@ msgstr "Настройки пользователя"
 msgid "User's profile has inappropriate content"
 msgstr "Профиль пользователя имеет неприемлемое содержание"
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/CreateBot.tsx
@@ -3448,8 +3444,8 @@ msgid "View pinned messages"
 msgstr "Показать закреплённые сообщения"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "View Recovery Codes"
-msgstr "Просмотреть резервные коды"
+#~ msgid "View Recovery Codes"
+#~ msgstr "Просмотреть резервные коды"
 
 #: components/ui/components/design/LoadingScreen.tsx
 msgid "View status page"
@@ -3661,8 +3657,8 @@ msgid "You will not receive any notifications"
 msgstr "Вы более не будете получать уведомления"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "You won't be able to access your account unless you contact support - however, your data will not be deleted."
-msgstr "Вы не сможете получить доступ к своему аккаунту, пока не обратитесь в службу поддержки, однако ваши данные не будут удалены."
+#~ msgid "You won't be able to access your account unless you contact support - however, your data will not be deleted."
+#~ msgstr "Вы не сможете получить доступ к своему аккаунту, пока не обратитесь в службу поддержки, однако ваши данные не будут удалены."
 
 #: components/modal/modals/DeleteChannel.tsx
 #: components/modal/modals/LeaveServer.tsx
@@ -3700,8 +3696,8 @@ msgid "You've sent too many friend requests, the maximum is {0}"
 msgstr "Вы отправили слишком много запросов в друзья. Лимит: {0}"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Your account and all of your data (including your messages and friends list) will be queued for deletion. A confirmation email will be sent - you can cancel this within 7 days by contacting support."
-msgstr "Ваша учетная запись и все ваши данные (включая сообщения и список друзей) будут помещены в очередь на удаление. На электронную почту будет отправлено письмо с подтверждением. Вы можете отменить свое решение в течение 7 дней, обратившись в службу поддержки."
+#~ msgid "Your account and all of your data (including your messages and friends list) will be queued for deletion. A confirmation email will be sent - you can cancel this within 7 days by contacting support."
+#~ msgstr "Ваша учетная запись и все ваши данные (включая сообщения и список друзей) будут помещены в очередь на удаление. На электронную почту будет отправлено письмо с подтверждением. Вы можете отменить свое решение в течение 7 дней, обратившись в службу поддержки."
 
 #: components/auth/src/flows/FlowVerify.tsx
 msgid "Your account has been verified!"

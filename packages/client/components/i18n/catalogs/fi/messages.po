@@ -460,7 +460,6 @@ msgstr "Roolien asettaminen"
 msgid "Audio disabled by browser"
 msgstr ""
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/modal/modals/MFAFlow.tsx
 msgid "Authenticator App"
 msgstr "Valtuutussovellus"
@@ -622,8 +621,8 @@ msgid "Cancel message"
 msgstr "Peru viesti"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Cannot delete account until servers are deleted or transferred"
-msgstr "Tiliä ei voi poistaa ellei palvelimia poisteta tai siirretä"
+#~ msgid "Cannot delete account until servers are deleted or transferred"
+#~ msgstr "Tiliä ei voi poistaa ellei palvelimia poisteta tai siirretä"
 
 #: components/i18n/errors.tsx
 msgid "Cannot edit this message."
@@ -807,12 +806,12 @@ msgid "Coming soon! 👀"
 msgstr ""
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Configure a way to get back into your account in case your 2FA is lost"
-msgstr "Aseta tapa päästä takaisin tilillesi, jos kaksivaiheinen tunnistautuminen ei onnistu."
+#~ msgid "Configure a way to get back into your account in case your 2FA is lost"
+#~ msgstr "Aseta tapa päästä takaisin tilillesi, jos kaksivaiheinen tunnistautuminen ei onnistu."
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Configure one-time password authentication"
-msgstr "Kertakäyttöisellä salasanalla tunnistautumisen asetukset"
+#~ msgid "Configure one-time password authentication"
+#~ msgstr "Kertakäyttöisellä salasanalla tunnistautumisen asetukset"
 
 #: components/auth/src/flows/FlowLogin.tsx
 #: components/modal/modals/MFAFlow.tsx
@@ -1133,8 +1132,8 @@ msgid "Delete {0}?"
 msgstr "Poista {0}?"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Delete Account"
-msgstr "Poista tili"
+#~ msgid "Delete Account"
+#~ msgstr "Poista tili"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Delete and pin messages sent by other members"
@@ -1193,12 +1192,12 @@ msgstr "Työpöytä"
 #~ msgstr "Kehittäjätiedot"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Disable Account"
-msgstr "Poista tili käytöstä"
+#~ msgid "Disable Account"
+#~ msgstr "Poista tili käytöstä"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Disable one-time password authenticator"
-msgstr "Poista kertakäyttöisen salasanan tunnisteväline käytöstä"
+#~ msgid "Disable one-time password authenticator"
+#~ msgstr "Poista kertakäyttöisen salasanan tunnisteväline käytöstä"
 
 #: components/app/interface/settings/server/Overview.tsx
 #: components/app/interface/settings/user/voice/VoiceProcessingOptions.tsx
@@ -1334,7 +1333,6 @@ msgstr "Muokattu"
 msgid "Effective <0/> (<1/>)"
 msgstr ""
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/EditEmail.tsx
 msgid "Email"
@@ -1353,8 +1351,8 @@ msgid "Emojis"
 msgstr "Emojit"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Enable Authenticator"
-msgstr "Ota valtuutus käyttöön"
+#~ msgid "Enable Authenticator"
+#~ msgstr "Ota valtuutus käyttöön"
 
 #: components/modal/modals/MFAEnableTOTP.tsx
 msgid "Enable authenticator app"
@@ -1525,20 +1523,20 @@ msgid "Generate a new token if it gets lost or compromised"
 msgstr "Luo uusi tunnus, jos se katoaa tai vaarantuu."
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Generate Recovery Codes"
-msgstr "Luo palautuskoodit"
+#~ msgid "Generate Recovery Codes"
+#~ msgstr "Luo palautuskoodit"
 
 #: components/modal/modals/CreateInvite.tsx
 msgid "Generating invite…"
 msgstr "Luodaan kutsua…"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Get a new set of recovery codes"
-msgstr "Hanki uudet palautuskoodit"
+#~ msgid "Get a new set of recovery codes"
+#~ msgstr "Hanki uudet palautuskoodit"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Get active recovery codes"
-msgstr "Hanki käytössä olevat palautuskoodit"
+#~ msgid "Get active recovery codes"
+#~ msgstr "Hanki käytössä olevat palautuskoodit"
 
 #: src/AndroidNag.tsx
 msgid "Get it on Google Play"
@@ -2044,8 +2042,8 @@ msgid "Messaging"
 msgstr "Viestintä"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "MFA setup canceled."
-msgstr ""
+#~ msgid "MFA setup canceled."
+#~ msgstr ""
 
 #: components/app/interface/settings/user/Native.tsx
 msgid "Minimise to Tray"
@@ -2320,7 +2318,6 @@ msgstr "Armahda käyttäjä"
 msgid "Partial Outage"
 msgstr ""
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/MFAFlow.tsx
 msgid "Password"
@@ -2500,8 +2497,8 @@ msgid "Recovery Code"
 msgstr "Palautuskoodi"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Recovery Codes"
-msgstr "Palautuskoodit"
+#~ msgid "Recovery Codes"
+#~ msgstr "Palautuskoodit"
 
 #: components/app/interface/settings/user/appearance/AppearanceMenu.tsx
 msgid "Reduced"
@@ -2540,8 +2537,8 @@ msgid "Remove all reactions"
 msgstr "Poista kaikki reaktiot"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Remove Authenticator"
-msgstr "Poista Authenticator"
+#~ msgid "Remove Authenticator"
+#~ msgstr "Poista Authenticator"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Remove Avatars"
@@ -2637,8 +2634,8 @@ msgid "Reset password"
 msgstr "Nollaa salasana"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Reset Recovery Codes"
-msgstr "Nollaa palautuskoodit"
+#~ msgid "Reset Recovery Codes"
+#~ msgstr "Nollaa palautuskoodit"
 
 #: components/app/interface/settings/user/bots/ViewBot.tsx
 msgid "Reset Token"
@@ -2884,12 +2881,12 @@ msgid "Settings"
 msgstr "Asetukset"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Setup one-time password authenticator"
-msgstr "Ota käyttöön kertakäyttösalasanan todennussovellus"
+#~ msgid "Setup one-time password authenticator"
+#~ msgstr "Ota käyttöön kertakäyttösalasanan todennussovellus"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Setup recovery codes"
-msgstr "Määritä palautuskoodit"
+#~ msgid "Setup recovery codes"
+#~ msgstr "Määritä palautuskoodit"
 
 #: src/interface/channels/text/CompositionInfo.tsx
 msgid "Several people are typing…"
@@ -3400,7 +3397,6 @@ msgstr "Käyttäjäasetukset"
 msgid "User's profile has inappropriate content"
 msgstr "Käyttäjän profiili sisältää asiatonta sisältöä"
 
-#: components/app/interface/settings/user/Account.tsx
 #: components/auth/src/flows/Form.tsx
 #: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/CreateBot.tsx
@@ -3469,8 +3465,8 @@ msgid "View pinned messages"
 msgstr "Näytä kiinnitetyt viestit"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "View Recovery Codes"
-msgstr "Näytä palautuskoodit"
+#~ msgid "View Recovery Codes"
+#~ msgstr "Näytä palautuskoodit"
 
 #: components/ui/components/design/LoadingScreen.tsx
 msgid "View status page"
@@ -3684,8 +3680,8 @@ msgid "You will not receive any notifications"
 msgstr "Et saa mitään ilmoituksia"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "You won't be able to access your account unless you contact support - however, your data will not be deleted."
-msgstr "Et voi käyttää tiliäsi ellet ota yhteyttä tukeen - emme kuitenkaan poista tietojasi."
+#~ msgid "You won't be able to access your account unless you contact support - however, your data will not be deleted."
+#~ msgstr "Et voi käyttää tiliäsi ellet ota yhteyttä tukeen - emme kuitenkaan poista tietojasi."
 
 #: components/modal/modals/DeleteChannel.tsx
 #: components/modal/modals/LeaveServer.tsx
@@ -3723,8 +3719,8 @@ msgid "You've sent too many friend requests, the maximum is {0}"
 msgstr "Olet lähettänyt liian monta kaveripyyntöä, maksimi on {0}"
 
 #: components/app/interface/settings/user/Account.tsx
-msgid "Your account and all of your data (including your messages and friends list) will be queued for deletion. A confirmation email will be sent - you can cancel this within 7 days by contacting support."
-msgstr "Käyttäjätilisi ja tietosi (mukaanlukien viestisi ja kaverilistasi) ovat jonossa poistoa varten. Vahvistusviesti lähetetään sähköpostiisi - voit perua tämän päätöksen 7 päivän sisällä ottamalla yhteyttä tukeen."
+#~ msgid "Your account and all of your data (including your messages and friends list) will be queued for deletion. A confirmation email will be sent - you can cancel this within 7 days by contacting support."
+#~ msgstr "Käyttäjätilisi ja tietosi (mukaanlukien viestisi ja kaverilistasi) ovat jonossa poistoa varten. Vahvistusviesti lähetetään sähköpostiisi - voit perua tämän päätöksen 7 päivän sisällä ottamalla yhteyttä tukeen."
 
 #: components/auth/src/flows/FlowVerify.tsx
 msgid "Your account has been verified!"

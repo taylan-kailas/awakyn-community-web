@@ -46,6 +46,7 @@ import {
 } from "../../../menus/UserContextMenu";
 
 import { EditMessage } from "./EditMessage";
+import { GuestTag } from "../../../../../src/awakyn/guests";
 
 /**
  * Regex for matching URLs
@@ -161,6 +162,8 @@ export function Message(props: Props) {
               }
               colour={props.message.roleColour!}
             />
+            {/* Awakyn: guests are marked as guests */}
+            <GuestTag userId={props.message.authorId} place="message" />
           </div>
         }
         avatar={

@@ -22,6 +22,7 @@ import { OverflowingText } from "@revolt/ui/components/utils";
 import { Symbol } from "@revolt/ui/components/utils/Symbol";
 
 import { VoiceStatefulUserIcons } from "../VoiceStatefulUserIcons";
+import { GuestTag } from "../../../../../../src/awakyn/guests";
 
 type TileProps = {
   focus?: boolean;
@@ -146,7 +147,11 @@ export function ParticipantTile(props: TileProps) {
         </Show>
         <Overlay showOnHover={isScreenShare()}>
           <OverlayInner>
-            <OverflowingText>{user().username}</OverflowingText>
+            <OverflowingText>
+              {user().username}
+              {/* Awakyn: guests are marked as guests */}
+              <GuestTag userId={user().user?.id} place="call" />
+            </OverflowingText>
             <Row gap="md">
               {isScreenShare() ? (
                 <Show when={isScreenShareAudioUserMuted()}>

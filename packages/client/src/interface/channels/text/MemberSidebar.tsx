@@ -20,6 +20,7 @@ import {
   Username,
   UserStatus,
 } from "@revolt/ui";
+import { GuestTag } from "../../../awakyn/guests";
 
 interface Props {
   /**
@@ -389,6 +390,8 @@ function Member(props: {
         <NameStatusStack>
           <OverflowingText>
             <Username username={user().username} colour={user().colour!} />
+            {/* Awakyn: guests are marked as guests */}
+            <GuestTag userId={(props.user ?? props.member?.user)?.id} place="member" />
           </OverflowingText>
           <Show when={status()}>
             <Tooltip

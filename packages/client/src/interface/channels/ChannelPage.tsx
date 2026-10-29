@@ -1,4 +1,4 @@
-import { Component, Match, Switch, createMemo } from "solid-js";
+import { Component, Match, Switch, createEffect, createMemo } from "solid-js";
 
 import { Channel } from "stoat.js";
 import { styled } from "styled-system/jsx";
@@ -40,6 +40,13 @@ export const ChannelPage: Component = () => {
   const params = useParams();
   const client = useClient();
   const channel = createMemo(() => client()!.channels.get(params.channel)!);
+
+  // Awakyn: load group members the app hasn't met yet (guests who joined by link)
+  createEffect(() => {
+    const group = channel();
+    if (group?.type !== "Group" || group.recipients.length >= group.recipientIds.size) return;
+    group.fetchMembers().catch((error) => console.error("Couldn't load the group's members:", error));
+  });
 
   return (
     <Base>

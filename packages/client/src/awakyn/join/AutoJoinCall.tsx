@@ -1,4 +1,4 @@
-import { createEffect } from "solid-js";
+import { createEffect, runWithOwner } from "solid-js";
 
 import { useClient, useClientLifecycle } from "@revolt/client";
 import { useVoice } from "@revolt/rtc";
@@ -17,7 +17,9 @@ export function AutoJoinCall() {
     const channel = client().channels.get(id);
     if (!channel) return;
     setPendingCall(undefined);
-    voice.connect(channel).catch((error) => console.error("Couldn't join the call:", error));
+    // Joined as a button press would: the call builds live parts of its own
+    // (who's in it), which must outlast this effect re-running.
+    runWithOwner(null, () => voice.connect(channel))?.catch((error) => console.error("Couldn't join the call:", error));
   });
 
   return null;
