@@ -3,14 +3,15 @@
 # Needs AWAKYN_API_ORIGIN, e.g. https://awakyn-community.tailf659bc.ts.net, and
 # the Google sign-in settings VITE_FIREBASE_API_KEY, VITE_FIREBASE_AUTH_DOMAIN,
 # VITE_FIREBASE_PROJECT_ID, VITE_FIREBASE_APP_ID (public values; the same as
-# awakyn-website-v2's NEXT_PUBLIC_FIREBASE_* ones).
+# awakyn-website-v2's NEXT_PUBLIC_FIREBASE_* ones), and VITE_OWNER_USER_ID
+# (server/config.env OWNER_USER_ID: who sees the Call links page).
 set -euo pipefail
 
 APP_PATH="community-app"
 ORIGIN="${AWAKYN_API_ORIGIN:?Set AWAKYN_API_ORIGIN to the Stoat server address}"
 ORIGIN="${ORIGIN%/}"
 PNPM="${PNPM:-npx -y pnpm@11.3.0}"
-for name in VITE_FIREBASE_API_KEY VITE_FIREBASE_AUTH_DOMAIN VITE_FIREBASE_PROJECT_ID VITE_FIREBASE_APP_ID; do
+for name in VITE_OWNER_USER_ID VITE_FIREBASE_API_KEY VITE_FIREBASE_AUTH_DOMAIN VITE_FIREBASE_PROJECT_ID VITE_FIREBASE_APP_ID; do
   [ -n "${!name:-}" ] || { echo "Set $name (Google sign-in settings) before building." >&2; exit 1; }
   export "$name"
 done

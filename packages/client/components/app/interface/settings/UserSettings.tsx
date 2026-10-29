@@ -9,11 +9,13 @@ import { useInstance } from "@revolt/instance";
 import { useUser } from "@revolt/markdown/users";
 import { useModals } from "@revolt/modal";
 import { BRAND } from "../../../../src/awakyn/brand";
+import { CallLinks } from "../../../../src/awakyn/calls/CallLinks";
 import { ColouredText, Column, Text, iconSize } from "@revolt/ui";
 import { Symbol } from "@revolt/ui/components/utils/Symbol";
 
 import MdAccountCircle from "@material-design-icons/svg/outlined/account_circle.svg?component-solid";
 import MdLanguage from "@material-design-icons/svg/outlined/language.svg?component-solid";
+import MdLink from "@material-design-icons/svg/outlined/link.svg?component-solid";
 import MdLogout from "@material-design-icons/svg/outlined/logout.svg?component-solid";
 import MdMemory from "@material-design-icons/svg/outlined/memory.svg?component-solid";
 import MdMic from "@material-design-icons/svg/outlined/mic.svg?component-solid";
@@ -97,6 +99,8 @@ const Config: SettingsConfiguration<{ server: Server }> = {
         return <VoiceSettings />;
       case "notifications":
         return <Notifications isDesktop={!!window.native} />;
+      case "call-links": // Awakyn
+        return <CallLinks />;
       default:
         return null;
     }
@@ -112,6 +116,7 @@ const Config: SettingsConfiguration<{ server: Server }> = {
     const { pop, openModal } = useModals();
     const { logout } = useClientLifecycle();
     const { limits, config } = useInstance();
+    const client = useClient(); // Awakyn: who is looking decides whether Call links shows
 
     return {
       context: null!,
@@ -222,6 +227,13 @@ const Config: SettingsConfiguration<{ server: Server }> = {
         {
           title: BRAND.name, // Awakyn
           entries: [
+            // Awakyn: Taylan's call rooms and their links
+            {
+              id: "call-links",
+              icon: <MdLink {...iconSize(20)} />,
+              title: "Call links",
+              hidden: client().user?.id !== import.meta.env.VITE_OWNER_USER_ID,
+            },
             {
               id: "bots",
               icon: <MdSmartToy {...iconSize(20)} />,

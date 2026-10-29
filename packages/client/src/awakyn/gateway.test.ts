@@ -58,3 +58,24 @@ test("requests go where the gateway expects them", async () => {
   );
   assert.equal((seen[2][1]?.headers as Record<string, string>)["x-session-token"], "session-token");
 });
+
+test("call room requests carry the owner's session", async () => {
+  const seen: [string, string, string | null, string | undefined][] = [];
+  const gateway = createGateway("https://g", async (url, init) => {
+    const headers = (init?.headers ?? {}) as Record<string, string>;
+    seen.push([String(url), init?.method ?? "GET", (init?.body as string) ?? null, headers["x-session-token"]]);
+    return answer(200, { rooms: [] });
+  });
+  await gateway.callRooms("t");
+  await gateway.createCallRoom("t", "Friday call");
+  await gateway.freshCallLink("t", "r1");
+  await gateway.switchOffCallLink("t", "r1");
+  await gateway.deleteCallRoom("t", "r1");
+  assert.deepEqual(seen, [
+    ["https://g/calls", "GET", null, "t"],
+    ["https://g/calls", "POST", JSON.stringify({ name: "Friday call" }), "t"],
+    ["https://g/calls/r1/fresh-link", "POST", JSON.stringify({}), "t"],
+    ["https://g/calls/r1/link", "DELETE", null, "t"],
+    ["https://g/calls/r1", "DELETE", null, "t"],
+  ]);
+});
