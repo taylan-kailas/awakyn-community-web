@@ -1860,8 +1860,8 @@ msgid "Load file ({0})"
 msgstr "Cargar archivo ({0})"
 
 #: components/auth/src/flows/FlowHome.tsx
-msgid "Log In"
-msgstr "Iniciar sesión"
+#~ msgid "Log In"
+#~ msgstr "Iniciar sesión"
 
 #: components/app/interface/settings/user/Sessions.tsx
 #: components/app/interface/settings/UserSettings.tsx
@@ -2907,8 +2907,8 @@ msgstr "Mostrar el botón de enviar mensaje"
 #~ msgstr "Iniciar sesión en Stoat"
 
 #: components/auth/src/flows/FlowHome.tsx
-msgid "Sign Up"
-msgstr "Registrarse"
+#~ msgid "Sign Up"
+#~ msgstr "Registrarse"
 
 #: components/app/interface/channels/text/Message.tsx
 msgid "Silent"

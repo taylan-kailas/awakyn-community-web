@@ -1872,8 +1872,8 @@ msgid "Load file ({0})"
 msgstr "Ladda fil ({0})"
 
 #: components/auth/src/flows/FlowHome.tsx
-msgid "Log In"
-msgstr "Logga in"
+#~ msgid "Log In"
+#~ msgstr "Logga in"
 
 #: components/app/interface/settings/user/Sessions.tsx
 #: components/app/interface/settings/UserSettings.tsx
@@ -2925,8 +2925,8 @@ msgstr "Visa knapp för att skicka meddelande"
 #~ msgstr "Logga in i Stoat"
 
 #: components/auth/src/flows/FlowHome.tsx
-msgid "Sign Up"
-msgstr "Registrera dig"
+#~ msgid "Sign Up"
+#~ msgstr "Registrera dig"
 
 #: components/app/interface/channels/text/Message.tsx
 msgid "Silent"

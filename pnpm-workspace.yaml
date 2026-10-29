@@ -3,8 +3,10 @@ packages:
   - packages/stoat.js
   - packages/solid-livekit-components
 allowBuilds:
+  '@firebase/util': false
   "@swc/core": true
   esbuild: true
+  protobufjs: false
 minimumReleaseAgeExclude:
   - stoat-api
 nodeLinker: isolated

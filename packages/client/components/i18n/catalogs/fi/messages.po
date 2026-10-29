@@ -1872,8 +1872,8 @@ msgid "Load file ({0})"
 msgstr "Lataa tiedosto ({0})"
 
 #: components/auth/src/flows/FlowHome.tsx
-msgid "Log In"
-msgstr "Kirjaudu sisään"
+#~ msgid "Log In"
+#~ msgstr "Kirjaudu sisään"
 
 #: components/app/interface/settings/user/Sessions.tsx
 #: components/app/interface/settings/UserSettings.tsx
@@ -2925,8 +2925,8 @@ msgstr "Näytä lähetä viesti -painike"
 #~ msgstr "Kirjaudu sisään Stoatiin"
 
 #: components/auth/src/flows/FlowHome.tsx
-msgid "Sign Up"
-msgstr "Rekisteröidy"
+#~ msgid "Sign Up"
+#~ msgstr "Rekisteröidy"
 
 #: components/app/interface/channels/text/Message.tsx
 msgid "Silent"

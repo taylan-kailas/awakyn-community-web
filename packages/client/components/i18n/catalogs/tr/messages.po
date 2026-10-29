@@ -1875,8 +1875,8 @@ msgid "Load file ({0})"
 msgstr "({0}) adlı dosyayı yükle"
 
 #: components/auth/src/flows/FlowHome.tsx
-msgid "Log In"
-msgstr "Giriş Yap"
+#~ msgid "Log In"
+#~ msgstr "Giriş Yap"
 
 #: components/app/interface/settings/user/Sessions.tsx
 #: components/app/interface/settings/UserSettings.tsx
@@ -2929,8 +2929,8 @@ msgstr "Mesaj gönder butonunu göster"
 #~ msgstr "Stoat'a giriş yap"
 
 #: components/auth/src/flows/FlowHome.tsx
-msgid "Sign Up"
-msgstr "Kaydol"
+#~ msgid "Sign Up"
+#~ msgstr "Kaydol"
 
 #: components/app/interface/channels/text/Message.tsx
 msgid "Silent"

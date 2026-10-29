@@ -14,6 +14,8 @@
       "vite-plugin-pwa/client"
     ],
     "noEmit": true,
+    // Awakyn: src/awakyn/ files import each other with ".ts" so Node can run their tests directly
+    "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,

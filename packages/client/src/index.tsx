@@ -13,15 +13,8 @@ import "material-symbols";
 import "mdui/mdui.css";
 import { PublicBot, PublicChannelInvite } from "stoat.js";
 
-import FlowCheck from "@revolt/auth/src/flows/FlowCheck";
-import FlowConfirmReset from "@revolt/auth/src/flows/FlowConfirmReset";
-import FlowCreate from "@revolt/auth/src/flows/FlowCreate";
 import FlowDeleteAccount from "@revolt/auth/src/flows/FlowDelete";
 import FlowHome from "@revolt/auth/src/flows/FlowHome";
-import FlowLogin from "@revolt/auth/src/flows/FlowLogin";
-import FlowResend from "@revolt/auth/src/flows/FlowResend";
-import FlowReset from "@revolt/auth/src/flows/FlowReset";
-import FlowVerify from "@revolt/auth/src/flows/FlowVerify";
 import { ClientContext, SoundContext, useClient } from "@revolt/client";
 import { DeviceContext } from "@revolt/common";
 import { I18nProvider } from "@revolt/i18n";
@@ -150,14 +143,11 @@ const routes = () => (
   <Route component={MountContext}>
     <Route path="/login" component={AuthPage as never}>
       <Route path="/delete/:token" component={FlowDeleteAccount} />
-      <Route path="/check" component={FlowCheck} />
-      <Route path="/create" component={FlowCreate} />
-      <Route path="/create/:code" component={FlowCreate} />
-      <Route path="/auth" component={FlowLogin} />
-      <Route path="/resend" component={FlowResend} />
-      <Route path="/reset" component={FlowReset} />
-      <Route path="/verify/:token" component={FlowVerify} />
-      <Route path="/reset/:token" component={FlowConfirmReset} />
+      {/* Awakyn: Google is the only way in; email and password pages go to sign-in */}
+      <Route
+        path={["/check", "/create/*", "/auth", "/resend", "/reset/*", "/verify/*"]}
+        component={() => <Navigate href="/login" />}
+      />
       <Route path="/*" component={FlowHome} />
     </Route>
     <Route path="/" component={Interface as never}>

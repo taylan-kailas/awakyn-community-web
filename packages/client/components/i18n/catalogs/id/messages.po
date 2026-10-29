@@ -1904,8 +1904,8 @@ msgid "Load file ({0})"
 msgstr "Muat berkas ({0})"
 
 #: components/auth/src/flows/FlowHome.tsx
-msgid "Log In"
-msgstr "Masuk"
+#~ msgid "Log In"
+#~ msgstr "Masuk"
 
 #: components/app/interface/settings/user/Sessions.tsx
 #: components/app/interface/settings/UserSettings.tsx
@@ -2958,8 +2958,8 @@ msgstr "Tampilkan tombol kirim pesan"
 #~ msgstr "Masuk ke dalam Stoat"
 
 #: components/auth/src/flows/FlowHome.tsx
-msgid "Sign Up"
-msgstr "Daftar"
+#~ msgid "Sign Up"
+#~ msgstr "Daftar"
 
 #: components/app/interface/channels/text/Message.tsx
 msgid "Silent"

@@ -1900,8 +1900,8 @@ msgid "Load file ({0})"
 msgstr ""
 
 #: components/auth/src/flows/FlowHome.tsx
-msgid "Log In"
-msgstr ""
+#~ msgid "Log In"
+#~ msgstr ""
 
 #: components/app/interface/settings/user/Sessions.tsx
 #: components/app/interface/settings/UserSettings.tsx
@@ -2953,8 +2953,8 @@ msgstr ""
 #~ msgstr ""
 
 #: components/auth/src/flows/FlowHome.tsx
-msgid "Sign Up"
-msgstr ""
+#~ msgid "Sign Up"
+#~ msgstr ""
 
 #: components/app/interface/channels/text/Message.tsx
 msgid "Silent"

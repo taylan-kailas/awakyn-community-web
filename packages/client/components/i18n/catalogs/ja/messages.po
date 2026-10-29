@@ -1797,8 +1797,8 @@ msgid "Load file ({0})"
 msgstr "読み込む ({0})"
 
 #: components/auth/src/flows/FlowHome.tsx
-msgid "Log In"
-msgstr "ログイン"
+#~ msgid "Log In"
+#~ msgstr "ログイン"
 
 #: components/app/interface/settings/user/Sessions.tsx
 #: components/app/interface/settings/UserSettings.tsx
@@ -2841,8 +2841,8 @@ msgstr ""
 #~ msgstr ""
 
 #: components/auth/src/flows/FlowHome.tsx
-msgid "Sign Up"
-msgstr "登録"
+#~ msgid "Sign Up"
+#~ msgstr "登録"
 
 #: components/app/interface/channels/text/Message.tsx
 msgid "Silent"

@@ -1,12 +1,19 @@
 #!/usr/bin/env bash
 # Builds the web app to be served under /community-app/ (Vercel output: out/).
-# Needs AWAKYN_API_ORIGIN, e.g. https://awakyn-community.tailf659bc.ts.net
+# Needs AWAKYN_API_ORIGIN, e.g. https://awakyn-community.tailf659bc.ts.net, and
+# the Google sign-in settings VITE_FIREBASE_API_KEY, VITE_FIREBASE_AUTH_DOMAIN,
+# VITE_FIREBASE_PROJECT_ID, VITE_FIREBASE_APP_ID (public values; the same as
+# awakyn-website-v2's NEXT_PUBLIC_FIREBASE_* ones).
 set -euo pipefail
 
 APP_PATH="community-app"
 ORIGIN="${AWAKYN_API_ORIGIN:?Set AWAKYN_API_ORIGIN to the Stoat server address}"
 ORIGIN="${ORIGIN%/}"
 PNPM="${PNPM:-npx -y pnpm@11.3.0}"
+for name in VITE_FIREBASE_API_KEY VITE_FIREBASE_AUTH_DOMAIN VITE_FIREBASE_PROJECT_ID VITE_FIREBASE_APP_ID; do
+  [ -n "${!name:-}" ] || { echo "Set $name (Google sign-in settings) before building." >&2; exit 1; }
+  export "$name"
+done
 
 cd "$(dirname "$0")/.."
 $PNPM install --frozen-lockfile

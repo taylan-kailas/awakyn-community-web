@@ -12,6 +12,7 @@ import { useState } from "@revolt/state";
 // Awakyn: our wordmark instead of Stoat's
 import { BRAND } from "../../../../src/awakyn/brand";
 import { Wordmark } from "../../../../src/awakyn/Wordmark";
+import { GoogleButton } from "../../../../src/awakyn/GoogleButton";
 
 /**
  * Flow for logging into an account
@@ -56,22 +57,8 @@ export default function FlowHome() {
               </span>
             </Column>
 
-            <Column>
-              <a href="/login/auth">
-                <Column>
-                  <Button>
-                    <Trans>Log In</Trans>
-                  </Button>
-                </Column>
-              </a>
-              <a href="/login/create">
-                <Column>
-                  <Button variant="tonal">
-                    <Trans>Sign Up</Trans>
-                  </Button>
-                </Column>
-              </a>
-            </Column>
+            {/* Awakyn: Google is the only way in */}
+            <GoogleButton />
           </Column>
         </>
       }

@@ -542,6 +542,11 @@ export default class ClientController {
       return;
     }
 
+    this.loginWithSession(session);
+  }
+
+  // Awakyn: also used for sessions the Awakyn gateway hands out (guests, Google)
+  loginWithSession(session: { _id: string; token: string; user_id: string }) {
     const createdSession = {
       _id: session._id,
       token: session.token,

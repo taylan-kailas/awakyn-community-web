@@ -1904,8 +1904,8 @@ msgid "Load file ({0})"
 msgstr "Fájl betöltése ({0})"
 
 #: components/auth/src/flows/FlowHome.tsx
-msgid "Log In"
-msgstr "Bejelentkezés"
+#~ msgid "Log In"
+#~ msgstr "Bejelentkezés"
 
 #: components/app/interface/settings/user/Sessions.tsx
 #: components/app/interface/settings/UserSettings.tsx
@@ -2958,8 +2958,8 @@ msgstr ""
 #~ msgstr "Bejelentkezés a Stoat-ba"
 
 #: components/auth/src/flows/FlowHome.tsx
-msgid "Sign Up"
-msgstr "Fiók létrehozása"
+#~ msgid "Sign Up"
+#~ msgstr "Fiók létrehozása"
 
 #: components/app/interface/channels/text/Message.tsx
 msgid "Silent"
