@@ -16,6 +16,7 @@ import { LoadingScreen, useSnackbar } from "@revolt/ui";
 
 import Instance, { _newClient } from "./Instance";
 import { OfflineScreen } from "../../src/awakyn/OfflineScreen";
+import { CONNECT_TIMEOUT_MS, isUnreachable, withTimeout } from "../../src/awakyn/reachability";
 
 export const StoatOrigin = new URL(`https://${STOAT_HOST}`).origin;
 export const DefaultURL = new URL(`https://${CONFIGURATION.DEFAULT_HOST}`);
@@ -54,7 +55,6 @@ export function InstanceContext(props: { children?: JSXElement }) {
   // Awakyn: an unreachable server (Taylan's PC off) shows the offline screen,
   // whose "Try again" re-runs this connect step.
   const [offline, setOffline] = createSignal(false);
-  const isUnreachable = (e: unknown) => (e as Error)?.message === "Failed to fetch";
 
   async function connect() {
     const appCfg: AppConfig = host
@@ -62,7 +62,7 @@ export function InstanceContext(props: { children?: JSXElement }) {
       : { api: CONFIGURATION.DEFAULT_API_URL };
 
     const cli = _newClient(appCfg.api);
-    await cli.initConfig();
+    await withTimeout(cli.initConfig(), CONNECT_TIMEOUT_MS);
     setInst(new Instance(appCfg, cli, host, nav));
     setOffline(false);
   }

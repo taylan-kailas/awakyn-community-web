@@ -35,6 +35,9 @@ import {
 
 import MDPalette from "@material-design-icons/svg/outlined/palette.svg?component-solid";
 
+// Awakyn: the theme always wins over these pickers, so they are hidden.
+const AWAKYN_THEME_IS_FIXED = true;
+
 /**
  * All appearance options for the client
  */
@@ -109,7 +112,8 @@ export function AppearanceMenu() {
           </Button>
         </Row> */}
 
-        <Show when={state.theme.preset === "you"}>
+        {/* Awakyn: colours come from the Awakyn theme, so no accent/contrast/style pickers */}
+        <Show when={!AWAKYN_THEME_IS_FIXED && state.theme.preset === "you"}>
           <Row align justify wrap>
             <IconButton
               ref={setPickerRef}
@@ -360,6 +364,8 @@ export function AppearanceMenu() {
         }
       />
 
+      {/* Awakyn: the interface font comes from the Awakyn theme */}
+      <Show when={!AWAKYN_THEME_IS_FIXED}>
       <FloatingSelect
         label={t`Interface Font`}
         value={state.theme.interfaceFont}
@@ -376,6 +382,7 @@ export function AppearanceMenu() {
           )}
         </For>
       </FloatingSelect>
+      </Show>
 
       <FloatingSelect
         label={t`Monospace Font`}

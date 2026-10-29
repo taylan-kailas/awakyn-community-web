@@ -11,6 +11,7 @@ import Instance from "../instance/Instance";
 import { killServiceWorkerSubscription } from "./NotificationsController";
 // Awakyn: signed-in devices carry our name
 import { BRAND } from "../../src/awakyn/brand";
+import { reconnectWaitSeconds } from "../../src/awakyn/reconnect";
 
 export enum State {
   Ready = "Ready",
@@ -187,9 +188,11 @@ class Lifecycle {
             type: TransitionType.DeviceOffline,
           });
         } else {
-          const retryIn =
-            (Math.pow(2, this.#connectionFailures) - 1) *
-            (0.8 + Math.random() * 0.4);
+          // Awakyn: capped, so long outages don't leave members waiting hours
+          const retryIn = reconnectWaitSeconds(
+            this.#connectionFailures,
+            Math.random(),
+          );
 
           console.info(
             "Will try to reconnect in",
@@ -490,7 +493,7 @@ export default class ClientController {
 
       friendly_name = `${BRAND.name} (${name} on ${os})`;
     } else {
-      friendly_name = "Stoat for Web (Unknown Device)";
+      friendly_name = `${BRAND.name} (Unknown Device)`;
     }
 
     // Try to login with given credentials

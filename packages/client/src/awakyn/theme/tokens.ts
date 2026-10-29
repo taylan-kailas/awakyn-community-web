@@ -10,7 +10,10 @@ export type AwakynPalette = {
   bg2: string;
   bg3: string;
   text: string;
+  /** Quieter text; kept readable (at least 4.5:1) on every background. */
   muted: string;
+  /** Selected items and filled tonal buttons; must stand out from bg2 and bg3. */
+  selected: string;
   faint: string;
   onInk: string;
   danger: string;
@@ -43,7 +46,9 @@ export const AWAKYN_THEME: AwakynTheme = {
     bg2: "#ede6d2",
     bg3: "#e7dec8",
     text: "#2b2823",
-    muted: "#8e8676",
+    // The website's #8e8676 is too faint for small app text; darkened to read.
+    muted: "#655e4f",
+    selected: "#cdbe9d",
     faint: "#b7ae9b",
     onInk: "#f3eddd",
     // Awakyn has no warning/success colours; these sit in its warm range.
@@ -55,7 +60,9 @@ export const AWAKYN_THEME: AwakynTheme = {
     bg2: "#211b15",
     bg3: "#2a231b",
     text: "#ece4d3",
-    muted: "#8c8375",
+    // The website's #8c8375 is a touch faint on bg3; lightened to read.
+    muted: "#a39886",
+    selected: "#4a3d2e",
     faint: "#5e574c",
     onInk: "#1a1611",
     danger: "#e07a5f",

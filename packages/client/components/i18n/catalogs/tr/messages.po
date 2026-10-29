@@ -1191,8 +1191,8 @@ msgid "Desktop"
 msgstr "Masaüstü"
 
 #: components/app/interface/settings/user/bots/MyBots.tsx
-msgid "Developer Documentation"
-msgstr "Geliştirici Dokümantasyonu"
+#~ msgid "Developer Documentation"
+#~ msgstr "Geliştirici Dokümantasyonu"
 
 #: components/app/interface/settings/user/Account.tsx
 msgid "Disable Account"
@@ -1462,7 +1462,6 @@ msgid "Failed to verify!"
 msgstr "Doğrulanamadı!"
 
 #: components/app/interface/settings/user/Feedback.tsx
-#: components/app/interface/settings/UserSettings.tsx
 msgid "Feedback"
 msgstr "Geri Bildirim"
 
@@ -1830,8 +1829,8 @@ msgid "Learn more"
 msgstr "Daha fazla bilgi edin"
 
 #: components/app/interface/settings/user/bots/MyBots.tsx
-msgid "Learn more about how to create bots on Stoat."
-msgstr "Stoat'ta nasıl bot oluşturabileceğiniz hakkında bilgi edinin."
+#~ msgid "Learn more about how to create bots on Stoat."
+#~ msgstr "Stoat'ta nasıl bot oluşturabileceğiniz hakkında bilgi edinin."
 
 #: components/modal/modals/DeleteChannel.tsx
 #: components/modal/modals/LeaveServer.tsx

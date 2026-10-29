@@ -1183,8 +1183,8 @@ msgid "Desktop"
 msgstr "Escritorio"
 
 #: components/app/interface/settings/user/bots/MyBots.tsx
-msgid "Developer Documentation"
-msgstr "Documentación para desarrolladores"
+#~ msgid "Developer Documentation"
+#~ msgstr "Documentación para desarrolladores"
 
 #: components/app/interface/settings/user/Account.tsx
 msgid "Disable Account"
@@ -1450,7 +1450,6 @@ msgid "Failed to verify!"
 msgstr "¡Error al verificar!"
 
 #: components/app/interface/settings/user/Feedback.tsx
-#: components/app/interface/settings/UserSettings.tsx
 msgid "Feedback"
 msgstr "Comentarios"
 
@@ -1815,8 +1814,8 @@ msgid "Learn more"
 msgstr "Más información"
 
 #: components/app/interface/settings/user/bots/MyBots.tsx
-msgid "Learn more about how to create bots on Stoat."
-msgstr "Aprende más sobre como crear bots en Stoat."
+#~ msgid "Learn more about how to create bots on Stoat."
+#~ msgstr "Aprende más sobre como crear bots en Stoat."
 
 #: components/modal/modals/DeleteChannel.tsx
 #: components/modal/modals/LeaveServer.tsx

@@ -6,6 +6,7 @@ import { AppConfig, STOAT_HOST } from "@revolt/common/lib/env";
 import { Client, UserLimits } from "stoat.js";
 
 import { DefaultHost } from ".";
+import { appAddress } from "../../src/awakyn/appAddress";
 
 const R_RelPath = /^\/i\/[^/]+/;
 
@@ -54,8 +55,8 @@ export default class Instance {
     this.host = host || undefined;
     if (!host) host = DefaultHost;
 
-    const hostUrl = new URL(`https://${host}`);
-    this.origin = hostUrl.origin;
+    // Awakyn: shared links point at the app's own page, not the server
+    this.origin = appAddress(location.origin, import.meta.env.BASE_URL);
     this.isStoat = host === STOAT_HOST;
     this.#nav = nav;
   }
