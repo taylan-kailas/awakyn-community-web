@@ -22,7 +22,6 @@ import { SlideState } from "@revolt/ui/components/navigation/SlideDrawer";
 
 import { VoiceCallCardActiveRoom } from "./VoiceCallCardActiveRoom";
 import { VoiceCallCardPiP } from "./VoiceCallCardPiP";
-import { VoiceCallCardPreview } from "./VoiceCallCardPreview";
 
 type Mode = "floating" | "moving";
 type FloatType = "tl" | "tr" | "bl" | "br";
@@ -275,15 +274,11 @@ function VoiceCallCard(props: {
   fullscreen: boolean;
 }) {
   return (
-    <Show when={props.showCard}>
+    // Awakyn: no "Join the voice channel" card; clicking the channel joins it.
+    <Show when={props.showCard && props.inCall}>
       <Base fullscreen={props.fullscreen}>
-        <Card active={props.inCall} fullscreen={props.fullscreen}>
-          <Show
-            when={props.inCall}
-            fallback={<VoiceCallCardPreview channel={props.channel} />}
-          >
-            <VoiceCallCardActiveRoom />
-          </Show>
+        <Card active fullscreen={props.fullscreen}>
+          <VoiceCallCardActiveRoom />
         </Card>
       </Base>
     </Show>

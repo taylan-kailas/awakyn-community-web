@@ -312,8 +312,8 @@ msgid "Accept"
 msgstr "Hyväksy"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Accept friend request"
-msgstr "Hyväksy kaveripyyntö"
+#~ msgid "Accept friend request"
+#~ msgstr "Hyväksy kaveripyyntö"
 
 #: components/modal/modals/PolicyChange.tsx
 msgid "Acknowledge"
@@ -326,25 +326,30 @@ msgstr "Lisää"
 
 #: components/modal/modals/AddFriend.tsx
 #: src/interface/Friends.tsx
-msgid "Add a new friend"
-msgstr "Lisää uusi kaveri"
+#~ msgid "Add a new friend"
+#~ msgstr "Lisää uusi kaveri"
 
 #: components/ui/components/features/profiles/ProfileActions.tsx
 msgid "Add Bot"
 msgstr "Lisää Botti"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Add friend"
-msgstr "Lisää kaveri"
+#~ msgid "Add friend"
+#~ msgstr "Lisää kaveri"
 
 #: components/modal/modals/AddMembersToGroup.tsx
 #: src/interface/channels/ChannelHeader.tsx
-msgid "Add friends to group"
-msgstr "Lisää kavereita ryhmään"
+#~ msgid "Add friends to group"
+#~ msgstr "Lisää kavereita ryhmään"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Add new members to the group"
 msgstr "Lisätä uusia jäseniä ryhmään"
+
+#: components/modal/modals/AddMembersToGroup.tsx
+#: src/interface/channels/ChannelHeader.tsx
+msgid "Add people to group"
+msgstr ""
 
 #: src/interface/navigation/servers/UserMenu.tsx
 msgid "Add status text"
@@ -369,8 +374,8 @@ msgstr "Edistynyt"
 #~ msgstr "Vaikuttaa kaikkiin rooleihin ja käyttäjiin"
 
 #: src/interface/Friends.tsx
-msgid "All"
-msgstr "Kaikki"
+#~ msgid "All"
+#~ msgstr "Kaikki"
 
 #: components/app/menus/ServerContextMenu.tsx
 #: components/app/menus/shared/NotificationContextMenu.tsx
@@ -531,8 +536,8 @@ msgid "Block user"
 msgstr "Estä käyttäjä"
 
 #: src/interface/Friends.tsx
-msgid "Blocked"
-msgstr "Estetty"
+#~ msgid "Blocked"
+#~ msgstr "Estetty"
 
 #: components/ui/components/features/messaging/elements/MessageReply.tsx
 msgid "Blocked User"
@@ -613,8 +618,8 @@ msgid "Cancel"
 msgstr "Peruuta"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Cancel friend request"
-msgstr "Peru ystäväpyyntö"
+#~ msgid "Cancel friend request"
+#~ msgstr "Peru ystäväpyyntö"
 
 #: components/app/menus/DraftMessageContextMenu.tsx
 msgid "Cancel message"
@@ -760,7 +765,6 @@ msgstr "Klikkaa näyttääksesi spoilerin"
 msgid "Client Settings"
 msgstr "Sovelluksen asetukset"
 
-#: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/AddMembersToGroup.tsx
 #: components/modal/modals/Changelog.tsx
 #: components/modal/modals/ChannelInfo.tsx
@@ -782,7 +786,6 @@ msgstr "Sovelluksen asetukset"
 #: components/modal/modals/LinkWarning.tsx
 #: components/modal/modals/PolicyChange.tsx
 #: components/modal/modals/ServerInfo.tsx
-#: components/modal/modals/UserProfileMutualFriends.tsx
 #: components/modal/modals/UserProfileMutualGroups.tsx
 #: components/modal/modals/UserProfileRoles.tsx
 msgid "Close"
@@ -860,8 +863,8 @@ msgid "Contribute a language"
 msgstr "Lisää kieli"
 
 #: src/interface/navigation/channels/HomeSidebar.tsx
-msgid "Conversations"
-msgstr "Keskustelut"
+#~ msgid "Conversations"
+#~ msgstr "Keskustelut"
 
 #: components/ui/components/features/profiles/ProfileBanner.tsx
 msgid "Copied!"
@@ -1191,6 +1194,12 @@ msgstr "Työpöytä"
 #~ msgid "Developer Documentation"
 #~ msgstr "Kehittäjätiedot"
 
+#: src/interface/Home.tsx
+#: src/interface/navigation/channels/HomeSidebar.tsx
+#: src/interface/navigation/servers/ServerList.tsx
+msgid "Direct Messages"
+msgstr ""
+
 #: components/app/interface/settings/user/Account.tsx
 #~ msgid "Disable Account"
 #~ msgstr "Poista tili käytöstä"
@@ -1507,8 +1516,8 @@ msgstr "8 tunnin ajan"
 
 #: src/interface/Friends.tsx
 #: src/interface/navigation/channels/HomeSidebar.tsx
-msgid "Friends"
-msgstr "Kaverit"
+#~ msgid "Friends"
+#~ msgstr "Kaverit"
 
 #: components/ui/components/features/messaging/composition/picker/EmojiPicker.tsx
 msgid "from "
@@ -1650,8 +1659,8 @@ msgstr ""
 
 #: src/interface/Home.tsx
 #: src/interface/navigation/channels/HomeSidebar.tsx
-msgid "Home"
-msgstr "Koti"
+#~ msgid "Home"
+#~ msgstr "Koti"
 
 #: src/interface/channels/AgeGate.tsx
 msgid "I confirm that I am at least 18 years old."
@@ -1760,7 +1769,6 @@ msgstr "Liity palvelimelle"
 msgid "Join the Stoat Lounge"
 msgstr "Liity Stoat Loungeen"
 
-#: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
 #: src/interface/channels/ChannelHeader.tsx
 msgid "Join the voice channel"
 msgstr "Liity puhekanavalle"
@@ -2114,8 +2122,8 @@ msgid "Muted until <0/>"
 msgstr "Mykistetty <0/> asti"
 
 #: components/modal/modals/UserProfileMutualFriends.tsx
-msgid "Mutual Friends"
-msgstr "Yhteiset kaverit"
+#~ msgid "Mutual Friends"
+#~ msgstr "Yhteiset kaverit"
 
 #: components/modal/modals/UserProfileMutualGroups.tsx
 msgid "Mutual Groups"
@@ -2181,8 +2189,8 @@ msgid "No role overrides have been configured."
 msgstr ""
 
 #: src/interface/Friends.tsx
-msgid "Nobody here right now!"
-msgstr "Ketään ei ole täällä tällä hetkellä!"
+#~ msgid "Nobody here right now!"
+#~ msgstr "Ketään ei ole täällä tällä hetkellä!"
 
 #: components/app/menus/ServerContextMenu.tsx
 #: components/app/menus/shared/NotificationContextMenu.tsx
@@ -2254,7 +2262,6 @@ msgstr ""
 
 #: components/ui/components/features/profiles/ProfileStatus.tsx
 #: src/interface/channels/text/MemberSidebar.tsx
-#: src/interface/Friends.tsx
 #: src/interface/navigation/channels/HomeSidebar.tsx
 #: src/interface/navigation/servers/UserMenu.tsx
 msgid "Online"
@@ -2290,8 +2297,8 @@ msgid "Open server settings"
 msgstr "Avaa palvelimen asetukset"
 
 #: src/interface/Home.tsx
-msgid "Open settings"
-msgstr "Avaa asetukset"
+#~ msgid "Open settings"
+#~ msgstr "Avaa asetukset"
 
 #: components/modal/modals/ReportContent.tsx
 msgid "Other"
@@ -2328,8 +2335,8 @@ msgid "Password changed successfully."
 msgstr ""
 
 #: src/interface/Friends.tsx
-msgid "Pending"
-msgstr "Vireillä"
+#~ msgid "Pending"
+#~ msgstr "Vireillä"
 
 #: components/app/interface/settings/ChannelSettings.tsx
 msgid "Permissions"
@@ -2513,8 +2520,8 @@ msgid "Registered since <0/>"
 msgstr "Rekisteröitynyt <0/> lähtien"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Reject friend request"
-msgstr "Hylkää kaveripyyntö"
+#~ msgid "Reject friend request"
+#~ msgstr "Hylkää kaveripyyntö"
 
 #: src/interface/channels/text/TextSearchSidebar.tsx
 msgid "Relevance"
@@ -2545,8 +2552,8 @@ msgid "Remove Avatars"
 msgstr "Profiilikuvien poistaminen"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Remove friend"
-msgstr "Poista kaveri"
+#~ msgid "Remove friend"
+#~ msgstr "Poista kaveri"
 
 #: components/app/menus/UserContextMenu.tsx
 #: components/modal/modals/RemoveMember.tsx
@@ -2713,7 +2720,6 @@ msgid "Save to your notes"
 msgstr "Tallenna muistiinpanoihisi"
 
 #: src/interface/channels/ChannelHeader.tsx
-#: src/interface/navigation/channels/HomeSidebar.tsx
 msgid "Saved Notes"
 msgstr "Tallennetut muistiinpanot"
 
@@ -2807,8 +2813,8 @@ msgid "Send messages in channels"
 msgstr "Voi lähettää viestejä kaikilla kanavilla"
 
 #: components/modal/modals/AddFriend.tsx
-msgid "Send Request"
-msgstr "Lähetä pyyntö"
+#~ msgid "Send Request"
+#~ msgstr "Lähetä pyyntö"
 
 #: components/app/interface/channels/text/DraftMessage.tsx
 msgid "Sending..."
@@ -2990,8 +2996,8 @@ msgid "Start Minimised to Tray"
 msgstr ""
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "Start the call"
-msgstr "Aloita puhelu"
+#~ msgid "Start the call"
+#~ msgstr "Aloita puhelu"
 
 #: components/app/interface/settings/user/Native.tsx
 msgid "Start with Computer"
@@ -3073,8 +3079,8 @@ msgstr "Ehdota uusia toimintoja Stoatiin Github-keskusteluissa."
 #~ msgstr "Tue projektia lahjoittamalla - kiitos!"
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "Switch to this voice channel"
-msgstr "Vaihda tähän puhekanavaan"
+#~ msgid "Switch to this voice channel"
+#~ msgstr "Vaihda tähän puhekanavaan"
 
 #: components/app/interface/settings/user/Sync.tsx
 msgid "Sync appearance options, such as chosen emoji pack and message density."
@@ -3398,7 +3404,6 @@ msgid "User's profile has inappropriate content"
 msgstr "Käyttäjän profiili sisältää asiatonta sisältöä"
 
 #: components/auth/src/flows/Form.tsx
-#: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/CreateBot.tsx
 #: components/modal/modals/EditBotUsername.tsx
 #: components/modal/modals/EditUsername.tsx
@@ -3407,8 +3412,8 @@ msgid "Username"
 msgstr "Käyttäjätunnus"
 
 #: components/modal/modals/AddFriend.tsx
-msgid "username#1234"
-msgstr "käyttäjä#1234"
+#~ msgid "username#1234"
+#~ msgstr "käyttäjä#1234"
 
 #: components/modal/modals/ChannelToggleMature.tsx
 msgid "Users will be asked to confirm their age before joining this channel."
@@ -3547,8 +3552,8 @@ msgstr "Voivatko muut käyttäjät muokata näitä asetuksia"
 
 #. placeholder {0}: names.join(", ")
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "with {0}"
-msgstr ""
+#~ msgid "with {0}"
+#~ msgstr ""
 
 #. placeholder {0}: names.join(", ")
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
@@ -3557,8 +3562,8 @@ msgstr ""
 
 #. placeholder {0}: names.length
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "with {0} others"
-msgstr ""
+#~ msgid "with {0} others"
+#~ msgstr ""
 
 #: components/modal/modals/CreateGroupOrServer.tsx
 msgid "Would you like to create a new group or server?"
@@ -3589,8 +3594,8 @@ msgid "You are banned from this server."
 msgstr "Sinut on bannattu palvelimelta."
 
 #: src/interface/Home.tsx
-msgid "You can also click the gear icon in the bottom left."
-msgstr "Voit myös painaa hammaspyöräkuvaketta alavasemmalla."
+#~ msgid "You can also click the gear icon in the bottom left."
+#~ msgstr "Voit myös painaa hammaspyöräkuvaketta alavasemmalla."
 
 #~ msgid "You can also right-click the user icon in the top left, or left click it if you're already home."
 #~ msgstr "Voit myös napsauttaa oikealla klikkauksella vasemmassa yläkulmassa olevaa käyttäjäkuvaketta, tai napsauttaa sitä vasemmalla klikkauksella, jos olet jo kotona."

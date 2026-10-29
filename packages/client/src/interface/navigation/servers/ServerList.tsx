@@ -1,11 +1,10 @@
-import { Accessor, For, JSX, Show, createMemo, createSignal } from "solid-js";
+import { Accessor, JSX, Show, createSignal } from "solid-js";
 
-import { Trans } from "@lingui/solid/macro";
+import { Trans, useLingui } from "@lingui/solid/macro";
 import { Channel, Server, User } from "stoat.js";
 import { cva } from "styled-system/css";
 import { styled } from "styled-system/jsx";
 
-import { useClient } from "@revolt/client";
 import { useDevice } from "@revolt/common";
 import { KeybindAction, createKeybind } from "@revolt/keybinds";
 import { useModals } from "@revolt/modal";
@@ -14,12 +13,13 @@ import { useState } from "@revolt/state";
 import { Avatar, Column, Text, Time, Unreads, UserStatus } from "@revolt/ui";
 import { VoiceStatus } from "@revolt/ui/components/design/VoiceStatus";
 
+import MdChat from "@material-design-icons/svg/filled/chat.svg?component-solid";
 import MdSettings from "@material-design-icons/svg/filled/settings.svg?component-solid";
 
-// Awakyn: lotus home button
-import { Lotus } from "../../../awakyn/Lotus";
+// Awakyn: direct messages sit under the community instead of a home button
 import { Tooltip } from "../../../../components/ui/components/floating";
 import { Draggable } from "../../../../components/ui/components/utils/Draggable";
+import { DIRECT_MESSAGES_PATH } from "../../../awakyn/paths";
 import { UserMenu } from "./UserMenu";
 
 interface Props {
@@ -64,8 +64,8 @@ interface Props {
  * Server list sidebar component
  */
 export const ServerList = (props: Props) => {
+  const { t } = useLingui();
   const state = useState();
-  const client = useClient();
   const navigate = useNavigate();
   const { isMobile } = useDevice();
   const { openModal } = useModals();
@@ -90,7 +90,7 @@ export const ServerList = (props: Props) => {
     const nextIndex = currentServerIndex + byOffset;
 
     if (nextIndex === -1) {
-      return navigate("/app");
+      return navigate(DIRECT_MESSAGES_PATH);
     }
 
     // this will wrap the index around
@@ -106,10 +106,7 @@ export const ServerList = (props: Props) => {
   createKeybind(KeybindAction.NAVIGATION_SERVER_UP, () => navigateServer(-1));
   createKeybind(KeybindAction.NAVIGATION_SERVER_DOWN, () => navigateServer(1));
 
-  const homeNotifications = createMemo(() => {
-    return client().users.filter((user) => user.relationship === "Incoming")
-      .length;
-  });
+  const unreadConversationCount = () => props.unreadConversations.length;
 
   // Ref for floating menu
   const [menuButton, setMenuButton] = createSignal<HTMLDivElement>();
@@ -117,32 +114,6 @@ export const ServerList = (props: Props) => {
   return (
     <ServerListBase>
       <div use:invisibleScrollable={{ direction: "y", class: listBase() }}>
-        <a
-          class={entryContainer({
-            indicator: !props.selectedServer() ? "selected" : undefined,
-          })}
-          href="/app"
-          use:floating={{
-            tooltip: {
-              content: `You have ${homeNotifications()} pending friend requests.`,
-              placement: "right",
-            },
-          }}
-        >
-          <Avatar
-            size={42}
-            fallback={<Lotus size={26} />}
-            holepunch={homeNotifications() ? "top-right" : undefined}
-            overlay={
-              <Show when={homeNotifications()}>
-                <Unreads.Graphic
-                  unread={homeNotifications() !== 0}
-                  count={homeNotifications()}
-                />
-              </Show>
-            }
-          />
-        </a>
         <Tooltip
           placement="right"
           content={() => (
@@ -166,46 +137,6 @@ export const ServerList = (props: Props) => {
           </a>
           <UserMenu anchor={menuButton} />
         </Tooltip>
-        <For each={props.unreadConversations.slice(0, 9)}>
-          {(conversation) => (
-            <Tooltip placement="right" content={conversation.displayName}>
-              <a
-                class={entryContainer()}
-                use:floating={props.menuGenerator(conversation)}
-                href={`/channel/${conversation.id}`}
-              >
-                <Avatar
-                  size={42}
-                  // TODO: fix this
-                  src={conversation.iconURL}
-                  holepunch={conversation.unread ? "top-right" : "none"}
-                  overlay={
-                    <>
-                      <Show when={conversation.unread}>
-                        <Unreads.Graphic
-                          count={conversation.mentions?.size ?? 0}
-                          unread
-                        />
-                      </Show>
-                    </>
-                  }
-                  fallback={
-                    conversation.name ?? conversation.recipient?.username
-                  }
-                  interactive
-                />
-              </a>
-            </Tooltip>
-          )}
-        </For>
-        <Show when={props.unreadConversations.length > 9}>
-          <a class={entryContainer()} href={`/`}>
-            <Avatar
-              size={42}
-              fallback={<>+{props.unreadConversations.length - 9}</>}
-            />
-          </a>
-        </Show>
         <LineDivider />
         <Draggable
           type="servers"
@@ -303,6 +234,30 @@ export const ServerList = (props: Props) => {
           )}
         </Draggable>
         {/* Awakyn: one community only; no create, join or discover buttons */}
+        <Tooltip placement="right" content={t`Direct Messages`}>
+          <a
+            class={entryContainer({
+              indicator: !props.selectedServer()
+                ? "selected"
+                : unreadConversationCount()
+                  ? "alert"
+                  : undefined,
+            })}
+            href={DIRECT_MESSAGES_PATH}
+          >
+            <Avatar
+              size={42}
+              fallback={<MdChat />}
+              holepunch={unreadConversationCount() ? "top-right" : undefined}
+              overlay={
+                <Show when={unreadConversationCount()}>
+                  <Unreads.Graphic unread count={unreadConversationCount()} />
+                </Show>
+              }
+              interactive
+            />
+          </a>
+        </Tooltip>
       </div>
       <Shadow>
         <div />

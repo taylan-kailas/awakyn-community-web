@@ -13,10 +13,10 @@ const APP_SECTIONS = new Set([
   "channel",
   "dev",
   "discover",
-  "friends",
   "i",
   "invite",
   "login",
+  "messages",
   "pwa",
   "server",
   "settings",
@@ -36,7 +36,8 @@ export function pathInsideApp(pathname: string, base: string): string | null {
  * the folder — the router adds the folder back itself when it navigates.
  */
 export function pathWithinApp(pathname: string, base: string): string {
-  if (!base || !(pathname === base || pathname.startsWith(`${base}/`))) return pathname;
+  if (!base || !(pathname === base || pathname.startsWith(`${base}/`)))
+    return pathname;
   return pathname.slice(base.length) || "/";
 }
 

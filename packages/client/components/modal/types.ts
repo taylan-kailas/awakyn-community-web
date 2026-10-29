@@ -33,10 +33,6 @@ export type Modals =
       invite: PublicBot;
     }
   | {
-      type: "add_friend";
-      client: Client;
-    }
-  | {
       type: "add_members_to_group";
       client: Client;
       group: Channel;
@@ -284,11 +280,6 @@ export type Modals =
   | {
       type: "user_profile_roles";
       member: ServerMember;
-    }
-  | {
-      type: "user_profile_mutual_friends";
-      users: User[];
-      server?: Server;
     }
   | {
       type: "user_profile_mutual_groups";

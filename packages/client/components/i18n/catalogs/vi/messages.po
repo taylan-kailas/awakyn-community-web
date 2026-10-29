@@ -333,8 +333,8 @@ msgid "Accept"
 msgstr "Chấp nhận"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Accept friend request"
-msgstr "Chấp nhận kết bạn"
+#~ msgid "Accept friend request"
+#~ msgstr "Chấp nhận kết bạn"
 
 #: components/modal/modals/PolicyChange.tsx
 msgid "Acknowledge"
@@ -347,25 +347,30 @@ msgstr "Thêm"
 
 #: components/modal/modals/AddFriend.tsx
 #: src/interface/Friends.tsx
-msgid "Add a new friend"
-msgstr "Thêm bạn mới"
+#~ msgid "Add a new friend"
+#~ msgstr "Thêm bạn mới"
 
 #: components/ui/components/features/profiles/ProfileActions.tsx
 msgid "Add Bot"
 msgstr ""
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Add friend"
-msgstr "Thêm bạn"
+#~ msgid "Add friend"
+#~ msgstr "Thêm bạn"
 
 #: components/modal/modals/AddMembersToGroup.tsx
 #: src/interface/channels/ChannelHeader.tsx
-msgid "Add friends to group"
-msgstr "Thêm bạn bè vào nhóm"
+#~ msgid "Add friends to group"
+#~ msgstr "Thêm bạn bè vào nhóm"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Add new members to the group"
 msgstr "Thêm thành viên mới vào nhóm"
+
+#: components/modal/modals/AddMembersToGroup.tsx
+#: src/interface/channels/ChannelHeader.tsx
+msgid "Add people to group"
+msgstr ""
 
 #: src/interface/navigation/servers/UserMenu.tsx
 msgid "Add status text"
@@ -392,8 +397,8 @@ msgstr "Nâng cao"
 #~ msgstr ""
 
 #: src/interface/Friends.tsx
-msgid "All"
-msgstr "Tất cả"
+#~ msgid "All"
+#~ msgstr "Tất cả"
 
 #: components/app/menus/ServerContextMenu.tsx
 #: components/app/menus/shared/NotificationContextMenu.tsx
@@ -554,8 +559,8 @@ msgid "Block user"
 msgstr "Chặn người dùng"
 
 #: src/interface/Friends.tsx
-msgid "Blocked"
-msgstr "Bị chặn"
+#~ msgid "Blocked"
+#~ msgstr "Bị chặn"
 
 #: components/ui/components/features/messaging/elements/MessageReply.tsx
 msgid "Blocked User"
@@ -636,8 +641,8 @@ msgid "Cancel"
 msgstr "Hủy bỏ"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Cancel friend request"
-msgstr "Hủy yêu cầu kết bạn"
+#~ msgid "Cancel friend request"
+#~ msgstr "Hủy yêu cầu kết bạn"
 
 #: components/app/menus/DraftMessageContextMenu.tsx
 msgid "Cancel message"
@@ -783,7 +788,6 @@ msgstr ""
 msgid "Client Settings"
 msgstr "Cài Đặt Ứng Dụng"
 
-#: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/AddMembersToGroup.tsx
 #: components/modal/modals/Changelog.tsx
 #: components/modal/modals/ChannelInfo.tsx
@@ -805,7 +809,6 @@ msgstr "Cài Đặt Ứng Dụng"
 #: components/modal/modals/LinkWarning.tsx
 #: components/modal/modals/PolicyChange.tsx
 #: components/modal/modals/ServerInfo.tsx
-#: components/modal/modals/UserProfileMutualFriends.tsx
 #: components/modal/modals/UserProfileMutualGroups.tsx
 #: components/modal/modals/UserProfileRoles.tsx
 msgid "Close"
@@ -883,8 +886,8 @@ msgid "Contribute a language"
 msgstr ""
 
 #: src/interface/navigation/channels/HomeSidebar.tsx
-msgid "Conversations"
-msgstr "Cuộc Trò chuyện"
+#~ msgid "Conversations"
+#~ msgstr "Cuộc Trò chuyện"
 
 #: components/ui/components/features/profiles/ProfileBanner.tsx
 msgid "Copied!"
@@ -1219,6 +1222,12 @@ msgstr ""
 #~ msgid "Developer Documentation"
 #~ msgstr ""
 
+#: src/interface/Home.tsx
+#: src/interface/navigation/channels/HomeSidebar.tsx
+#: src/interface/navigation/servers/ServerList.tsx
+msgid "Direct Messages"
+msgstr ""
+
 #: components/app/interface/settings/user/Account.tsx
 #~ msgid "Disable Account"
 #~ msgstr "Vô Hiệu Hoá Tài Khoản"
@@ -1535,8 +1544,8 @@ msgstr ""
 
 #: src/interface/Friends.tsx
 #: src/interface/navigation/channels/HomeSidebar.tsx
-msgid "Friends"
-msgstr "Bạn Bè"
+#~ msgid "Friends"
+#~ msgstr "Bạn Bè"
 
 #: components/ui/components/features/messaging/composition/picker/EmojiPicker.tsx
 msgid "from "
@@ -1678,8 +1687,8 @@ msgstr ""
 
 #: src/interface/Home.tsx
 #: src/interface/navigation/channels/HomeSidebar.tsx
-msgid "Home"
-msgstr "Trang Chủ"
+#~ msgid "Home"
+#~ msgstr "Trang Chủ"
 
 #: src/interface/channels/AgeGate.tsx
 msgid "I confirm that I am at least 18 years old."
@@ -1788,7 +1797,6 @@ msgstr ""
 msgid "Join the Stoat Lounge"
 msgstr ""
 
-#: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
 #: src/interface/channels/ChannelHeader.tsx
 msgid "Join the voice channel"
 msgstr ""
@@ -2142,8 +2150,8 @@ msgid "Muted until <0/>"
 msgstr ""
 
 #: components/modal/modals/UserProfileMutualFriends.tsx
-msgid "Mutual Friends"
-msgstr "Bạn Chung"
+#~ msgid "Mutual Friends"
+#~ msgstr "Bạn Chung"
 
 #: components/modal/modals/UserProfileMutualGroups.tsx
 msgid "Mutual Groups"
@@ -2209,8 +2217,8 @@ msgid "No role overrides have been configured."
 msgstr ""
 
 #: src/interface/Friends.tsx
-msgid "Nobody here right now!"
-msgstr ""
+#~ msgid "Nobody here right now!"
+#~ msgstr ""
 
 #: components/app/menus/ServerContextMenu.tsx
 #: components/app/menus/shared/NotificationContextMenu.tsx
@@ -2282,7 +2290,6 @@ msgstr ""
 
 #: components/ui/components/features/profiles/ProfileStatus.tsx
 #: src/interface/channels/text/MemberSidebar.tsx
-#: src/interface/Friends.tsx
 #: src/interface/navigation/channels/HomeSidebar.tsx
 #: src/interface/navigation/servers/UserMenu.tsx
 msgid "Online"
@@ -2318,8 +2325,8 @@ msgid "Open server settings"
 msgstr ""
 
 #: src/interface/Home.tsx
-msgid "Open settings"
-msgstr "Mở cài đặt"
+#~ msgid "Open settings"
+#~ msgstr "Mở cài đặt"
 
 #: components/modal/modals/ReportContent.tsx
 msgid "Other"
@@ -2356,8 +2363,8 @@ msgid "Password changed successfully."
 msgstr ""
 
 #: src/interface/Friends.tsx
-msgid "Pending"
-msgstr ""
+#~ msgid "Pending"
+#~ msgstr ""
 
 #: components/app/interface/settings/ChannelSettings.tsx
 msgid "Permissions"
@@ -2541,8 +2548,8 @@ msgid "Registered since <0/>"
 msgstr ""
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Reject friend request"
-msgstr "Từ chối kết bạn"
+#~ msgid "Reject friend request"
+#~ msgstr "Từ chối kết bạn"
 
 #: src/interface/channels/text/TextSearchSidebar.tsx
 msgid "Relevance"
@@ -2573,8 +2580,8 @@ msgid "Remove Avatars"
 msgstr "Xoá ảnh đại diện"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Remove friend"
-msgstr "Bỏ bạn"
+#~ msgid "Remove friend"
+#~ msgstr "Bỏ bạn"
 
 #: components/app/menus/UserContextMenu.tsx
 #: components/modal/modals/RemoveMember.tsx
@@ -2741,7 +2748,6 @@ msgid "Save to your notes"
 msgstr "Lưu vào ghi chú của bạn"
 
 #: src/interface/channels/ChannelHeader.tsx
-#: src/interface/navigation/channels/HomeSidebar.tsx
 msgid "Saved Notes"
 msgstr "Ghi chú đã lưu"
 
@@ -2835,8 +2841,8 @@ msgid "Send messages in channels"
 msgstr ""
 
 #: components/modal/modals/AddFriend.tsx
-msgid "Send Request"
-msgstr ""
+#~ msgid "Send Request"
+#~ msgstr ""
 
 #: components/app/interface/channels/text/DraftMessage.tsx
 msgid "Sending..."
@@ -3018,8 +3024,8 @@ msgid "Start Minimised to Tray"
 msgstr ""
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "Start the call"
-msgstr ""
+#~ msgid "Start the call"
+#~ msgstr ""
 
 #: components/app/interface/settings/user/Native.tsx
 msgid "Start with Computer"
@@ -3101,8 +3107,8 @@ msgstr ""
 #~ msgstr "Ủng hộ dự án bằng cách quyên góp - cảm ơn bạn!"
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "Switch to this voice channel"
-msgstr ""
+#~ msgid "Switch to this voice channel"
+#~ msgstr ""
 
 #: components/app/interface/settings/user/Sync.tsx
 msgid "Sync appearance options, such as chosen emoji pack and message density."
@@ -3426,7 +3432,6 @@ msgid "User's profile has inappropriate content"
 msgstr ""
 
 #: components/auth/src/flows/Form.tsx
-#: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/CreateBot.tsx
 #: components/modal/modals/EditBotUsername.tsx
 #: components/modal/modals/EditUsername.tsx
@@ -3435,8 +3440,8 @@ msgid "Username"
 msgstr "Tên Người Dùng"
 
 #: components/modal/modals/AddFriend.tsx
-msgid "username#1234"
-msgstr ""
+#~ msgid "username#1234"
+#~ msgstr ""
 
 #: components/modal/modals/ChannelToggleMature.tsx
 msgid "Users will be asked to confirm their age before joining this channel."
@@ -3575,8 +3580,8 @@ msgstr ""
 
 #. placeholder {0}: names.join(", ")
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "with {0}"
-msgstr ""
+#~ msgid "with {0}"
+#~ msgstr ""
 
 #. placeholder {0}: names.join(", ")
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
@@ -3585,8 +3590,8 @@ msgstr ""
 
 #. placeholder {0}: names.length
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "with {0} others"
-msgstr ""
+#~ msgid "with {0} others"
+#~ msgstr ""
 
 #: components/modal/modals/CreateGroupOrServer.tsx
 msgid "Would you like to create a new group or server?"
@@ -3617,8 +3622,8 @@ msgid "You are banned from this server."
 msgstr ""
 
 #: src/interface/Home.tsx
-msgid "You can also click the gear icon in the bottom left."
-msgstr ""
+#~ msgid "You can also click the gear icon in the bottom left."
+#~ msgstr ""
 
 #~ msgid "You can also right-click the user icon in the top left, or left click it if you're already home."
 #~ msgstr "Bạn cũng có thể nhấp chuột phải vào biểu tượng người dùng ở trên cùng góc trái, hoặc nhấp chuột trái vào biểu tượng nếu bạn ở trang chủ."

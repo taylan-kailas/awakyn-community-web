@@ -312,8 +312,8 @@ msgid "Accept"
 msgstr "Kabul et"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Accept friend request"
-msgstr "Arkadaş isteğini kabul et"
+#~ msgid "Accept friend request"
+#~ msgstr "Arkadaş isteğini kabul et"
 
 #: components/modal/modals/PolicyChange.tsx
 msgid "Acknowledge"
@@ -326,25 +326,30 @@ msgstr "Ekle"
 
 #: components/modal/modals/AddFriend.tsx
 #: src/interface/Friends.tsx
-msgid "Add a new friend"
-msgstr "Yeni bir arkadaş ekle"
+#~ msgid "Add a new friend"
+#~ msgstr "Yeni bir arkadaş ekle"
 
 #: components/ui/components/features/profiles/ProfileActions.tsx
 msgid "Add Bot"
 msgstr "Bot ekle"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Add friend"
-msgstr "Arkadaş ekle"
+#~ msgid "Add friend"
+#~ msgstr "Arkadaş ekle"
 
 #: components/modal/modals/AddMembersToGroup.tsx
 #: src/interface/channels/ChannelHeader.tsx
-msgid "Add friends to group"
-msgstr "Gruba arkadaş ekle"
+#~ msgid "Add friends to group"
+#~ msgstr "Gruba arkadaş ekle"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Add new members to the group"
 msgstr "Gruba yeni üye ekle"
+
+#: components/modal/modals/AddMembersToGroup.tsx
+#: src/interface/channels/ChannelHeader.tsx
+msgid "Add people to group"
+msgstr ""
 
 #: src/interface/navigation/servers/UserMenu.tsx
 msgid "Add status text"
@@ -369,8 +374,8 @@ msgstr "Gelişmiş"
 #~ msgstr "Tüm rol ve kullanıcıları etkiler"
 
 #: src/interface/Friends.tsx
-msgid "All"
-msgstr "Tümü"
+#~ msgid "All"
+#~ msgstr "Tümü"
 
 #: components/app/menus/ServerContextMenu.tsx
 #: components/app/menus/shared/NotificationContextMenu.tsx
@@ -532,8 +537,8 @@ msgid "Block user"
 msgstr "Kullanıcıyı engelle"
 
 #: src/interface/Friends.tsx
-msgid "Blocked"
-msgstr "Engellendi"
+#~ msgid "Blocked"
+#~ msgstr "Engellendi"
 
 #: components/ui/components/features/messaging/elements/MessageReply.tsx
 msgid "Blocked User"
@@ -614,8 +619,8 @@ msgid "Cancel"
 msgstr "İptal et"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Cancel friend request"
-msgstr "Arkadaş isteğini iptal et"
+#~ msgid "Cancel friend request"
+#~ msgstr "Arkadaş isteğini iptal et"
 
 #: components/app/menus/DraftMessageContextMenu.tsx
 msgid "Cancel message"
@@ -761,7 +766,6 @@ msgstr "Spoiler'ı görmek için tıkla"
 msgid "Client Settings"
 msgstr "İstemci Ayarları"
 
-#: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/AddMembersToGroup.tsx
 #: components/modal/modals/Changelog.tsx
 #: components/modal/modals/ChannelInfo.tsx
@@ -783,7 +787,6 @@ msgstr "İstemci Ayarları"
 #: components/modal/modals/LinkWarning.tsx
 #: components/modal/modals/PolicyChange.tsx
 #: components/modal/modals/ServerInfo.tsx
-#: components/modal/modals/UserProfileMutualFriends.tsx
 #: components/modal/modals/UserProfileMutualGroups.tsx
 #: components/modal/modals/UserProfileRoles.tsx
 msgid "Close"
@@ -861,8 +864,8 @@ msgid "Contribute a language"
 msgstr "Bir dile katkıda bulun"
 
 #: src/interface/navigation/channels/HomeSidebar.tsx
-msgid "Conversations"
-msgstr "Sohbetler"
+#~ msgid "Conversations"
+#~ msgstr "Sohbetler"
 
 #: components/ui/components/features/profiles/ProfileBanner.tsx
 msgid "Copied!"
@@ -1193,6 +1196,12 @@ msgstr "Masaüstü"
 #~ msgid "Developer Documentation"
 #~ msgstr "Geliştirici Dokümantasyonu"
 
+#: src/interface/Home.tsx
+#: src/interface/navigation/channels/HomeSidebar.tsx
+#: src/interface/navigation/servers/ServerList.tsx
+msgid "Direct Messages"
+msgstr ""
+
 #: components/app/interface/settings/user/Account.tsx
 #~ msgid "Disable Account"
 #~ msgstr "Hesabı Devre Dışı Bırak"
@@ -1510,8 +1519,8 @@ msgstr "8 saat boyunca"
 
 #: src/interface/Friends.tsx
 #: src/interface/navigation/channels/HomeSidebar.tsx
-msgid "Friends"
-msgstr "Arkadaşlar"
+#~ msgid "Friends"
+#~ msgstr "Arkadaşlar"
 
 #: components/ui/components/features/messaging/composition/picker/EmojiPicker.tsx
 msgid "from "
@@ -1653,8 +1662,8 @@ msgstr "Rolü ayrı göster"
 
 #: src/interface/Home.tsx
 #: src/interface/navigation/channels/HomeSidebar.tsx
-msgid "Home"
-msgstr "Ana Sayfa"
+#~ msgid "Home"
+#~ msgstr "Ana Sayfa"
 
 #: src/interface/channels/AgeGate.tsx
 msgid "I confirm that I am at least 18 years old."
@@ -1763,7 +1772,6 @@ msgstr "Bir sunucuya katıl"
 msgid "Join the Stoat Lounge"
 msgstr "Stoat Resmi Sunucusuna Katılın"
 
-#: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
 #: src/interface/channels/ChannelHeader.tsx
 msgid "Join the voice channel"
 msgstr "Sesli sohbete katıl"
@@ -2117,8 +2125,8 @@ msgid "Muted until <0/>"
 msgstr "Şu zamana kadar susturuldu <0/>"
 
 #: components/modal/modals/UserProfileMutualFriends.tsx
-msgid "Mutual Friends"
-msgstr "Ortak Arkadaşlar"
+#~ msgid "Mutual Friends"
+#~ msgstr "Ortak Arkadaşlar"
 
 #: components/modal/modals/UserProfileMutualGroups.tsx
 msgid "Mutual Groups"
@@ -2184,8 +2192,8 @@ msgid "No role overrides have been configured."
 msgstr "Hiçbir rol istisnası yapılandırılmadı."
 
 #: src/interface/Friends.tsx
-msgid "Nobody here right now!"
-msgstr "Burada kimse yok!"
+#~ msgid "Nobody here right now!"
+#~ msgstr "Burada kimse yok!"
 
 #: components/app/menus/ServerContextMenu.tsx
 #: components/app/menus/shared/NotificationContextMenu.tsx
@@ -2257,7 +2265,6 @@ msgstr "Devam Eden Bakım"
 
 #: components/ui/components/features/profiles/ProfileStatus.tsx
 #: src/interface/channels/text/MemberSidebar.tsx
-#: src/interface/Friends.tsx
 #: src/interface/navigation/channels/HomeSidebar.tsx
 #: src/interface/navigation/servers/UserMenu.tsx
 msgid "Online"
@@ -2293,8 +2300,8 @@ msgid "Open server settings"
 msgstr "Sunucu ayarlarını aç"
 
 #: src/interface/Home.tsx
-msgid "Open settings"
-msgstr "Ayarları aç"
+#~ msgid "Open settings"
+#~ msgstr "Ayarları aç"
 
 #: components/modal/modals/ReportContent.tsx
 msgid "Other"
@@ -2331,8 +2338,8 @@ msgid "Password changed successfully."
 msgstr "Şifre başarıyla değiştirildi"
 
 #: src/interface/Friends.tsx
-msgid "Pending"
-msgstr "Beklemede"
+#~ msgid "Pending"
+#~ msgstr "Beklemede"
 
 #: components/app/interface/settings/ChannelSettings.tsx
 msgid "Permissions"
@@ -2516,8 +2523,8 @@ msgid "Registered since <0/>"
 msgstr "Şu tarihten beri kayıtlı <0/>"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Reject friend request"
-msgstr "Arkadaş isteğini reddet"
+#~ msgid "Reject friend request"
+#~ msgstr "Arkadaş isteğini reddet"
 
 #: src/interface/channels/text/TextSearchSidebar.tsx
 msgid "Relevance"
@@ -2548,8 +2555,8 @@ msgid "Remove Avatars"
 msgstr "Profil Resmini Kaldır"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Remove friend"
-msgstr "Arkadaşlıktan çıkar"
+#~ msgid "Remove friend"
+#~ msgstr "Arkadaşlıktan çıkar"
 
 #: components/app/menus/UserContextMenu.tsx
 #: components/modal/modals/RemoveMember.tsx
@@ -2716,7 +2723,6 @@ msgid "Save to your notes"
 msgstr "Notlarına kaydet"
 
 #: src/interface/channels/ChannelHeader.tsx
-#: src/interface/navigation/channels/HomeSidebar.tsx
 msgid "Saved Notes"
 msgstr "Kaydedilen Notlar"
 
@@ -2810,8 +2816,8 @@ msgid "Send messages in channels"
 msgstr "Kanallara mesaj gönderebilme"
 
 #: components/modal/modals/AddFriend.tsx
-msgid "Send Request"
-msgstr "İstek Gönder"
+#~ msgid "Send Request"
+#~ msgstr "İstek Gönder"
 
 #: components/app/interface/channels/text/DraftMessage.tsx
 msgid "Sending..."
@@ -2994,8 +3000,8 @@ msgid "Start Minimised to Tray"
 msgstr "Küçültülmüş olarak başlat"
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "Start the call"
-msgstr "Aramayı başlat"
+#~ msgid "Start the call"
+#~ msgstr "Aramayı başlat"
 
 #: components/app/interface/settings/user/Native.tsx
 msgid "Start with Computer"
@@ -3077,8 +3083,8 @@ msgstr "GitHub tartışmaları üzerinden, Stoat'a yeni özellikler önerin."
 #~ msgstr "Bağış yaparak projeyi destekleyin - teşekkürler!"
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "Switch to this voice channel"
-msgstr "Bu ses kanalına geç"
+#~ msgid "Switch to this voice channel"
+#~ msgstr "Bu ses kanalına geç"
 
 #: components/app/interface/settings/user/Sync.tsx
 msgid "Sync appearance options, such as chosen emoji pack and message density."
@@ -3402,7 +3408,6 @@ msgid "User's profile has inappropriate content"
 msgstr "Bu kullanıcının profili uygunsuz içeriğe sahip"
 
 #: components/auth/src/flows/Form.tsx
-#: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/CreateBot.tsx
 #: components/modal/modals/EditBotUsername.tsx
 #: components/modal/modals/EditUsername.tsx
@@ -3411,8 +3416,8 @@ msgid "Username"
 msgstr "Kullanıcı Adı"
 
 #: components/modal/modals/AddFriend.tsx
-msgid "username#1234"
-msgstr "kullanıcıadı#1234"
+#~ msgid "username#1234"
+#~ msgstr "kullanıcıadı#1234"
 
 #: components/modal/modals/ChannelToggleMature.tsx
 msgid "Users will be asked to confirm their age before joining this channel."
@@ -3551,8 +3556,8 @@ msgstr "Bu ayarları başka kullanıcıların düzenleyip düzenleyemeceği"
 
 #. placeholder {0}: names.join(", ")
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "with {0}"
-msgstr ""
+#~ msgid "with {0}"
+#~ msgstr ""
 
 #. placeholder {0}: names.join(", ")
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
@@ -3561,8 +3566,8 @@ msgstr ""
 
 #. placeholder {0}: names.length
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "with {0} others"
-msgstr ""
+#~ msgid "with {0} others"
+#~ msgstr ""
 
 #: components/modal/modals/CreateGroupOrServer.tsx
 msgid "Would you like to create a new group or server?"
@@ -3593,8 +3598,8 @@ msgid "You are banned from this server."
 msgstr "Bu sunucudan yasaklandın."
 
 #: src/interface/Home.tsx
-msgid "You can also click the gear icon in the bottom left."
-msgstr "Sol alttaki çark simgesine de tıklayabilirsin."
+#~ msgid "You can also click the gear icon in the bottom left."
+#~ msgstr "Sol alttaki çark simgesine de tıklayabilirsin."
 
 #~ msgid "You can also right-click the user icon in the top left, or left click it if you're already home."
 #~ msgstr "Ayrıca sol üstteki kullanıcı simgesine sağ tıklayabilirsin veya eğer ana sayfadaysan sol tıklayabilirsin."

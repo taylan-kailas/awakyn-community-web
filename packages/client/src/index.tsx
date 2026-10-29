@@ -36,18 +36,19 @@ import "@revolt/ui/styles";
 import { AndroidNag } from "./AndroidNag";
 import AuthPage from "./Auth";
 import Interface from "./Interface";
-import { JoinPage } from "./awakyn/join/JoinPage";
-import "./index.css";
-import { DevelopmentPage } from "./interface/Development";
-import { Friends } from "./interface/Friends";
-import { HomePage } from "./interface/Home";
-import { ServerHome } from "./interface/ServerHome";
-import { ChannelPage } from "./interface/channels/ChannelPage";
-import "./serviceWorkerInterface";
+import { CommunityHome } from "./awakyn/CommunityHome";
 import { keepLinksInsideBasePath } from "./awakyn/basePathLinks";
+import { JoinPage } from "./awakyn/join/JoinPage";
+import { DIRECT_MESSAGES_PATH } from "./awakyn/paths";
 import { loadThemeFont } from "./awakyn/theme/loadThemeFont";
 import { loadPressFeedback } from "./awakyn/theme/pressFeedback";
 import { AWAKYN_THEME } from "./awakyn/theme/tokens";
+import "./index.css";
+import { DevelopmentPage } from "./interface/Development";
+import { MessagesHome } from "./interface/Home";
+import { ServerHome } from "./interface/ServerHome";
+import { ChannelPage } from "./interface/channels/ChannelPage";
+import "./serviceWorkerInterface";
 
 attachDevtoolsOverlay();
 
@@ -124,7 +125,14 @@ const routes = () => (
       <Route path="/delete/:token" component={FlowDeleteAccount} />
       {/* Awakyn: Google is the only way in; email and password pages go to sign-in */}
       <Route
-        path={["/check", "/create/*", "/auth", "/resend", "/reset/*", "/verify/*"]}
+        path={[
+          "/check",
+          "/create/*",
+          "/auth",
+          "/resend",
+          "/reset/*",
+          "/verify/*",
+        ]}
         component={() => <Navigate href="/login" />}
       />
       <Route path="/*" component={FlowHome} />
@@ -136,17 +144,18 @@ const routes = () => (
     <Route path="/" component={Interface as never}>
       <Route path="/pwa" component={PWARedirect} />
       <Route path="/dev" component={DevelopmentPage} />
-      {/* Awakyn: one community only, so Discover goes home */}
-      <Route path="/discover/*" component={() => <Navigate href="/app" />} />
+      {/* Awakyn: one community only, so Discover goes to it */}
+      <Route path="/discover/*" component={CommunityHome} />
       <Route path="/settings" component={SettingsRedirect} />
       <Route path="/bot/:code" component={BotRedirect} />
-      <Route path="/friends" component={Friends} />
+      <Route path={DIRECT_MESSAGES_PATH} component={MessagesHome} />
       <Route path="/server/:server/*">
         <Route path="/channel/:channel/*" component={ChannelPage} />
         <Route path="/*" component={ServerHome} />
       </Route>
       <Route path="/channel/:channel/*" component={ChannelPage} />
-      <Route path="/*" component={HomePage} />
+      {/* Awakyn: no home page; /app, / and anything unknown open the community */}
+      <Route path="/*" component={CommunityHome} />
     </Route>
   </Route>
 );

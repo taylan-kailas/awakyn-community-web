@@ -55,7 +55,7 @@ function inAppScope(link: URL, root: string): boolean {
       "https://revolt.chat",
       "https://app.revolt.chat",
     ].includes(link.origin) &&
-    /\/(i|app|home|pwa|dev|invite|bot|friends|server|channel)\/?/.test(
+    /\/(i|app|home|pwa|dev|invite|bot|messages|server|channel)\/?/.test(
       link.pathname,
     )
   );

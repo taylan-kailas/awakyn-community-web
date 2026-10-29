@@ -20,18 +20,14 @@ export function ProfileMutuals(props: { user: User; member?: ServerMember }) {
     queryFn: async () => {
       if (props.user.self || props.user.bot) {
         return {
-          users: [],
           groups: [],
         };
       }
 
       const clnt = client();
-      const { users, servers } = await props.user.fetchMutual();
+      const { servers } = await props.user.fetchMutual();
 
       return {
-        users: users
-          .map((userId) => clnt.users.get(userId)!)
-          .filter((user) => user),
         groups: [
           ...servers
             .map((serverId) => clnt.servers.get(serverId)!)
@@ -47,17 +43,6 @@ export function ProfileMutuals(props: { user: User; member?: ServerMember }) {
   }));
 
   /**
-   * Open friends modal
-   */
-  function openFriends() {
-    openModal({
-      type: "user_profile_mutual_friends",
-      users: query.data!.users,
-      server: props.member?.server,
-    });
-  }
-
-  /**
    * Open groups modal
    */
   function openGroups() {
@@ -69,26 +54,7 @@ export function ProfileMutuals(props: { user: User; member?: ServerMember }) {
 
   return (
     <>
-      <Show when={query.data?.users.length}>
-        <ProfileCard isLink onClick={openFriends}>
-          <Ripple />
-
-          <Text class="title" size="large">
-            Mutuals
-          </Text>
-          <Grid>
-            <For each={query.data?.users}>
-              {(user) => (
-                <Avatar
-                  src={user?.animatedAvatarURL}
-                  fallback={user?.displayName}
-                  size={20}
-                />
-              )}
-            </For>
-          </Grid>
-        </ProfileCard>
-      </Show>
+      {/* Awakyn: no mutual friends card; everyone in the community is connected */}
       <Show when={query.data?.groups.length}>
         <ProfileCard isLink onClick={openGroups}>
           <Ripple />

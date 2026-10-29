@@ -150,20 +150,6 @@ export function UserContextMenu(props: {
   }
 
   /**
-   * Add friend
-   */
-  function addFriend() {
-    props.user.addFriend();
-  }
-
-  /**
-   * Remove friend
-   */
-  function removeFriend() {
-    props.user.removeFriend();
-  }
-
-  /**
    * Block user
    */
   function blockUser() {
@@ -477,67 +463,7 @@ export function UserContextMenu(props: {
         </Show>
       </Show>
 
-      {/* Social: friend requests */}
-      <Show
-        when={
-          !props.user.self &&
-          !props.user.bot &&
-          (props.user.relationship === "None" ||
-            props.user.relationship === "Incoming" ||
-            props.user.relationship === "Outgoing")
-        }
-      >
-        <ContextMenuDivider />
-        <Show when={props.user.relationship === "None"}>
-          <ContextMenuButton
-            symbol={
-              <IconSlot>
-                <Symbol size={16}>person_add_alt</Symbol>
-              </IconSlot>
-            }
-            onClick={addFriend}
-          >
-            <Trans>Add friend</Trans>
-          </ContextMenuButton>
-        </Show>
-        <Show when={props.user.relationship === "Incoming"}>
-          <ContextMenuButton
-            symbol={
-              <IconSlot>
-                <Symbol size={16}>person_add_alt</Symbol>
-              </IconSlot>
-            }
-            onClick={addFriend}
-          >
-            <Trans>Accept friend request</Trans>
-          </ContextMenuButton>
-          <ContextMenuButton
-            symbol={
-              <IconSlot>
-                <Symbol size={16}>cancel</Symbol>
-              </IconSlot>
-            }
-            onClick={removeFriend}
-            destructive
-          >
-            <Trans>Reject friend request</Trans>
-          </ContextMenuButton>
-        </Show>
-        <Show when={props.user.relationship === "Outgoing"}>
-          <ContextMenuButton
-            symbol={
-              <IconSlot>
-                <Symbol size={16}>cancel</Symbol>
-              </IconSlot>
-            }
-            onClick={removeFriend}
-            destructive
-          >
-            <Trans>Cancel friend request</Trans>
-          </ContextMenuButton>
-        </Show>
-      </Show>
-
+      {/* Awakyn: everyone in the community is already connected; no friend requests */}
       {/* Moderation: kick, ban */}
       {/** TODO: #287 timeout users */}
       <Show
@@ -602,22 +528,9 @@ export function UserContextMenu(props: {
         </ContextMenuButton>
       </Show>
 
-      {/* Safety: remove friend, block, report */}
+      {/* Safety: block, report */}
       <Show when={!props.user.self}>
         <ContextMenuDivider />
-        <Show when={props.user.relationship === "Friend"}>
-          <ContextMenuButton
-            symbol={
-              <IconSlot>
-                <Symbol size={16}>person_remove</Symbol>
-              </IconSlot>
-            }
-            onClick={removeFriend}
-            destructive
-          >
-            <Trans>Remove friend</Trans>
-          </ContextMenuButton>
-        </Show>
         <Show when={props.user.relationship !== "Blocked"}>
           <ContextMenuButton
             symbol={

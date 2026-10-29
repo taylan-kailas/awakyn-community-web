@@ -65,7 +65,7 @@ export function AddMembersToGroupModal(
       minWidth={420}
       show={props.show}
       onClose={props.onClose}
-      title={<Trans>Add friends to group</Trans>}
+      title={<Trans>Add people to group</Trans>}
       actions={[
         { text: <Trans>Close</Trans> },
         {

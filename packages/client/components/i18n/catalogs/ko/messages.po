@@ -333,8 +333,8 @@ msgid "Accept"
 msgstr "수락"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Accept friend request"
-msgstr "친구 요청 수락"
+#~ msgid "Accept friend request"
+#~ msgstr "친구 요청 수락"
 
 #: components/modal/modals/PolicyChange.tsx
 msgid "Acknowledge"
@@ -347,25 +347,30 @@ msgstr "추가"
 
 #: components/modal/modals/AddFriend.tsx
 #: src/interface/Friends.tsx
-msgid "Add a new friend"
-msgstr "새로운 친구 추가"
+#~ msgid "Add a new friend"
+#~ msgstr "새로운 친구 추가"
 
 #: components/ui/components/features/profiles/ProfileActions.tsx
 msgid "Add Bot"
 msgstr ""
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Add friend"
-msgstr "친구 추가"
+#~ msgid "Add friend"
+#~ msgstr "친구 추가"
 
 #: components/modal/modals/AddMembersToGroup.tsx
 #: src/interface/channels/ChannelHeader.tsx
-msgid "Add friends to group"
-msgstr "그룹에 친구 추가"
+#~ msgid "Add friends to group"
+#~ msgstr "그룹에 친구 추가"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Add new members to the group"
 msgstr "그룹에 새 멤버들 추가"
+
+#: components/modal/modals/AddMembersToGroup.tsx
+#: src/interface/channels/ChannelHeader.tsx
+msgid "Add people to group"
+msgstr ""
 
 #: src/interface/navigation/servers/UserMenu.tsx
 msgid "Add status text"
@@ -392,8 +397,8 @@ msgstr "고급 모드"
 #~ msgstr ""
 
 #: src/interface/Friends.tsx
-msgid "All"
-msgstr ""
+#~ msgid "All"
+#~ msgstr ""
 
 #: components/app/menus/ServerContextMenu.tsx
 #: components/app/menus/shared/NotificationContextMenu.tsx
@@ -554,8 +559,8 @@ msgid "Block user"
 msgstr "사용자 차단"
 
 #: src/interface/Friends.tsx
-msgid "Blocked"
-msgstr "차단됨"
+#~ msgid "Blocked"
+#~ msgstr "차단됨"
 
 #: components/ui/components/features/messaging/elements/MessageReply.tsx
 msgid "Blocked User"
@@ -637,8 +642,8 @@ msgid "Cancel"
 msgstr "취소"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Cancel friend request"
-msgstr "요청 취소"
+#~ msgid "Cancel friend request"
+#~ msgstr "요청 취소"
 
 #: components/app/menus/DraftMessageContextMenu.tsx
 msgid "Cancel message"
@@ -785,7 +790,6 @@ msgstr ""
 msgid "Client Settings"
 msgstr "클라이언트 설정"
 
-#: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/AddMembersToGroup.tsx
 #: components/modal/modals/Changelog.tsx
 #: components/modal/modals/ChannelInfo.tsx
@@ -807,7 +811,6 @@ msgstr "클라이언트 설정"
 #: components/modal/modals/LinkWarning.tsx
 #: components/modal/modals/PolicyChange.tsx
 #: components/modal/modals/ServerInfo.tsx
-#: components/modal/modals/UserProfileMutualFriends.tsx
 #: components/modal/modals/UserProfileMutualGroups.tsx
 #: components/modal/modals/UserProfileRoles.tsx
 msgid "Close"
@@ -885,8 +888,8 @@ msgid "Contribute a language"
 msgstr ""
 
 #: src/interface/navigation/channels/HomeSidebar.tsx
-msgid "Conversations"
-msgstr "대화"
+#~ msgid "Conversations"
+#~ msgstr "대화"
 
 #: components/ui/components/features/profiles/ProfileBanner.tsx
 msgid "Copied!"
@@ -1222,6 +1225,12 @@ msgstr ""
 #~ msgid "Developer Documentation"
 #~ msgstr ""
 
+#: src/interface/Home.tsx
+#: src/interface/navigation/channels/HomeSidebar.tsx
+#: src/interface/navigation/servers/ServerList.tsx
+msgid "Direct Messages"
+msgstr ""
+
 #: components/app/interface/settings/user/Account.tsx
 #~ msgid "Disable Account"
 #~ msgstr "계정 비활성화"
@@ -1538,8 +1547,8 @@ msgstr ""
 
 #: src/interface/Friends.tsx
 #: src/interface/navigation/channels/HomeSidebar.tsx
-msgid "Friends"
-msgstr "친구"
+#~ msgid "Friends"
+#~ msgstr "친구"
 
 #: components/ui/components/features/messaging/composition/picker/EmojiPicker.tsx
 msgid "from "
@@ -1681,8 +1690,8 @@ msgstr ""
 
 #: src/interface/Home.tsx
 #: src/interface/navigation/channels/HomeSidebar.tsx
-msgid "Home"
-msgstr "홈"
+#~ msgid "Home"
+#~ msgstr "홈"
 
 #: src/interface/channels/AgeGate.tsx
 msgid "I confirm that I am at least 18 years old."
@@ -1792,7 +1801,6 @@ msgstr ""
 msgid "Join the Stoat Lounge"
 msgstr ""
 
-#: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
 #: src/interface/channels/ChannelHeader.tsx
 msgid "Join the voice channel"
 msgstr ""
@@ -2146,8 +2154,8 @@ msgid "Muted until <0/>"
 msgstr ""
 
 #: components/modal/modals/UserProfileMutualFriends.tsx
-msgid "Mutual Friends"
-msgstr "같이 아는 친구"
+#~ msgid "Mutual Friends"
+#~ msgstr "같이 아는 친구"
 
 #: components/modal/modals/UserProfileMutualGroups.tsx
 msgid "Mutual Groups"
@@ -2213,8 +2221,8 @@ msgid "No role overrides have been configured."
 msgstr ""
 
 #: src/interface/Friends.tsx
-msgid "Nobody here right now!"
-msgstr ""
+#~ msgid "Nobody here right now!"
+#~ msgstr ""
 
 #: components/app/menus/ServerContextMenu.tsx
 #: components/app/menus/shared/NotificationContextMenu.tsx
@@ -2286,7 +2294,6 @@ msgstr ""
 
 #: components/ui/components/features/profiles/ProfileStatus.tsx
 #: src/interface/channels/text/MemberSidebar.tsx
-#: src/interface/Friends.tsx
 #: src/interface/navigation/channels/HomeSidebar.tsx
 #: src/interface/navigation/servers/UserMenu.tsx
 msgid "Online"
@@ -2322,8 +2329,8 @@ msgid "Open server settings"
 msgstr ""
 
 #: src/interface/Home.tsx
-msgid "Open settings"
-msgstr "설정 열기"
+#~ msgid "Open settings"
+#~ msgstr "설정 열기"
 
 #: components/modal/modals/ReportContent.tsx
 msgid "Other"
@@ -2360,8 +2367,8 @@ msgid "Password changed successfully."
 msgstr ""
 
 #: src/interface/Friends.tsx
-msgid "Pending"
-msgstr ""
+#~ msgid "Pending"
+#~ msgstr ""
 
 #: components/app/interface/settings/ChannelSettings.tsx
 msgid "Permissions"
@@ -2546,8 +2553,8 @@ msgid "Registered since <0/>"
 msgstr ""
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Reject friend request"
-msgstr "친구 요청 거절"
+#~ msgid "Reject friend request"
+#~ msgstr "친구 요청 거절"
 
 #: src/interface/channels/text/TextSearchSidebar.tsx
 msgid "Relevance"
@@ -2578,8 +2585,8 @@ msgid "Remove Avatars"
 msgstr "아바타 삭제"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Remove friend"
-msgstr "친구 삭제"
+#~ msgid "Remove friend"
+#~ msgstr "친구 삭제"
 
 #: components/app/menus/UserContextMenu.tsx
 #: components/modal/modals/RemoveMember.tsx
@@ -2746,7 +2753,6 @@ msgid "Save to your notes"
 msgstr "내 메모에 저장"
 
 #: src/interface/channels/ChannelHeader.tsx
-#: src/interface/navigation/channels/HomeSidebar.tsx
 msgid "Saved Notes"
 msgstr "저장된 메모"
 
@@ -2840,8 +2846,8 @@ msgid "Send messages in channels"
 msgstr ""
 
 #: components/modal/modals/AddFriend.tsx
-msgid "Send Request"
-msgstr ""
+#~ msgid "Send Request"
+#~ msgstr ""
 
 #: components/app/interface/channels/text/DraftMessage.tsx
 msgid "Sending..."
@@ -3023,8 +3029,8 @@ msgid "Start Minimised to Tray"
 msgstr ""
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "Start the call"
-msgstr ""
+#~ msgid "Start the call"
+#~ msgstr ""
 
 #: components/app/interface/settings/user/Native.tsx
 msgid "Start with Computer"
@@ -3106,8 +3112,8 @@ msgstr ""
 #~ msgstr "기부로 프로젝트를 지원해 주세요. 감사드려요!"
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "Switch to this voice channel"
-msgstr ""
+#~ msgid "Switch to this voice channel"
+#~ msgstr ""
 
 #: components/app/interface/settings/user/Sync.tsx
 msgid "Sync appearance options, such as chosen emoji pack and message density."
@@ -3431,7 +3437,6 @@ msgid "User's profile has inappropriate content"
 msgstr ""
 
 #: components/auth/src/flows/Form.tsx
-#: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/CreateBot.tsx
 #: components/modal/modals/EditBotUsername.tsx
 #: components/modal/modals/EditUsername.tsx
@@ -3440,8 +3445,8 @@ msgid "Username"
 msgstr "사용자명"
 
 #: components/modal/modals/AddFriend.tsx
-msgid "username#1234"
-msgstr ""
+#~ msgid "username#1234"
+#~ msgstr ""
 
 #: components/modal/modals/ChannelToggleMature.tsx
 msgid "Users will be asked to confirm their age before joining this channel."
@@ -3582,8 +3587,8 @@ msgstr ""
 
 #. placeholder {0}: names.join(", ")
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "with {0}"
-msgstr ""
+#~ msgid "with {0}"
+#~ msgstr ""
 
 #. placeholder {0}: names.join(", ")
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
@@ -3592,8 +3597,8 @@ msgstr ""
 
 #. placeholder {0}: names.length
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "with {0} others"
-msgstr ""
+#~ msgid "with {0} others"
+#~ msgstr ""
 
 #: components/modal/modals/CreateGroupOrServer.tsx
 msgid "Would you like to create a new group or server?"
@@ -3624,8 +3629,8 @@ msgid "You are banned from this server."
 msgstr ""
 
 #: src/interface/Home.tsx
-msgid "You can also click the gear icon in the bottom left."
-msgstr ""
+#~ msgid "You can also click the gear icon in the bottom left."
+#~ msgstr ""
 
 #~ msgid "You can also right-click the user icon in the top left, or left click it if you're already home."
 #~ msgstr "왼쪽 상단에 있는 사용자 아이콘을 우클릭하거나, 홈에 있는 경우 좌클릭할 수도 있어요."

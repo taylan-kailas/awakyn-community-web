@@ -312,8 +312,8 @@ msgid "Accept"
 msgstr ""
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Accept friend request"
-msgstr ""
+#~ msgid "Accept friend request"
+#~ msgstr ""
 
 #: components/modal/modals/PolicyChange.tsx
 msgid "Acknowledge"
@@ -326,24 +326,29 @@ msgstr ""
 
 #: components/modal/modals/AddFriend.tsx
 #: src/interface/Friends.tsx
-msgid "Add a new friend"
-msgstr ""
+#~ msgid "Add a new friend"
+#~ msgstr ""
 
 #: components/ui/components/features/profiles/ProfileActions.tsx
 msgid "Add Bot"
 msgstr ""
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Add friend"
-msgstr "Add friend"
+#~ msgid "Add friend"
+#~ msgstr "Add friend"
 
 #: components/modal/modals/AddMembersToGroup.tsx
 #: src/interface/channels/ChannelHeader.tsx
-msgid "Add friends to group"
-msgstr ""
+#~ msgid "Add friends to group"
+#~ msgstr ""
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Add new members to the group"
+msgstr ""
+
+#: components/modal/modals/AddMembersToGroup.tsx
+#: src/interface/channels/ChannelHeader.tsx
+msgid "Add people to group"
 msgstr ""
 
 #: src/interface/navigation/servers/UserMenu.tsx
@@ -369,8 +374,8 @@ msgstr ""
 #~ msgstr ""
 
 #: src/interface/Friends.tsx
-msgid "All"
-msgstr ""
+#~ msgid "All"
+#~ msgstr ""
 
 #: components/app/menus/ServerContextMenu.tsx
 #: components/app/menus/shared/NotificationContextMenu.tsx
@@ -531,8 +536,8 @@ msgid "Block user"
 msgstr "Block user"
 
 #: src/interface/Friends.tsx
-msgid "Blocked"
-msgstr "Blocked"
+#~ msgid "Blocked"
+#~ msgstr "Blocked"
 
 #: components/ui/components/features/messaging/elements/MessageReply.tsx
 msgid "Blocked User"
@@ -613,8 +618,8 @@ msgid "Cancel"
 msgstr "Cancel"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Cancel friend request"
-msgstr "Cancel request"
+#~ msgid "Cancel friend request"
+#~ msgstr "Cancel request"
 
 #: components/app/menus/DraftMessageContextMenu.tsx
 msgid "Cancel message"
@@ -760,7 +765,6 @@ msgstr ""
 msgid "Client Settings"
 msgstr "Client Settings"
 
-#: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/AddMembersToGroup.tsx
 #: components/modal/modals/Changelog.tsx
 #: components/modal/modals/ChannelInfo.tsx
@@ -782,7 +786,6 @@ msgstr "Client Settings"
 #: components/modal/modals/LinkWarning.tsx
 #: components/modal/modals/PolicyChange.tsx
 #: components/modal/modals/ServerInfo.tsx
-#: components/modal/modals/UserProfileMutualFriends.tsx
 #: components/modal/modals/UserProfileMutualGroups.tsx
 #: components/modal/modals/UserProfileRoles.tsx
 msgid "Close"
@@ -860,8 +863,8 @@ msgid "Contribute a language"
 msgstr ""
 
 #: src/interface/navigation/channels/HomeSidebar.tsx
-msgid "Conversations"
-msgstr "Conversations"
+#~ msgid "Conversations"
+#~ msgstr "Conversations"
 
 #: components/ui/components/features/profiles/ProfileBanner.tsx
 msgid "Copied!"
@@ -1188,6 +1191,12 @@ msgstr ""
 #~ msgid "Developer Documentation"
 #~ msgstr ""
 
+#: src/interface/Home.tsx
+#: src/interface/navigation/channels/HomeSidebar.tsx
+#: src/interface/navigation/servers/ServerList.tsx
+msgid "Direct Messages"
+msgstr ""
+
 #: components/app/interface/settings/user/Account.tsx
 #~ msgid "Disable Account"
 #~ msgstr "Disable Account"
@@ -1504,8 +1513,8 @@ msgstr ""
 
 #: src/interface/Friends.tsx
 #: src/interface/navigation/channels/HomeSidebar.tsx
-msgid "Friends"
-msgstr "Friends"
+#~ msgid "Friends"
+#~ msgstr "Friends"
 
 #: components/ui/components/features/messaging/composition/picker/EmojiPicker.tsx
 msgid "from "
@@ -1647,8 +1656,8 @@ msgstr ""
 
 #: src/interface/Home.tsx
 #: src/interface/navigation/channels/HomeSidebar.tsx
-msgid "Home"
-msgstr "Home"
+#~ msgid "Home"
+#~ msgstr "Home"
 
 #: src/interface/channels/AgeGate.tsx
 msgid "I confirm that I am at least 18 years old."
@@ -1757,7 +1766,6 @@ msgstr ""
 msgid "Join the Stoat Lounge"
 msgstr ""
 
-#: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
 #: src/interface/channels/ChannelHeader.tsx
 msgid "Join the voice channel"
 msgstr ""
@@ -2111,8 +2119,8 @@ msgid "Muted until <0/>"
 msgstr ""
 
 #: components/modal/modals/UserProfileMutualFriends.tsx
-msgid "Mutual Friends"
-msgstr "Mutual Friends"
+#~ msgid "Mutual Friends"
+#~ msgstr "Mutual Friends"
 
 #: components/modal/modals/UserProfileMutualGroups.tsx
 msgid "Mutual Groups"
@@ -2178,8 +2186,8 @@ msgid "No role overrides have been configured."
 msgstr ""
 
 #: src/interface/Friends.tsx
-msgid "Nobody here right now!"
-msgstr ""
+#~ msgid "Nobody here right now!"
+#~ msgstr ""
 
 #: components/app/menus/ServerContextMenu.tsx
 #: components/app/menus/shared/NotificationContextMenu.tsx
@@ -2251,7 +2259,6 @@ msgstr ""
 
 #: components/ui/components/features/profiles/ProfileStatus.tsx
 #: src/interface/channels/text/MemberSidebar.tsx
-#: src/interface/Friends.tsx
 #: src/interface/navigation/channels/HomeSidebar.tsx
 #: src/interface/navigation/servers/UserMenu.tsx
 msgid "Online"
@@ -2287,8 +2294,8 @@ msgid "Open server settings"
 msgstr ""
 
 #: src/interface/Home.tsx
-msgid "Open settings"
-msgstr "Open settings"
+#~ msgid "Open settings"
+#~ msgstr "Open settings"
 
 #: components/modal/modals/ReportContent.tsx
 msgid "Other"
@@ -2325,8 +2332,8 @@ msgid "Password changed successfully."
 msgstr ""
 
 #: src/interface/Friends.tsx
-msgid "Pending"
-msgstr ""
+#~ msgid "Pending"
+#~ msgstr ""
 
 #: components/app/interface/settings/ChannelSettings.tsx
 msgid "Permissions"
@@ -2510,8 +2517,8 @@ msgid "Registered since <0/>"
 msgstr ""
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Reject friend request"
-msgstr ""
+#~ msgid "Reject friend request"
+#~ msgstr ""
 
 #: src/interface/channels/text/TextSearchSidebar.tsx
 msgid "Relevance"
@@ -2542,8 +2549,8 @@ msgid "Remove Avatars"
 msgstr "Remove Avatars"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Remove friend"
-msgstr "Remove friend"
+#~ msgid "Remove friend"
+#~ msgstr "Remove friend"
 
 #: components/app/menus/UserContextMenu.tsx
 #: components/modal/modals/RemoveMember.tsx
@@ -2710,7 +2717,6 @@ msgid "Save to your notes"
 msgstr "Save to your notes"
 
 #: src/interface/channels/ChannelHeader.tsx
-#: src/interface/navigation/channels/HomeSidebar.tsx
 msgid "Saved Notes"
 msgstr "Saved Notes"
 
@@ -2804,8 +2810,8 @@ msgid "Send messages in channels"
 msgstr ""
 
 #: components/modal/modals/AddFriend.tsx
-msgid "Send Request"
-msgstr ""
+#~ msgid "Send Request"
+#~ msgstr ""
 
 #: components/app/interface/channels/text/DraftMessage.tsx
 msgid "Sending..."
@@ -2987,8 +2993,8 @@ msgid "Start Minimised to Tray"
 msgstr ""
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "Start the call"
-msgstr ""
+#~ msgid "Start the call"
+#~ msgstr ""
 
 #: components/app/interface/settings/user/Native.tsx
 msgid "Start with Computer"
@@ -3070,8 +3076,8 @@ msgstr ""
 #~ msgstr "Support the project by donating - thank you!"
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "Switch to this voice channel"
-msgstr ""
+#~ msgid "Switch to this voice channel"
+#~ msgstr ""
 
 #: components/app/interface/settings/user/Sync.tsx
 msgid "Sync appearance options, such as chosen emoji pack and message density."
@@ -3395,7 +3401,6 @@ msgid "User's profile has inappropriate content"
 msgstr ""
 
 #: components/auth/src/flows/Form.tsx
-#: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/CreateBot.tsx
 #: components/modal/modals/EditBotUsername.tsx
 #: components/modal/modals/EditUsername.tsx
@@ -3404,8 +3409,8 @@ msgid "Username"
 msgstr "Username"
 
 #: components/modal/modals/AddFriend.tsx
-msgid "username#1234"
-msgstr ""
+#~ msgid "username#1234"
+#~ msgstr ""
 
 #: components/modal/modals/ChannelToggleMature.tsx
 msgid "Users will be asked to confirm their age before joining this channel."
@@ -3544,16 +3549,16 @@ msgstr ""
 
 #. placeholder {0}: names.join(", ")
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "with {0}"
-msgstr ""
+#~ msgid "with {0}"
+#~ msgstr ""
 
 #~ msgid "With {0}"
 #~ msgstr ""
 
 #. placeholder {0}: names.length
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "with {0} others"
-msgstr ""
+#~ msgid "with {0} others"
+#~ msgstr ""
 
 #: components/modal/modals/CreateGroupOrServer.tsx
 msgid "Would you like to create a new group or server?"
@@ -3584,8 +3589,8 @@ msgid "You are banned from this server."
 msgstr ""
 
 #: src/interface/Home.tsx
-msgid "You can also click the gear icon in the bottom left."
-msgstr ""
+#~ msgid "You can also click the gear icon in the bottom left."
+#~ msgstr ""
 
 #~ msgid "You can also right-click the user icon in the top left, or left click it if you're already home."
 #~ msgstr "You can also right-click the user icon in the top left, or left click it if you're already home."

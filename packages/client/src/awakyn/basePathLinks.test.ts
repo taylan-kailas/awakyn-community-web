@@ -9,8 +9,15 @@ const BASE = "/community-app";
 test("Stoat's own fixed links are moved inside the app", () => {
   assert.equal(pathInsideApp("/login/auth", BASE), "/community-app/login/auth");
   assert.equal(pathInsideApp("/app", BASE), "/community-app/app");
-  assert.equal(pathInsideApp("/server/abc/channel/def", BASE), "/community-app/server/abc/channel/def");
-  assert.equal(pathInsideApp("/invite/7QgvnPYT", BASE), "/community-app/invite/7QgvnPYT");
+  assert.equal(
+    pathInsideApp("/server/abc/channel/def", BASE),
+    "/community-app/server/abc/channel/def",
+  );
+  assert.equal(
+    pathInsideApp("/invite/7QgvnPYT", BASE),
+    "/community-app/invite/7QgvnPYT",
+  );
+  assert.equal(pathInsideApp("/messages", BASE), "/community-app/messages");
 });
 
 test("links already inside the app are left alone", () => {
@@ -30,7 +37,10 @@ test("nothing changes when the app is served from the site root", () => {
 });
 
 test("the page to return to after signing in is remembered without the app's folder", () => {
-  assert.equal(pathWithinApp("/community-app/channel/abc", "/community-app"), "/channel/abc");
+  assert.equal(
+    pathWithinApp("/community-app/channel/abc", "/community-app"),
+    "/channel/abc",
+  );
   assert.equal(pathWithinApp("/community-app", "/community-app"), "/");
   assert.equal(pathWithinApp("/channel/abc", ""), "/channel/abc");
   assert.equal(pathWithinApp("/channel/abc", "/community-app"), "/channel/abc");

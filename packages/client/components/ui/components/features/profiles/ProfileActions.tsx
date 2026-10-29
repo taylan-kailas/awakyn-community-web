@@ -9,7 +9,6 @@ import { UserContextMenu } from "@revolt/app";
 import { useClient } from "@revolt/client";
 import { useModals } from "@revolt/modal";
 
-import MdCancel from "@material-design-icons/svg/filled/cancel.svg?component-solid";
 import MdEdit from "@material-design-icons/svg/filled/edit.svg?component-solid";
 import MdMoreVert from "@material-design-icons/svg/filled/more_vert.svg?component-solid";
 
@@ -61,22 +60,7 @@ export function ProfileActions(props: {
 
   return (
     <Actions width={props.width}>
-      <Show when={props.user.relationship === "None" && !props.user.bot}>
-        <Button onPress={() => props.user.addFriend()}>Add Friend</Button>
-      </Show>
-      <Show when={props.user.relationship === "Incoming"}>
-        <Button onPress={() => props.user.addFriend()}>
-          Accept friend request
-        </Button>
-        <IconButton onPress={() => props.user.removeFriend()}>
-          <MdCancel />
-        </IconButton>
-      </Show>
-      <Show when={props.user.relationship === "Outgoing"}>
-        <Button onPress={() => props.user.removeFriend()}>
-          Cancel friend request
-        </Button>
-      </Show>
+      {/* Awakyn: everyone in the community is already connected; no friend requests */}
       <Show when={props.user.relationship === "Friend"}>
         <Button onPress={openDm}>Message</Button>
       </Show>

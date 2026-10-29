@@ -258,8 +258,8 @@ msgid "Accept"
 msgstr "承認"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Accept friend request"
-msgstr "フレンド申請を承認"
+#~ msgid "Accept friend request"
+#~ msgstr "フレンド申請を承認"
 
 #: components/modal/modals/PolicyChange.tsx
 msgid "Acknowledge"
@@ -272,25 +272,30 @@ msgstr "追加"
 
 #: components/modal/modals/AddFriend.tsx
 #: src/interface/Friends.tsx
-msgid "Add a new friend"
-msgstr "フレンドを追加"
+#~ msgid "Add a new friend"
+#~ msgstr "フレンドを追加"
 
 #: components/ui/components/features/profiles/ProfileActions.tsx
 msgid "Add Bot"
 msgstr "Botを追加"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Add friend"
-msgstr "フレンドに追加"
+#~ msgid "Add friend"
+#~ msgstr "フレンドに追加"
 
 #: components/modal/modals/AddMembersToGroup.tsx
 #: src/interface/channels/ChannelHeader.tsx
-msgid "Add friends to group"
-msgstr "フレンドをグループに追加"
+#~ msgid "Add friends to group"
+#~ msgstr "フレンドをグループに追加"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Add new members to the group"
 msgstr "新しいメンバーをグループに追加できます"
+
+#: components/modal/modals/AddMembersToGroup.tsx
+#: src/interface/channels/ChannelHeader.tsx
+msgid "Add people to group"
+msgstr ""
 
 #: src/interface/navigation/servers/UserMenu.tsx
 msgid "Add status text"
@@ -315,8 +320,8 @@ msgstr "詳細設定"
 #~ msgstr "全てのロールとユーザーに影響します"
 
 #: src/interface/Friends.tsx
-msgid "All"
-msgstr "全て"
+#~ msgid "All"
+#~ msgstr "全て"
 
 #: components/app/menus/ServerContextMenu.tsx
 #: components/app/menus/shared/NotificationContextMenu.tsx
@@ -474,8 +479,8 @@ msgid "Block user"
 msgstr "ユーザーをブロック"
 
 #: src/interface/Friends.tsx
-msgid "Blocked"
-msgstr "ブロック"
+#~ msgid "Blocked"
+#~ msgstr "ブロック"
 
 #: components/ui/components/features/messaging/elements/MessageReply.tsx
 msgid "Blocked User"
@@ -553,8 +558,8 @@ msgid "Cancel"
 msgstr "キャンセル"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Cancel friend request"
-msgstr "フレンド申請を取り消す"
+#~ msgid "Cancel friend request"
+#~ msgstr "フレンド申請を取り消す"
 
 #: components/app/menus/DraftMessageContextMenu.tsx
 msgid "Cancel message"
@@ -697,7 +702,6 @@ msgstr "クリックしてスポイラーを解除"
 msgid "Client Settings"
 msgstr "クライアントの設定"
 
-#: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/AddMembersToGroup.tsx
 #: components/modal/modals/Changelog.tsx
 #: components/modal/modals/ChannelInfo.tsx
@@ -719,7 +723,6 @@ msgstr "クライアントの設定"
 #: components/modal/modals/LinkWarning.tsx
 #: components/modal/modals/PolicyChange.tsx
 #: components/modal/modals/ServerInfo.tsx
-#: components/modal/modals/UserProfileMutualFriends.tsx
 #: components/modal/modals/UserProfileMutualGroups.tsx
 #: components/modal/modals/UserProfileRoles.tsx
 msgid "Close"
@@ -797,8 +800,8 @@ msgid "Contribute a language"
 msgstr "言語の追加に協力"
 
 #: src/interface/navigation/channels/HomeSidebar.tsx
-msgid "Conversations"
-msgstr "会話"
+#~ msgid "Conversations"
+#~ msgstr "会話"
 
 #: components/ui/components/features/profiles/ProfileBanner.tsx
 msgid "Copied!"
@@ -1125,6 +1128,12 @@ msgstr "デスクトップ"
 #~ msgid "Developer Documentation"
 #~ msgstr "デベロッパードキュメント"
 
+#: src/interface/Home.tsx
+#: src/interface/navigation/channels/HomeSidebar.tsx
+#: src/interface/navigation/servers/ServerList.tsx
+msgid "Direct Messages"
+msgstr ""
+
 #: components/app/interface/settings/user/Account.tsx
 #~ msgid "Disable Account"
 #~ msgstr "アカウントを無効化"
@@ -1438,8 +1447,8 @@ msgstr "8時間"
 
 #: src/interface/Friends.tsx
 #: src/interface/navigation/channels/HomeSidebar.tsx
-msgid "Friends"
-msgstr "フレンド"
+#~ msgid "Friends"
+#~ msgstr "フレンド"
 
 #: components/ui/components/features/messaging/composition/picker/EmojiPicker.tsx
 msgid "from "
@@ -1581,8 +1590,8 @@ msgstr ""
 
 #: src/interface/Home.tsx
 #: src/interface/navigation/channels/HomeSidebar.tsx
-msgid "Home"
-msgstr "ホーム"
+#~ msgid "Home"
+#~ msgstr "ホーム"
 
 #: src/interface/channels/AgeGate.tsx
 msgid "I confirm that I am at least 18 years old."
@@ -1685,7 +1694,6 @@ msgstr "サーバーに参加"
 msgid "Join the Stoat Lounge"
 msgstr "Stoatラウンジに参加"
 
-#: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
 #: src/interface/channels/ChannelHeader.tsx
 msgid "Join the voice channel"
 msgstr "ボイスチャンネルに参加"
@@ -2039,8 +2047,8 @@ msgid "Muted until <0/>"
 msgstr "<0/> まで通知されません"
 
 #: components/modal/modals/UserProfileMutualFriends.tsx
-msgid "Mutual Friends"
-msgstr "共通のフレンド"
+#~ msgid "Mutual Friends"
+#~ msgstr "共通のフレンド"
 
 #: components/modal/modals/UserProfileMutualGroups.tsx
 msgid "Mutual Groups"
@@ -2106,8 +2114,8 @@ msgid "No role overrides have been configured."
 msgstr ""
 
 #: src/interface/Friends.tsx
-msgid "Nobody here right now!"
-msgstr "ここにはまだ誰もいません!"
+#~ msgid "Nobody here right now!"
+#~ msgstr "ここにはまだ誰もいません!"
 
 #: components/app/menus/ServerContextMenu.tsx
 #: components/app/menus/shared/NotificationContextMenu.tsx
@@ -2179,7 +2187,6 @@ msgstr ""
 
 #: components/ui/components/features/profiles/ProfileStatus.tsx
 #: src/interface/channels/text/MemberSidebar.tsx
-#: src/interface/Friends.tsx
 #: src/interface/navigation/channels/HomeSidebar.tsx
 #: src/interface/navigation/servers/UserMenu.tsx
 msgid "Online"
@@ -2215,8 +2222,8 @@ msgid "Open server settings"
 msgstr "サーバー設定"
 
 #: src/interface/Home.tsx
-msgid "Open settings"
-msgstr "設定を開く"
+#~ msgid "Open settings"
+#~ msgstr "設定を開く"
 
 #: components/modal/modals/ReportContent.tsx
 msgid "Other"
@@ -2253,8 +2260,8 @@ msgid "Password changed successfully."
 msgstr ""
 
 #: src/interface/Friends.tsx
-msgid "Pending"
-msgstr "待機中"
+#~ msgid "Pending"
+#~ msgstr "待機中"
 
 #: components/app/interface/settings/ChannelSettings.tsx
 msgid "Permissions"
@@ -2435,8 +2442,8 @@ msgid "Registered since <0/>"
 msgstr "</0>に登録"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Reject friend request"
-msgstr "フレンド申請を拒否"
+#~ msgid "Reject friend request"
+#~ msgstr "フレンド申請を拒否"
 
 #: src/interface/channels/text/TextSearchSidebar.tsx
 msgid "Relevance"
@@ -2467,8 +2474,8 @@ msgid "Remove Avatars"
 msgstr "アバターの削除"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Remove friend"
-msgstr "フレンドを削除"
+#~ msgid "Remove friend"
+#~ msgstr "フレンドを削除"
 
 #: components/app/menus/UserContextMenu.tsx
 #: components/modal/modals/RemoveMember.tsx
@@ -2632,7 +2639,6 @@ msgid "Save to your notes"
 msgstr "ノートに保存"
 
 #: src/interface/channels/ChannelHeader.tsx
-#: src/interface/navigation/channels/HomeSidebar.tsx
 msgid "Saved Notes"
 msgstr "保存されたノート"
 
@@ -2723,8 +2729,8 @@ msgid "Send messages in channels"
 msgstr "サーバー内のチャンネルでメッセージを送信できます"
 
 #: components/modal/modals/AddFriend.tsx
-msgid "Send Request"
-msgstr "申請を送信"
+#~ msgid "Send Request"
+#~ msgstr "申請を送信"
 
 #: components/app/interface/channels/text/DraftMessage.tsx
 msgid "Sending..."
@@ -2903,8 +2909,8 @@ msgid "Start Minimised to Tray"
 msgstr ""
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "Start the call"
-msgstr ""
+#~ msgid "Start the call"
+#~ msgstr ""
 
 #: components/app/interface/settings/user/Native.tsx
 msgid "Start with Computer"
@@ -2983,8 +2989,8 @@ msgstr ""
 #~ msgstr "寄付でプロジェクトを支援する - ありがとうございます!"
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "Switch to this voice channel"
-msgstr ""
+#~ msgid "Switch to this voice channel"
+#~ msgstr ""
 
 #: components/app/interface/settings/user/Sync.tsx
 msgid "Sync appearance options, such as chosen emoji pack and message density."
@@ -3308,7 +3314,6 @@ msgid "User's profile has inappropriate content"
 msgstr ""
 
 #: components/auth/src/flows/Form.tsx
-#: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/CreateBot.tsx
 #: components/modal/modals/EditBotUsername.tsx
 #: components/modal/modals/EditUsername.tsx
@@ -3317,8 +3322,8 @@ msgid "Username"
 msgstr "ユーザー名"
 
 #: components/modal/modals/AddFriend.tsx
-msgid "username#1234"
-msgstr ""
+#~ msgid "username#1234"
+#~ msgstr ""
 
 #: components/modal/modals/ChannelToggleMature.tsx
 msgid "Users will be asked to confirm their age before joining this channel."
@@ -3451,8 +3456,8 @@ msgstr ""
 
 #. placeholder {0}: names.join(", ")
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "with {0}"
-msgstr ""
+#~ msgid "with {0}"
+#~ msgstr ""
 
 #. placeholder {0}: names.join(", ")
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
@@ -3461,8 +3466,8 @@ msgstr ""
 
 #. placeholder {0}: names.length
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "with {0} others"
-msgstr ""
+#~ msgid "with {0} others"
+#~ msgstr ""
 
 #: components/modal/modals/CreateGroupOrServer.tsx
 msgid "Would you like to create a new group or server?"
@@ -3493,8 +3498,8 @@ msgid "You are banned from this server."
 msgstr ""
 
 #: src/interface/Home.tsx
-msgid "You can also click the gear icon in the bottom left."
-msgstr ""
+#~ msgid "You can also click the gear icon in the bottom left."
+#~ msgstr ""
 
 #~ msgid "You can also right-click the user icon in the top left, or left click it if you're already home."
 #~ msgstr "左上のユーザーアイコンを右クリックするか、すでにホームにいる場合は左クリックしてください。"

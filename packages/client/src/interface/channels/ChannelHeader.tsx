@@ -194,7 +194,7 @@ export function ChannelHeader(props: Props) {
           use:floating={{
             tooltip: {
               placement: "bottom",
-              content: t`Add friends to group`,
+              content: t`Add people to group`,
             },
           }}
         >

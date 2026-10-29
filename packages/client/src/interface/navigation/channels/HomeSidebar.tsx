@@ -1,4 +1,4 @@
-import { Match, Show, Switch, createMemo, splitProps } from "solid-js";
+import { Match, Show, Switch, splitProps } from "solid-js";
 
 import { Trans, useLingui } from "@lingui/solid/macro";
 import { VirtualContainer } from "@minht11/solid-virtual-container";
@@ -9,10 +9,8 @@ import { styled } from "styled-system/jsx";
 import { ChannelContextMenu, UserContextMenu } from "@revolt/app";
 import { useClient } from "@revolt/client";
 import { useDevice } from "@revolt/common";
-import Instance from "@revolt/instance/Instance";
 import { TextWithEmoji } from "@revolt/markdown";
 import { useModals } from "@revolt/modal";
-import { useLocation, useNavigate } from "@revolt/routing";
 import {
   Avatar,
   Deferred,
@@ -39,115 +37,26 @@ interface Props {
    * Current channel ID
    */
   channelId?: string;
-
-  /**
-   * Open the saved notes channel
-   */
-  openSavedNotes: (
-    navigate?: ReturnType<typeof useNavigate>,
-  ) => string | undefined;
 }
 
 /**
- * Display home navigation and conversations
+ * Display direct messages and groups
  */
 export const HomeSidebar = (props: Props) => {
   const { t } = useLingui();
   const client = useClient();
-  const navigate = useNavigate();
-  const location = useLocation();
   const { openModal } = useModals();
   const { isMobile } = useDevice();
 
-  const savedNotesChannelId = createMemo(() => props.openSavedNotes());
-
   let scrollTargetElement!: HTMLDivElement;
-
-  const pendingRequests = createMemo(() => {
-    return client().users.filter((user) => user.relationship === "Incoming")
-      .length;
-  });
 
   return (
     <SidebarBase class="channel_bar home">
       <div ref={scrollTargetElement} use:invisibleScrollable>
         <List>
+          {/* Awakyn: one community, so no home page, friends or saved notes; just conversations */}
           <SidebarTitle>
-            <Trans>Conversations</Trans>
-          </SidebarTitle>
-
-          <MenuButton
-            href="/app"
-            size="normal"
-            icon={<Symbol>home</Symbol>}
-            attention={
-              Instance.relPath(location.pathname) === "/app"
-                ? "selected"
-                : "normal"
-            }
-          >
-            <ButtonTitle>
-              <Trans>Home</Trans>
-            </ButtonTitle>
-          </MenuButton>
-
-          <div style={{ height: "5px" }} />
-
-          <MenuButton
-            href="/friends"
-            size="normal"
-            icon={<Symbol>group</Symbol>}
-            attention={
-              Instance.relPath(location.pathname) === "/friends"
-                ? "selected"
-                : "normal"
-            }
-          >
-            <ButtonTitle>
-              <Trans>Friends</Trans>
-              <div style={{ flex: "1 1 auto" }} />
-              <Show when={pendingRequests()}>
-                <PendingBadge>{pendingRequests()} requests</PendingBadge>
-              </Show>
-            </ButtonTitle>
-          </MenuButton>
-
-          <div style={{ height: "5px" }} />
-
-          <Switch
-            fallback={
-              <MenuButton
-                size="normal"
-                attention={"normal"}
-                icon={<Symbol>note_stack</Symbol>}
-                onClick={() => props.openSavedNotes(navigate)}
-              >
-                <ButtonTitle>
-                  <Trans>Saved Notes</Trans>
-                </ButtonTitle>
-              </MenuButton>
-            }
-          >
-            <Match when={savedNotesChannelId()}>
-              <MenuButton
-                href={`/channel/${savedNotesChannelId()}`}
-                size="normal"
-                icon={<Symbol>note_stack</Symbol>}
-                attention={
-                  props.channelId && savedNotesChannelId() === props.channelId
-                    ? "selected"
-                    : "normal"
-                }
-              >
-                <ButtonTitle>
-                  <Trans>Saved Notes</Trans>
-                </ButtonTitle>
-              </MenuButton>
-            </Match>
-          </Switch>
-
-          <Category>
-            Direct Messages
+            <Trans>Direct Messages</Trans>
             <a
               class={css({ cursor: "pointer" })}
               onClick={() =>
@@ -167,7 +76,7 @@ export const HomeSidebar = (props: Props) => {
                 add
               </Symbol>
             </a>
-          </Category>
+          </SidebarTitle>
 
           <Deferred>
             <VirtualContainer
@@ -204,48 +113,15 @@ export const HomeSidebar = (props: Props) => {
 /**
  * Sidebar title
  */
-const SidebarTitle = styled("p", {
+const SidebarTitle = styled("div", {
   base: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
     paddingBlock: "calc(var(--gap-md) + 15px)",
     paddingInline: "var(--gap-md)",
 
     ...typography.raw({ class: "title" }),
-  },
-});
-
-/**
- * Button title
- */
-const ButtonTitle = styled("div", {
-  base: {
-    gap: "var(--gap-md)",
-    height: "100%",
-    display: "flex",
-    alignItems: "center",
-  },
-});
-
-const PendingBadge = styled("div", {
-  base: {
-    ...typography.raw({ class: "label", size: "small" }),
-    padding: "var(--gap-sm) var(--gap-md)",
-    color: "var(--md-sys-color-on-error)",
-    background: "var(--md-sys-color-error)",
-    borderRadius: "var(--borderRadius-md)",
-  },
-});
-
-const Category = styled("div", {
-  base: {
-    display: "flex",
-    paddingInline: "var(--gap-lg)",
-    alignItems: "center",
-    justifyContent: "space-between",
-    paddingTop: "calc(var(--gap-xl) - 5px)",
-    paddingBottom: "var(--gap-md)",
-
-    ...typography.raw({ class: "label", size: "small" }),
-    fontSize: "13px",
   },
 });
 

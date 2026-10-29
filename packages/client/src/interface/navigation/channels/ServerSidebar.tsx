@@ -7,6 +7,7 @@ import {
   Show,
   Switch,
   createMemo,
+  runWithOwner,
 } from "solid-js";
 
 import { useLingui } from "@lingui/solid/macro";
@@ -454,7 +455,7 @@ function Entry(
 ) {
   const state = useState();
   const voice = useVoice();
-  const { openModal } = useModals();
+  const { openModal, showError } = useModals();
   const { isMobile } = useDevice();
 
   const canEditChannel = createMemo(() =>
@@ -476,6 +477,16 @@ function Entry(
 
   const inCall = () => props.channel.id === voice.channel()?.id;
 
+  // Awakyn: one click on a voice channel opens it and joins its call.
+  function joinCall() {
+    if (!props.channel.isVoice || inCall()) return;
+    if (!props.channel.havePermission("Connect")) return;
+    // The call outlives this entry (scrolling or switching away unmounts it).
+    runWithOwner(null, () => voice.connect(props.channel))?.catch((error) =>
+      showError(error),
+    );
+  }
+
   const attentionState = createMemo(() =>
     props.active
       ? "selected"
@@ -492,6 +503,7 @@ function Entry(
     <Column gap="sm">
       <MenuButton
         href={`/server/${props.channel.serverId}/channel/${props.channel.id}`}
+        onClick={joinCall}
         use:floating={props.menuGenerator(props.channel)}
         size="normal"
         alert={alertState()}

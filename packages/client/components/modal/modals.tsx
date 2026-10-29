@@ -4,7 +4,6 @@ import { IS_DEV } from "@revolt/client";
 
 import { type ActiveModal } from ".";
 import { AddBotModal } from "./modals/AddBot";
-import { AddFriendModal } from "./modals/AddFriend";
 import { AddMembersToGroupModal } from "./modals/AddMembersToGroup";
 import { BanMemberModal } from "./modals/BanMember";
 import { BanNonMemberModal } from "./modals/BanNonMember";
@@ -59,7 +58,6 @@ import { SettingsModal } from "./modals/Settings";
 import { SignOutSessionsModal } from "./modals/SignOutSessions";
 import { SignedOutModal } from "./modals/SignedOut";
 import { UserProfileModal } from "./modals/UserProfile";
-import { UserProfileMutualFriendsModal } from "./modals/UserProfileMutualFriends";
 import { UserProfileMutualGroupsModal } from "./modals/UserProfileMutualGroups";
 import { UserProfileRolesModal } from "./modals/UserProfileRoles";
 
@@ -82,8 +80,6 @@ export function RenderModal(props: ActiveModal & { onClose: () => void }) {
   switch (modalProps.type) {
     case "add_bot":
       return <AddBotModal {...modalProps} />;
-    case "add_friend":
-      return <AddFriendModal {...modalProps} />;
     case "ban_member":
       return <BanMemberModal {...modalProps} />;
     case "ban_non_member":
@@ -180,8 +176,6 @@ export function RenderModal(props: ActiveModal & { onClose: () => void }) {
       return <UserProfileModal {...modalProps} />;
     case "user_profile_roles":
       return <UserProfileRolesModal {...modalProps} />;
-    case "user_profile_mutual_friends":
-      return <UserProfileMutualFriendsModal {...modalProps} />;
     case "user_profile_mutual_groups":
       return <UserProfileMutualGroupsModal {...modalProps} />;
     case "reset_bot_token":

@@ -258,8 +258,8 @@ msgid "Accept"
 msgstr "Přijmout"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Accept friend request"
-msgstr "Přijmout žádost o přátelství"
+#~ msgid "Accept friend request"
+#~ msgstr "Přijmout žádost o přátelství"
 
 #: components/modal/modals/PolicyChange.tsx
 msgid "Acknowledge"
@@ -272,25 +272,30 @@ msgstr "Přidat"
 
 #: components/modal/modals/AddFriend.tsx
 #: src/interface/Friends.tsx
-msgid "Add a new friend"
-msgstr "Odeslat žádost o přátelství"
+#~ msgid "Add a new friend"
+#~ msgstr "Odeslat žádost o přátelství"
 
 #: components/ui/components/features/profiles/ProfileActions.tsx
 msgid "Add Bot"
 msgstr "Přidat bota"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Add friend"
-msgstr "Přidat přítele"
+#~ msgid "Add friend"
+#~ msgstr "Přidat přítele"
 
 #: components/modal/modals/AddMembersToGroup.tsx
 #: src/interface/channels/ChannelHeader.tsx
-msgid "Add friends to group"
-msgstr "Přidat přátele do skupiny"
+#~ msgid "Add friends to group"
+#~ msgstr "Přidat přátele do skupiny"
 
 #: components/app/interface/settings/channel/permissions/ChannelPermissionsEditor.tsx
 msgid "Add new members to the group"
 msgstr "Přidat nové členy do skupiny"
+
+#: components/modal/modals/AddMembersToGroup.tsx
+#: src/interface/channels/ChannelHeader.tsx
+msgid "Add people to group"
+msgstr ""
 
 #: src/interface/navigation/servers/UserMenu.tsx
 msgid "Add status text"
@@ -315,8 +320,8 @@ msgstr "Pokročilé"
 #~ msgstr "Ovlivňuje všechny role a členy"
 
 #: src/interface/Friends.tsx
-msgid "All"
-msgstr "Všechny"
+#~ msgid "All"
+#~ msgstr "Všechny"
 
 #: components/app/menus/ServerContextMenu.tsx
 #: components/app/menus/shared/NotificationContextMenu.tsx
@@ -474,8 +479,8 @@ msgid "Block user"
 msgstr "Zablokovat uživatele"
 
 #: src/interface/Friends.tsx
-msgid "Blocked"
-msgstr "Zablokován"
+#~ msgid "Blocked"
+#~ msgstr "Zablokován"
 
 #: components/ui/components/features/messaging/elements/MessageReply.tsx
 msgid "Blocked User"
@@ -553,8 +558,8 @@ msgid "Cancel"
 msgstr "Zrušit"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Cancel friend request"
-msgstr "Zrušit žádost o přátelství"
+#~ msgid "Cancel friend request"
+#~ msgstr "Zrušit žádost o přátelství"
 
 #: components/app/menus/DraftMessageContextMenu.tsx
 msgid "Cancel message"
@@ -697,7 +702,6 @@ msgstr "Odkrýt spoiler"
 msgid "Client Settings"
 msgstr "Nastavení klienta"
 
-#: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/AddMembersToGroup.tsx
 #: components/modal/modals/Changelog.tsx
 #: components/modal/modals/ChannelInfo.tsx
@@ -719,7 +723,6 @@ msgstr "Nastavení klienta"
 #: components/modal/modals/LinkWarning.tsx
 #: components/modal/modals/PolicyChange.tsx
 #: components/modal/modals/ServerInfo.tsx
-#: components/modal/modals/UserProfileMutualFriends.tsx
 #: components/modal/modals/UserProfileMutualGroups.tsx
 #: components/modal/modals/UserProfileRoles.tsx
 msgid "Close"
@@ -797,8 +800,8 @@ msgid "Contribute a language"
 msgstr "Pomoct s překladem"
 
 #: src/interface/navigation/channels/HomeSidebar.tsx
-msgid "Conversations"
-msgstr "Konverzace"
+#~ msgid "Conversations"
+#~ msgstr "Konverzace"
 
 #: components/ui/components/features/profiles/ProfileBanner.tsx
 msgid "Copied!"
@@ -1125,6 +1128,12 @@ msgstr "Stolní Počítač"
 #~ msgid "Developer Documentation"
 #~ msgstr "Vývojářská Dokumentace"
 
+#: src/interface/Home.tsx
+#: src/interface/navigation/channels/HomeSidebar.tsx
+#: src/interface/navigation/servers/ServerList.tsx
+msgid "Direct Messages"
+msgstr ""
+
 #: components/app/interface/settings/user/Account.tsx
 #~ msgid "Disable Account"
 #~ msgstr "Deaktivovat účet"
@@ -1438,8 +1447,8 @@ msgstr "Na 8 hodin"
 
 #: src/interface/Friends.tsx
 #: src/interface/navigation/channels/HomeSidebar.tsx
-msgid "Friends"
-msgstr "Přátelé"
+#~ msgid "Friends"
+#~ msgstr "Přátelé"
 
 #: components/ui/components/features/messaging/composition/picker/EmojiPicker.tsx
 msgid "from "
@@ -1581,8 +1590,8 @@ msgstr ""
 
 #: src/interface/Home.tsx
 #: src/interface/navigation/channels/HomeSidebar.tsx
-msgid "Home"
-msgstr "Domů"
+#~ msgid "Home"
+#~ msgstr "Domů"
 
 #: src/interface/channels/AgeGate.tsx
 msgid "I confirm that I am at least 18 years old."
@@ -1685,7 +1694,6 @@ msgstr "Připojit se na server"
 msgid "Join the Stoat Lounge"
 msgstr ""
 
-#: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
 #: src/interface/channels/ChannelHeader.tsx
 msgid "Join the voice channel"
 msgstr "Připojit se do hlasového kanálu"
@@ -2039,8 +2047,8 @@ msgid "Muted until <0/>"
 msgstr "Ztlumen do <0/>"
 
 #: components/modal/modals/UserProfileMutualFriends.tsx
-msgid "Mutual Friends"
-msgstr "Společní přátelé"
+#~ msgid "Mutual Friends"
+#~ msgstr "Společní přátelé"
 
 #: components/modal/modals/UserProfileMutualGroups.tsx
 msgid "Mutual Groups"
@@ -2106,8 +2114,8 @@ msgid "No role overrides have been configured."
 msgstr ""
 
 #: src/interface/Friends.tsx
-msgid "Nobody here right now!"
-msgstr "Právě tu nikdo není!"
+#~ msgid "Nobody here right now!"
+#~ msgstr "Právě tu nikdo není!"
 
 #: components/app/menus/ServerContextMenu.tsx
 #: components/app/menus/shared/NotificationContextMenu.tsx
@@ -2179,7 +2187,6 @@ msgstr ""
 
 #: components/ui/components/features/profiles/ProfileStatus.tsx
 #: src/interface/channels/text/MemberSidebar.tsx
-#: src/interface/Friends.tsx
 #: src/interface/navigation/channels/HomeSidebar.tsx
 #: src/interface/navigation/servers/UserMenu.tsx
 msgid "Online"
@@ -2215,8 +2222,8 @@ msgid "Open server settings"
 msgstr "Otevřít nastavení serveru"
 
 #: src/interface/Home.tsx
-msgid "Open settings"
-msgstr "Otevřít nastavení"
+#~ msgid "Open settings"
+#~ msgstr "Otevřít nastavení"
 
 #: components/modal/modals/ReportContent.tsx
 msgid "Other"
@@ -2253,8 +2260,8 @@ msgid "Password changed successfully."
 msgstr ""
 
 #: src/interface/Friends.tsx
-msgid "Pending"
-msgstr ""
+#~ msgid "Pending"
+#~ msgstr ""
 
 #: components/app/interface/settings/ChannelSettings.tsx
 msgid "Permissions"
@@ -2435,8 +2442,8 @@ msgid "Registered since <0/>"
 msgstr ""
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Reject friend request"
-msgstr "Odmítnout žádost o přátelství"
+#~ msgid "Reject friend request"
+#~ msgstr "Odmítnout žádost o přátelství"
 
 #: src/interface/channels/text/TextSearchSidebar.tsx
 msgid "Relevance"
@@ -2467,8 +2474,8 @@ msgid "Remove Avatars"
 msgstr "Odebrat avatar"
 
 #: components/app/menus/UserContextMenu.tsx
-msgid "Remove friend"
-msgstr "Odebrat přítele"
+#~ msgid "Remove friend"
+#~ msgstr "Odebrat přítele"
 
 #: components/app/menus/UserContextMenu.tsx
 #: components/modal/modals/RemoveMember.tsx
@@ -2632,7 +2639,6 @@ msgid "Save to your notes"
 msgstr "Uložit do poznámek"
 
 #: src/interface/channels/ChannelHeader.tsx
-#: src/interface/navigation/channels/HomeSidebar.tsx
 msgid "Saved Notes"
 msgstr "Poznámky"
 
@@ -2723,8 +2729,8 @@ msgid "Send messages in channels"
 msgstr ""
 
 #: components/modal/modals/AddFriend.tsx
-msgid "Send Request"
-msgstr ""
+#~ msgid "Send Request"
+#~ msgstr ""
 
 #: components/app/interface/channels/text/DraftMessage.tsx
 msgid "Sending..."
@@ -2903,8 +2909,8 @@ msgid "Start Minimised to Tray"
 msgstr ""
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "Start the call"
-msgstr ""
+#~ msgid "Start the call"
+#~ msgstr ""
 
 #: components/app/interface/settings/user/Native.tsx
 msgid "Start with Computer"
@@ -2983,8 +2989,8 @@ msgstr ""
 #~ msgstr "Podpořte projekt finančním darem - děkujeme!"
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "Switch to this voice channel"
-msgstr ""
+#~ msgid "Switch to this voice channel"
+#~ msgstr ""
 
 #: components/app/interface/settings/user/Sync.tsx
 msgid "Sync appearance options, such as chosen emoji pack and message density."
@@ -3308,7 +3314,6 @@ msgid "User's profile has inappropriate content"
 msgstr "Profil uživatele má nevhodný obsah"
 
 #: components/auth/src/flows/Form.tsx
-#: components/modal/modals/AddFriend.tsx
 #: components/modal/modals/CreateBot.tsx
 #: components/modal/modals/EditBotUsername.tsx
 #: components/modal/modals/EditUsername.tsx
@@ -3317,8 +3322,8 @@ msgid "Username"
 msgstr "Uživatelské jméno"
 
 #: components/modal/modals/AddFriend.tsx
-msgid "username#1234"
-msgstr "uzivatelskejmeno#1234"
+#~ msgid "username#1234"
+#~ msgstr "uzivatelskejmeno#1234"
 
 #: components/modal/modals/ChannelToggleMature.tsx
 msgid "Users will be asked to confirm their age before joining this channel."
@@ -3451,16 +3456,16 @@ msgstr "Pokud ostaní mohou upravit toto nastavení"
 
 #. placeholder {0}: names.join(", ")
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "with {0}"
-msgstr ""
+#~ msgid "with {0}"
+#~ msgstr ""
 
 #~ msgid "With {0}"
 #~ msgstr "s {0}"
 
 #. placeholder {0}: names.length
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
-msgid "with {0} others"
-msgstr ""
+#~ msgid "with {0} others"
+#~ msgstr ""
 
 #: components/modal/modals/CreateGroupOrServer.tsx
 msgid "Would you like to create a new group or server?"
@@ -3491,8 +3496,8 @@ msgid "You are banned from this server."
 msgstr "Z tohoto serveru jste zabanován."
 
 #: src/interface/Home.tsx
-msgid "You can also click the gear icon in the bottom left."
-msgstr ""
+#~ msgid "You can also click the gear icon in the bottom left."
+#~ msgstr ""
 
 #~ msgid "You can also right-click the user icon in the top left, or left click it if you're already home."
 #~ msgstr "Také můžete kliknout pravým na ikonu uživatele vlevo nahoře, nebo na ni kliknout levým, pokud jste již doma."

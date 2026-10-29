@@ -96,31 +96,7 @@ const Home: Component = () => {
   );
 
   return (
-    <HomeSidebar
-      conversations={conversations}
-      channelId={params().channelId}
-      openSavedNotes={(navigate) => {
-        // Check whether the saved messages channel exists already
-        const channelId = [...client()!.channels.values()].find(
-          (channel) => channel.type === "SavedMessages",
-        )?.id;
-
-        if (navigate) {
-          if (channelId) {
-            // Navigate if exists
-            navigate(`/channel/${channelId}`);
-          } else {
-            // If not, try to create one but only if navigating
-            client()!
-              .user!.openDM()
-              .then((channel) => navigate(`/channel/${channel.id}`));
-          }
-        }
-
-        // Otherwise return channel ID if available
-        return channelId;
-      }}
-    />
+    <HomeSidebar conversations={conversations} channelId={params().channelId} />
   );
 };
 
