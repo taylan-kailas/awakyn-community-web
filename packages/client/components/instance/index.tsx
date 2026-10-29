@@ -15,6 +15,7 @@ import { AppConfig, normalizeHost, STOAT_HOST } from "@revolt/common/lib/env";
 import { LoadingScreen, useSnackbar } from "@revolt/ui";
 
 import Instance, { _newClient } from "./Instance";
+import { OfflineScreen } from "../../src/awakyn/OfflineScreen";
 
 export const StoatOrigin = new URL(`https://${STOAT_HOST}`).origin;
 export const DefaultURL = new URL(`https://${CONFIGURATION.DEFAULT_HOST}`);
@@ -50,6 +51,22 @@ export function InstanceContext(props: { children?: JSXElement }) {
     if (appLoadedOnce) nav(-1);
   }
 
+  // Awakyn: an unreachable server (Taylan's PC off) shows the offline screen,
+  // whose "Try again" re-runs this connect step.
+  const [offline, setOffline] = createSignal(false);
+  const isUnreachable = (e: unknown) => (e as Error)?.message === "Failed to fetch";
+
+  async function connect() {
+    const appCfg: AppConfig = host
+      ? await (await fetch(`https://${host}/.well-known/stoat`)).json()
+      : { api: CONFIGURATION.DEFAULT_API_URL };
+
+    const cli = _newClient(appCfg.api);
+    await cli.initConfig();
+    setInst(new Instance(appCfg, cli, host, nav));
+    setOffline(false);
+  }
+
   (async () => {
     //Redirect default instance
     //TODO This redirects ALL instance paths to default until multi-instance is ready
@@ -57,15 +74,10 @@ export function InstanceContext(props: { children?: JSXElement }) {
     if (host) return nav(Instance.relPath(), { replace: true });
 
     try {
-      const appCfg: AppConfig = host
-        ? await (await fetch(`https://${host}/.well-known/stoat`)).json()
-        : { api: CONFIGURATION.DEFAULT_API_URL };
-
-      const cli = _newClient(appCfg.api);
-      await cli.initConfig();
-      setInst(new Instance(appCfg, cli, host, nav));
+      await connect();
     } catch (e) {
-      onError(e);
+      if (isUnreachable(e)) setOffline(true);
+      else onError(e);
     }
     appLoadedOnce = true;
   })();
@@ -81,7 +93,14 @@ export function InstanceContext(props: { children?: JSXElement }) {
     <Show
       when={instInit()}
       fallback={
-        <LoadingScreen isStoat={(host || DefaultHost) === STOAT_HOST} />
+        <Show
+          when={offline()}
+          fallback={
+            <LoadingScreen isStoat={(host || DefaultHost) === STOAT_HOST} />
+          }
+        >
+          <OfflineScreen onRetry={connect} />
+        </Show>
       }
     >
       <Dynamic component={instanceContext.Provider} value={instInit()}>
