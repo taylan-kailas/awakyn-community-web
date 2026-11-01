@@ -2,7 +2,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 
-import { callLink, shortDate } from "./callLinks.ts";
+import { callLink, quickRoomName, shortDate } from "./callLinks.ts";
 
 test("dates read day/month/year", () => {
   assert.equal(shortDate(new Date(2026, 9, 29, 23, 59).getTime()), "29/10/2026");
@@ -11,4 +11,9 @@ test("dates read day/month/year", () => {
 
 test("a call link opens the app's join screen", () => {
   assert.equal(callLink("https://awakyn.one/community-app", "Ab12"), "https://awakyn.one/community-app/invite/Ab12");
+});
+
+test("a quick call room is named after when it was made", () => {
+  assert.equal(quickRoomName(new Date(2026, 9, 31, 17, 5).getTime()), "Call 31/10/2026 17:05");
+  assert.equal(quickRoomName(new Date(2027, 0, 3, 0, 0).getTime()), "Call 03/01/2027 00:00");
 });

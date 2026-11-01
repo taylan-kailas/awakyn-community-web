@@ -25,6 +25,8 @@ import { Symbol } from "@revolt/ui/components/utils/Symbol";
 
 import MdClose from "@material-design-icons/svg/outlined/close.svg?component-solid";
 
+import { QuickCallLink } from "../../../awakyn/calls/QuickCallLink";
+
 import { SidebarBase } from "./common";
 
 interface Props {
@@ -77,6 +79,8 @@ export const HomeSidebar = (props: Props) => {
               </Symbol>
             </a>
           </SidebarTitle>
+
+          <QuickCallLink />
 
           <Deferred>
             <VirtualContainer

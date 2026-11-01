@@ -10,3 +10,11 @@ export function shortDate(ms: number): string {
 export function callLink(appAddress: string, code: string): string {
   return `${appAddress}/invite/${code}`;
 }
+
+const QUICK_ROOM_PREFIX = "Call";
+
+/** A quick call room's name: when it was made, to the minute, in the viewer's own time zone. */
+export function quickRoomName(ms: number): string {
+  const d = new Date(ms);
+  return `${QUICK_ROOM_PREFIX} ${shortDate(ms)} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
+}
