@@ -62,7 +62,7 @@ export default defineConfig({
         icons: [
           { src: `${base}awakyn/icon-192.png`, type: "image/png", sizes: "192x192" },
           { src: `${base}awakyn/icon-512.png`, type: "image/png", sizes: "512x512" },
-          { src: `${base}awakyn/icon-512.png`, type: "image/png", sizes: "512x512", purpose: "maskable" },
+          { src: `${base}awakyn/icon-maskable-512.png`, type: "image/png", sizes: "512x512", purpose: "maskable" },
         ],
         // TODO: take advantage of shortcuts
       },
