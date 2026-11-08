@@ -4,7 +4,14 @@ import { styled } from "styled-system/jsx";
 
 import { useInstance } from "@revolt/instance";
 import Instance from "@revolt/instance/Instance";
-import { Button, CircularProgress, Symbol, Text } from "@revolt/ui";
+import { Button, Symbol, Text } from "@revolt/ui";
+
+import { AppGlyph } from "../../../../src/awakyn/AppGlyph";
+
+/**
+ * Size of the Awakyn icon that replaces the spinner (the box it sits in)
+ */
+const SPINNER_SIZE = 48;
 
 /**
  * Stoat status page URL
@@ -129,7 +136,7 @@ export function LoadingScreen(props: { isStoat?: boolean }) {
   return (
     <Base>
       <Spinner>
-        <CircularProgress />
+        <AppGlyph size={SPINNER_SIZE} />
       </Spinner>
 
       <Show when={notice()} keyed>
